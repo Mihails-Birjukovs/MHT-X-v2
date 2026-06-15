@@ -1,0 +1,9 @@
+Things to implement:
+1) Remove trajectory image export ("trajectories" folder);
+2) Family graphs -- either export as a .zip or as a .pkl + .wxf (all .gml's in one);
+3) "trajectories" folder -- export 'data' and 'changes' as single .pkl + .wxf objects;
+4) See if image mapping can be parallelized;
+5) Export parameters are .json + .csv, and make sure there are in the order of appearance in the code;
+6) Check if all parameters are explicitly communicated/input in the main.py;
+
+

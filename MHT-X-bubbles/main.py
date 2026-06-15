@@ -13,14 +13,14 @@ import os
 plt.rcParams['figure.dpi'] = 500
 np.set_printoptions(suppress=True)
 #%%
-drive = 'C:\\'
-w_dir = drive + os.path.join(*(os.getcwd().split('\\')[1:-1] + ['Objects']))
+drive = 'E:\\'
+w_dir = drive + os.path.join(*(os.getcwd().split('\\')[1:] + ['Objects']))
 os.chdir(w_dir)
 main_dirs = sorted(glob.glob('./*'))
 #%%
-I = 32
+I = 0
 
-J = 0
+J = 0 # Obsolete
 
 sub_dirs = glob.glob(main_dirs[I] + '/*')
 try: sub_dirs.remove(*glob.glob(main_dirs[I] + '/**.ini'))
@@ -42,18 +42,18 @@ entry   = exit_entry_func(-A, Height - Boundary, 0, 1)
 
 Sig_displacement_movement_split_merge   = 150
 Weight_split_merge                      = 0.9
-Power = 3/2
+Power = 3/2 
 merge  = split_merge_func(Sig_displacement_movement_split_merge, Weight_split_merge, 0, Power)
 split  = split_merge_func(Sig_displacement_movement_split_merge, Weight_split_merge, 1, Power)
 
 stat_funcs = [move, exitt, entry, split, merge]
 
 Max_displ_per_frame = 400
-Radius_multlplyer   = 5
+Radius_multlplyer   = 5 
 Min_displacement    = 30
 asc_condition  = association_condition(Max_displ_per_frame, Radius_multlplyer, Min_displacement)
 
-Upsilon                 = 1.2
+Upsilon                 = 1.2 
 Velocity_coefficient    = 80
 Max_acceleration        = 80
 comb_constr = combination_constraint(Upsilon, Velocity_coefficient, Max_acceleration)
@@ -63,12 +63,12 @@ aSSociator = aAssociator(asc_condition, comb_constr)
 Mu_Vel0     = 50
 Sig_Vel0    = 30
 R_sig_Area0 = 1.5
-R_sig_Volume0 = 1.5
+R_sig_Volume0 = 1.5 # Obsolete
 
 bubble_trajectory.mu_Vel0 = Mu_Vel0
 bubble_trajectory.sig_Vel0 = Sig_Vel0
 bubble_trajectory.r_sig_Area0 = R_sig_Area0
-bubble_trajectory.r_sig_Volume0 = R_sig_Volume0
+bubble_trajectory.r_sig_Volume0 = R_sig_Volume0 # Obsolete
 
 Max_occlusion = 2
 Quantile = 0.01

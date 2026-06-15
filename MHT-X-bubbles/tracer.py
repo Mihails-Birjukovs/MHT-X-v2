@@ -21,7 +21,7 @@ class Tracer():
                  path,
                  dim = 2):
 
-        self.dataset            = np.array((dataset := pd.read_csv('%s\\dataset.csv'%path)))
+        self.dataset            = np.array((dataset := pd.read_excel('%s\\dataset.xlsx'%path)))
         self.columns            = dataset.columns
         index                   = pd.MultiIndex.from_tuples(list(map(tuple, np.array(self.dataset, dtype = np.uint16)[:,:2])))
         self.multi_indexed      = pd.DataFrame(self.dataset[:,:2].astype(np.uint16), index = index)
@@ -228,8 +228,8 @@ class Tracer():
             table.to_csv(output_path + '/trajectories/changes/changes_%i.csv'%i, index = False)
 
         with open(output_path + '/trajectories/events.csv', 'w') as file:
-             events_str = 'Type,In,Out,Frame,X,Y,likelihood\n'
-             for event in interpretation.Events:
+            events_str = 'Type,Out,In,Frame,X,Y,likelihood\n'
+            for event in interpretation.Events:
                 if type(event[0][0]) is str:
                     tr = interpretation.trajectories[event[1][0]].beginning
                     tmp_str = str([0] + event[0] + event[1] + [tr[0]] + list(tr[2:4]) + [event[2]])[1:-1] + '\n'
@@ -243,13 +243,14 @@ class Tracer():
                     tr = interpretation.trajectories[event[0][0]].ending
                     tmp_str = str([3] + event[0] + [str(event[1]).replace(',', ';')[1:-1]] + [tr[0]] + list(tr[2:4]) + [event[2]])[1:-1] + '\n'
                 events_str +=  tmp_str
-                file.write(events_str)
-            #Family graph output
+            file.write(events_str)
+
+        #Family graph output
         try: os.mkdir(output_path + '/family_graphs')
         except FileExistsError: map(os.remove, glob.glob(output_path + '/family_graphs/**.gml'))
         for i, family_graph in tqdm(enumerate(interpretation.families), desc = 'Writing family graphs: '):
             nx.readwrite.gml.write_gml(family_graph, output_path + '/family_graphs/family_%i.gml'%i, stringizer = str)
-    
+
         del Vis, self.images
 
 def unzip_images(path):
@@ -262,7 +263,7 @@ def unzip_images(path):
         images = list(map(imgFromZip, tqdm(names, desc = 'Loading images ')))
 
     scaler_f = lambda x: (2**-8 * int(np.max(x) >= 256) + int(np.max(x) < 256) + 254 * int(np.max(x) == 1))
-    scaler   = scaler_f(np.asarray(images[15], np.uint16))
+    scaler   = scaler_f(np.asarray(images[0], np.uint16))
 
     mapper = lambda img:  np.repeat((np.asarray(img, np.uint16) * scaler).astype(np.uint8)[:,:,np.newaxis],3,2)
     images = list(map(mapper, tqdm(images, desc = 'Mapping images ')))

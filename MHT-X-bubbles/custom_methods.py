@@ -6,8 +6,9 @@ from scipy.stats import norm
 
 class bubble_trajectory(node_trajectory_base):
     mu_Vel0 = 0
-    sig_Vel0 = 100
+    sig_Vel0 = 0
     r_sig_Area0 = 1
+    r_sig_Volume0 = 1
     def __init__(self, graph):
         super().__init__(graph)
         self._get_stats()
@@ -22,14 +23,18 @@ class bubble_trajectory(node_trajectory_base):
         if len(self) <= 2:
             self.mu_Vel   = self.mu_Vel0
             self.sig_Vel  = self.sig_Vel0
-            self.mu_Area  = np.average(self.data[:,-2])
+            self.mu_Area = np.average(self.data[:,4])
             self.sig_Area = self.mu_Area * self.r_sig_Area0
+            self.mu_Volume  = self.mu_Area# OG = np.average(self.data[:,5]) (edits made to get "rid" of volume in calculations)
+            self.sig_Volume = self.sig_Area#OG = self.mu_Volume * self.r_sig_Volume0 (edits made to get "rid" of volume in calculations)
         else:
             velocities   = np.linalg.norm(self.displacements, axis = 1)/self.changes[:,0]
             self.mu_Vel     = np.average(velocities)
             self.sig_Vel    = np.std(velocities)
-            self.mu_Area    = np.average((A := self.data[:,-2]))
-            self.sig_Area   = np.std(A)
+            self.mu_Area        = np.average((S := self.data[:,4]))
+            self.sig_Area       = np.std(S)
+            self.mu_Volume    =  self.mu_Area# OG = np.average((V := self.data[:,5])) (edits made to get "rid" of volume in calculations)
+            self.sig_Volume   = self.sig_Area# OG = np.std(V) (edits made to get "rid" of volume in calculations)
 
 class association_condition(Association_condition):
     def __init__(self,
@@ -38,16 +43,16 @@ class association_condition(Association_condition):
                  min_displacement = 30):
 
         def f(stop, start):
-            if stop == start:                                                           return False
+            if stop == start:                                                                   return False
 
             dt = start.beginning[0] - stop.ending[0]
             dr = np.linalg.norm(start.beginning[2:4] - stop.ending[2:4])
-
-            if   dt <= 0:                                                               return False
-            elif dr > max_displ_per_frame * dt:                                         return False
-            elif dr > (stop.ending[4]+start.beginning[4])/2 * radius_multiplyer * dt:   return False
-            if dr < min_displacement * dt:                                              return True
-            else:                                                                       return True
+            f1 = lambda A: (A/np.pi)**(1/2)
+            if   dt <= 0:                                                                       return False
+            elif dr > max_displ_per_frame * dt:                                                 return False
+            elif dr > (f1(stop.mu_Area)+f1(start.mu_Area))/2 * radius_multiplyer * dt:          return False
+            if dr < min_displacement * dt:                                                      return True
+            else:                                                                               return True
 
         super().__init__(f)
 
@@ -72,14 +77,14 @@ class combination_constraint(Combination_constraint):
                     acc = 2 * (v - mid_v)/(start.changes[0,0] + dt)
                     if np.linalg.norm(acc) > max_a: return False
                     if d_fi(mid_v, v) > (np.pi + 1e-3) * np.exp(-np.linalg.norm(v)/v_scaler): return False
-            #Area check
+            #Volume check
             S1, S2, sigs = 0, 0, 0
             for stop in stops:
-                S1   += stop.mu_Area
-                sigs += stop.mu_Area / stop.mu_Area
+                S1   += stop.mu_Volume
+                sigs += stop.sig_Volume / stop.mu_Volume
             for start in starts:
-                S2   += start.mu_Area
-                sigs += start.mu_Area / start.mu_Area
+                S2   += start.mu_Volume
+                sigs += start.sig_Volume / start.mu_Volume
             sigs     /= len(stops) + len(starts)
             if abs(S2 - S1)/max(S2, S1) < upsilon * sigs:
                 return True
@@ -127,7 +132,7 @@ class movement_func(statFunc):
 
 
 class split_merge_func(statFunc):
-    def __init__(self, sig_displ, k, c, power = 3/2):
+    def __init__(self, sig_displ, k, c, power = 1.5):
         likelihood_displ = lambda p1, p2, dt: np.divide(norm.pdf(np.linalg.norm(p2 - p1), 0, sig_displ*dt),norm.pdf(0, 0, sig_displ*dt))
         likelihood_S     = lambda dS, S_sig: norm.pdf(dS, 0, S_sig)/norm.pdf(0, 0, S_sig)
         f0 = lambda pos, Ss: np.array([np.dot(pos[:,i], Ss**power)/np.sum(Ss**power) for i in range(pos.shape[1])])
@@ -157,12 +162,10 @@ class split_merge_func(statFunc):
                 except: pass
 
             if len(positions) != 0:
-                p_predict = f0(np.array(positions), np.array(Ss))
-
-                frac    = len(Ss)/len(trajectories)
-                a       = likelihood_displ(p_predict, p, np.average(dts)) * frac
-            else:
-                a=0
+                p_predict   = f0(np.array(positions), np.array(Ss))
+                frac        = len(Ss)/len(trajectories)
+                a           = likelihood_displ(p_predict, p, np.average(dts)) * frac
+            else: a = 0
 
             S       = np.sum(np.array([traject.mu_Area for traject in trajectories]))
             sig_S   = np.sum(np.array([tr.sig_Area for tr in trajectories]))
