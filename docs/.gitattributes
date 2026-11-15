@@ -1,1 +1,4 @@
-* -text
+archive/** -text
+*.webp -text
+*.gif -text
+*.zip -text

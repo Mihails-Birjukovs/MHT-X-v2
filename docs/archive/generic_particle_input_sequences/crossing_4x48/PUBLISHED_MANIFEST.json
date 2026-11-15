@@ -1,0 +1,400 @@
+{
+  "case": "crossing_4x48",
+  "role": "input/latent truth, no implied tracking result",
+  "frames": 48,
+  "pixel_exact_webp": true,
+  "assets": [
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_001.png",
+      "original_sha256": "dafc65a5dc2495b4ef79ce2c7c40f3a9a26b6f610d93eef9e16138bac9402075",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_001.webp",
+      "published_sha256": "1782d62f3948a91b866cbcf38753f5bf690679cd5f620f9b3abcf2e3c0c8682e",
+      "original_bytes": 27217,
+      "published_bytes": 12132
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_002.png",
+      "original_sha256": "0f34fafa179a3adfeb6ae55f2194819aa0419fbe94ce13dc58c6447c63bda829",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_002.webp",
+      "published_sha256": "2f8da3095f24d3b481690bf42063d6b5de63d8d862ff4923143eadd2e3376bac",
+      "original_bytes": 27388,
+      "published_bytes": 12180
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_003.png",
+      "original_sha256": "65e06d6486f081976c91c4b23775232b35937ea661c28e45b6a3432cdcca1b9a",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_003.webp",
+      "published_sha256": "9f224fc517d5d08176901be95aca718a9fcbd5b68c3f01eb8c86772b5c663bd9",
+      "original_bytes": 27413,
+      "published_bytes": 12194
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_004.png",
+      "original_sha256": "ee0e4926b926ca5ec7249302b0e5027b6217b444132ab4ea29e0cb1c11fa1634",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_004.webp",
+      "published_sha256": "15c6907b7339058b6d1e6bfe8e2841d0ec28d785648aa9acec88073054fb4d78",
+      "original_bytes": 27347,
+      "published_bytes": 12168
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_005.png",
+      "original_sha256": "757abef6d274a36d834af4356b502ea98febdcd760a2597677fcdc681b4c4e88",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_005.webp",
+      "published_sha256": "f42d25871191c2925bc0eacdba83e617af6195326884e5f3e01629514068a86d",
+      "original_bytes": 27394,
+      "published_bytes": 12192
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_006.png",
+      "original_sha256": "d034c89d0d8f13761a32282dd9e3eef81634917080a2f142faf6afe057b7efad",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_006.webp",
+      "published_sha256": "0b41f24bc48fd9cce9f7cb3ff28d65dc85775d8510375ab202fc763ce4255782",
+      "original_bytes": 27444,
+      "published_bytes": 12130
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_007.png",
+      "original_sha256": "779529f92cefa8d8b22815856b7ded32249d68a7ca8025f62a2616bf009e72f1",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_007.webp",
+      "published_sha256": "11a649f86898e3da708dd796df7873dc9877c40b5af3793859d237de96ae2de9",
+      "original_bytes": 27356,
+      "published_bytes": 12186
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_008.png",
+      "original_sha256": "3452fa86b95e154a065271c24c45c9ee44f8e374c80f0d3735e82fca0c8d132a",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_008.webp",
+      "published_sha256": "0ff1243b6e8574b675191cf9a6193cfa05722e42b865320e1725656afb8c0b55",
+      "original_bytes": 27473,
+      "published_bytes": 12278
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_009.png",
+      "original_sha256": "449542d25d43dc3ae9d3937167fa5002129e6c3ee19d6c8444224a18e570fdda",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_009.webp",
+      "published_sha256": "b1a19090a91907e512fa266b9248c24a01a336c53bda731790aafa1bdf44dd22",
+      "original_bytes": 27478,
+      "published_bytes": 12274
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_010.png",
+      "original_sha256": "3ff260f232314b1a39987e081565ac3cdebf4d1edbaee1cc1ce80f5072fc6a4c",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_010.webp",
+      "published_sha256": "a71bcd0ff263e1f47e6042ee7a64d19164943b5541ec88a5b2b53a06ba4a178f",
+      "original_bytes": 27566,
+      "published_bytes": 12286
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_011.png",
+      "original_sha256": "6fc3d161d40af847a37e9292922f3d7f162e7054ef55a5592ca4d2921023a68f",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_011.webp",
+      "published_sha256": "907090073693e1962e6591a473312ab115d67ace0524d9989b46ed48d29b123f",
+      "original_bytes": 27294,
+      "published_bytes": 12174
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_012.png",
+      "original_sha256": "ca53aff77d1249f7dc665c84f66169fb8b04fd78c3e39cd5321d4492aba7fb55",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_012.webp",
+      "published_sha256": "690d1afaf308f7957c5be039706a421a9affbf50bfffbdb30f7e72325c64078b",
+      "original_bytes": 27504,
+      "published_bytes": 12260
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_013.png",
+      "original_sha256": "781ccaacf595ca74f01f2779ac2ab436a239b68c9338c656665216ff9e17b678",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_013.webp",
+      "published_sha256": "93ca104004219e65958ac69ddecb8f860e6156ba6dffd750e265d05d25168881",
+      "original_bytes": 27541,
+      "published_bytes": 12278
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_014.png",
+      "original_sha256": "d199924225fd20210358189227d8c69c4f3e13caf39bd87aeaf3fa949c112c2c",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_014.webp",
+      "published_sha256": "0bd3aa8ca1419e871c90e7058d9c340d33f7b6c079a8a02466fa7a074b163f28",
+      "original_bytes": 27484,
+      "published_bytes": 12230
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_015.png",
+      "original_sha256": "cfde9debddcab199bf18f226de66d5f37b7051feafb14c5a9a21a1e5a5920166",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_015.webp",
+      "published_sha256": "d2406c075b424cb9d5bd1836a722619b3cf8fe8dca2eb73b24075d3b7c57b3be",
+      "original_bytes": 27525,
+      "published_bytes": 12248
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_016.png",
+      "original_sha256": "4aee9c13b0d293ab0625861a78bb466b516d16a315a0f17e1938c1fb8dd4bdee",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_016.webp",
+      "published_sha256": "547113a424daa47be84f87712ababfb69bba849bd1e231992c99a2592c5bac2e",
+      "original_bytes": 27552,
+      "published_bytes": 12282
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_017.png",
+      "original_sha256": "5dba8c227cbd1782d286d1a40af54a65c77bf5595f2ae50b908655d6c5821620",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_017.webp",
+      "published_sha256": "02def76d19a4a4f4ef9b3911c1ad4d7dbc26d41449334f1b88f90ae6b7d0b468",
+      "original_bytes": 27450,
+      "published_bytes": 12248
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_018.png",
+      "original_sha256": "2656018d2443ddbc7db21eb1f8d437a3f1a302ecfa47e020570bc042266c85e1",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_018.webp",
+      "published_sha256": "0ba90bb186f1ee6cc992ef7a7aa10044f65eac75f132b10865309d14359b3abe",
+      "original_bytes": 27574,
+      "published_bytes": 12302
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_019.png",
+      "original_sha256": "2e7f1b300b09cc68f5e51655c4ce9146e023c658cd29b5ddd636c814ef332f44",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_019.webp",
+      "published_sha256": "a733806efd97b25b3833bcd3638453b99008c2711458bd1c179523d7fad0bd9e",
+      "original_bytes": 27560,
+      "published_bytes": 12296
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_020.png",
+      "original_sha256": "781a183a8499d33bc1d3a57421b2e09bcfcdd0a03e1e0ef6e7fb58c75da4ec82",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_020.webp",
+      "published_sha256": "33ebeef19d215ab5ae3eb28535ea603de4ad8f7f1ef7acee07a90869f573957b",
+      "original_bytes": 27716,
+      "published_bytes": 12356
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_021.png",
+      "original_sha256": "18d8602bf7d4b92be2cc7f055b3271b9496d32f28c696019e985143b828b5891",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_021.webp",
+      "published_sha256": "041b5eeaa9df2e4d81b3432a12cc3a13dde44d52a434b0183d260e12ad88d334",
+      "original_bytes": 27501,
+      "published_bytes": 12236
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_022.png",
+      "original_sha256": "841b9f59f167d64a6c692d4c64141cd3d23a76688e13481f992651fd41c62199",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_022.webp",
+      "published_sha256": "e03ab1bb44a68a01c1623477dff457c90e6e1d4fb860bd64d585f78985de77c2",
+      "original_bytes": 27470,
+      "published_bytes": 12246
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_023.png",
+      "original_sha256": "fe8b6de93b596d9e23d5569780856ad6ece7b055bac62c671c04d4d684e1f0a4",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_023.webp",
+      "published_sha256": "45f28fe34d98fc667e1da92a98c3838ae66814aa674c57c55156c15c0e52c88b",
+      "original_bytes": 27665,
+      "published_bytes": 12328
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_024.png",
+      "original_sha256": "361e87c68561ba5b825f9304ea54ea1ab1948bee80f003551393979980c065b8",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_024.webp",
+      "published_sha256": "20b4a44c297e6cba0e13d9ca5dd8a27b482fc476cc459f5e1860a16e973bcb19",
+      "original_bytes": 27600,
+      "published_bytes": 12292
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_025.png",
+      "original_sha256": "03b0cdb85cf6164625067d7e93986c15105b645d0c7c2291fb75578d9e704f09",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_025.webp",
+      "published_sha256": "4b5b13d853a40022ea58eefac5bc06d753a3c6bd3e32b5f51a4e448c69dabb91",
+      "original_bytes": 27578,
+      "published_bytes": 12334
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_026.png",
+      "original_sha256": "449cb266bee2c0bf166659dc66f4e1e25f9ed5c4a7df864c5ba914be0b245767",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_026.webp",
+      "published_sha256": "89af8a8e0854aa592406b657e50aae7233f621491d6b766d5587678985db585f",
+      "original_bytes": 27724,
+      "published_bytes": 12360
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_027.png",
+      "original_sha256": "318960648befdfa1dbd7f5ca34da58d444de894eba2b717db1de791242c608b8",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_027.webp",
+      "published_sha256": "6bef44b0e7fbc0ae1a8fdb78c93d21172e0924087d0833e0ac9675bbe9cc6942",
+      "original_bytes": 27607,
+      "published_bytes": 12314
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_028.png",
+      "original_sha256": "420699f86a78e525e4a2b6c435adc47567845282a88ee1ef1662eb2f24f92bc8",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_028.webp",
+      "published_sha256": "5a07bcc8beaf9c756c71172b15b350a855276494ffcbebebd47b71af633ec948",
+      "original_bytes": 27726,
+      "published_bytes": 12378
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_029.png",
+      "original_sha256": "e3a9cb04eb10d266c2d6a7391e4eb66f01054a592cf9fc0a80c1f699c30cb77c",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_029.webp",
+      "published_sha256": "1ee58827c135e492593bbde0f2448899e949a08a70d5cb7cdf895a876a2738d3",
+      "original_bytes": 27737,
+      "published_bytes": 12368
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_030.png",
+      "original_sha256": "e490bb5d459cbbb6b652ffaba0ecb1c2b90b1a08e4900bd0c4768801f155ba42",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_030.webp",
+      "published_sha256": "92b5eceb990a23c64a90c6348ceb2b033b171dc6d625436d5eb42b450942b1d6",
+      "original_bytes": 27729,
+      "published_bytes": 12360
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_031.png",
+      "original_sha256": "e0a829b7639794b125d8abae5d21f65cebf8246ba4f82ec2a07bfc390dea7f28",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_031.webp",
+      "published_sha256": "1a79fb42303b74e7c462d898c2774f21fe0cad65bf31e16c7c72718ed411e7fc",
+      "original_bytes": 27526,
+      "published_bytes": 12254
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_032.png",
+      "original_sha256": "043fe2248488fcad7e7659376b62b8d787303f3f213814667777d0b28a0e9477",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_032.webp",
+      "published_sha256": "36d5ed34a55c688903855ac8136cba1b890f5e8a76e3a77d8166ae499c20849d",
+      "original_bytes": 27680,
+      "published_bytes": 12348
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_033.png",
+      "original_sha256": "31e8bd4e89a4dc1cf6c5378217ffc208da87aed86272deccbc31b0ae1c4ed73d",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_033.webp",
+      "published_sha256": "0b9ecadf9453290ab32c76bebf51bf5dfde05507c441d1f3decb33914e052885",
+      "original_bytes": 27494,
+      "published_bytes": 12250
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_034.png",
+      "original_sha256": "d312388808900baaa705d2a08cbfd948964f7afc0b6474dd91a20a10e721cad6",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_034.webp",
+      "published_sha256": "3cdc32a8c400fea38fc191e708b3aae9038b374fc959c2112145377d14a5c89f",
+      "original_bytes": 27643,
+      "published_bytes": 12286
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_035.png",
+      "original_sha256": "a7cb2980b1385aedb69bed0fd74099f88d5c98f14758b3ae69082f52712934e4",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_035.webp",
+      "published_sha256": "47be80808e851af196ebff11c298fe427daf2fff3fb45bc17abd24b29edb84e8",
+      "original_bytes": 27679,
+      "published_bytes": 12310
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_036.png",
+      "original_sha256": "7206b18af791b01ddada4667598f2f3c6356523f73f2de339a1a8757b0572ce5",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_036.webp",
+      "published_sha256": "db42722090b22328d29ce1bc0aef065ee5617254369c58a809f98d91ed0a77cf",
+      "original_bytes": 27735,
+      "published_bytes": 12372
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_037.png",
+      "original_sha256": "c9a1f8fd89b72c7c3b685cbc54ef0bddb9921740a0e1f2c36eef4b0922d01292",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_037.webp",
+      "published_sha256": "efcef586d62a0f5a2b7913685428ed2990c2d59581790cf423589f926140cad6",
+      "original_bytes": 27626,
+      "published_bytes": 12306
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_038.png",
+      "original_sha256": "abff0850cdf259f0b9fc56ce297c524977f2ad4d7013c3fd0843dc3395fb7b70",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_038.webp",
+      "published_sha256": "e5d6a6629b370afcaabd86569cbb5d3036afc0b4a00d6b215f55c04ac037199f",
+      "original_bytes": 27739,
+      "published_bytes": 12380
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_039.png",
+      "original_sha256": "c67eae54015d2c4e87a28c6fa696c5ec03c54a73e26c70139ba398c8f44e54e0",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_039.webp",
+      "published_sha256": "152b1cb2e7ecf2fefab1bc848ca195af3fe7640639853d09025abdfdedc2130e",
+      "original_bytes": 27744,
+      "published_bytes": 12362
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_040.png",
+      "original_sha256": "3e43fd03a85c093faf7df82ce0504ccfb26702c747e71b93373da58c1d7ff032",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_040.webp",
+      "published_sha256": "90b3998e6c62dd44bbae51eb2fd2ccca03414792f08138429993c9e81357d0b8",
+      "original_bytes": 27672,
+      "published_bytes": 12332
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_041.png",
+      "original_sha256": "8687d02cb5acc3f442b3ab524a345e5e40485c920f76366dec0a2820b58d3de4",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_041.webp",
+      "published_sha256": "aa0f5a97b4720c2679f45cbbdd9256d16b04122033f7f83dff3c6242b9d0a9b8",
+      "original_bytes": 27477,
+      "published_bytes": 12232
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_042.png",
+      "original_sha256": "04d6c0cfb0f8f3a9f6d7b39b74a3de18c87677661733b5af60e0b2477c8802bc",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_042.webp",
+      "published_sha256": "e60d98f646a7c478661e37e69f7af4a5dd3f2a39602e8a7338e6c9af5ef18c9e",
+      "original_bytes": 27617,
+      "published_bytes": 12290
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_043.png",
+      "original_sha256": "23e557e7ca658b2a2367ee79d8b907887e9f25dead1e819f27e63912dff3dd76",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_043.webp",
+      "published_sha256": "008b480c1aac6a5b8b7148d9fe8e88d158b4ef09a1e737c27e402c8dba7f0e93",
+      "original_bytes": 27629,
+      "published_bytes": 12298
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_044.png",
+      "original_sha256": "fabacf22a419eb55f8c5d99ce6d562604279c1b76ef14e70b20491bfb9a27f31",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_044.webp",
+      "published_sha256": "deabd3204d5b7e533a008e60ed97a2c9309466432e58602aa07764b3c35fb59c",
+      "original_bytes": 27416,
+      "published_bytes": 12218
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_045.png",
+      "original_sha256": "846d1d803da22460baa098f92293a71a5ebd71d56695201724ef77498e594d6e",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_045.webp",
+      "published_sha256": "0ebbad29c11ddac33b5a84b6f9b84b2ba52327842988c7a6e6aa758b09bff780",
+      "original_bytes": 27612,
+      "published_bytes": 12278
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_046.png",
+      "original_sha256": "da0b01c270051bd307d6cbde3ab067f8060afa1efafc567995d578c308a838ce",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_046.webp",
+      "published_sha256": "05f78c569ff5e85aafebce087b9d57671670c429395a61641fab5888f7cee514",
+      "original_bytes": 27674,
+      "published_bytes": 12330
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_047.png",
+      "original_sha256": "088abe969de7078771ec61ecea696c4c8bc0ea81798519862431fd06e9a8c7c2",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_047.webp",
+      "published_sha256": "8015706fb35e66310ac918424ef09cdcb5ed4d8340b317df9e8ce47037d190ac",
+      "original_bytes": 27576,
+      "published_bytes": 12286
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/frames/frame_048.png",
+      "original_sha256": "dec03b06a5eae120b3a56ff1950c7576cb0b4930981be42d7dc329972ecbd832",
+      "published": "generic_particle_input_sequences/crossing_4x48/frames/frame_048.webp",
+      "published_sha256": "a68ad9f1e0ccff749451e94d93a5341f4422a41150dbe371b3b41474478ed395",
+      "original_bytes": 27667,
+      "published_bytes": 12346
+    },
+    {
+      "original": "generic_particle_input_sequences/crossing_4x48/OVERVIEW_STORYBOARD.png",
+      "original_sha256": "9e9d2eaff26a39ea7570bb940d2fefd99fb75cc445dd46e07e8cdac9342d0a0d",
+      "published": "generic_particle_input_sequences/crossing_4x48/OVERVIEW_STORYBOARD.webp",
+      "published_sha256": "392e0ec510351339f2bae31d10808dfc59643922910b8751718ff14f0472e05b",
+      "original_bytes": 90062,
+      "published_bytes": 27602
+    }
+  ]
+}
