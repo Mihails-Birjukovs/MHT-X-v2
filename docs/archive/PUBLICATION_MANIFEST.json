@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "created_utc": "2026-11-15T19:01:18.862958+00:00",
+  "created_utc": "2026-11-15T19:22:54.497293+00:00",
   "data_role": "curated original synthetic observations/graphs and rendered images only",
   "source_code_sha": "3f1343f90ce29ba42eede6d4de84531d8168768e",
   "original_bubble_graph_exports": 172,
@@ -17841,8 +17841,8 @@
     },
     {
       "path": "controls/index.html",
-      "sha256": "20e0b3c8194cecb67ed3e173517fc9874439ee90a8817d0c2d52c0e93df7dbf2",
-      "size": 6009,
+      "sha256": "7e1b93e68295327b1580c6e547436e81e0ea73a5cf2be069bd37550da23e2199",
+      "size": 6010,
       "role": "curated_synthetic_evidence_or_standalone_site"
     },
     {
@@ -17865,6 +17865,12 @@
     },
     {
       "path": "controls/SCIENCE_REPORT.md",
+      "sha256": "d3e23e188780adcdfb131becf126332ec16541d6b2f74bd7a4a5042b39b515c8",
+      "size": 6195,
+      "role": "curated_synthetic_evidence_or_standalone_site"
+    },
+    {
+      "path": "controls/SCIENCE_REPORT.txt",
       "sha256": "d3e23e188780adcdfb131becf126332ec16541d6b2f74bd7a4a5042b39b515c8",
       "size": 6195,
       "role": "curated_synthetic_evidence_or_standalone_site"
@@ -26925,8 +26931,14 @@
     },
     {
       "path": "index.html",
-      "sha256": "6888f316b4ec6700fe00cf5d537441db21dd918bc2b6842ae054d681d6c480c9",
-      "size": 118967,
+      "sha256": "b5d76d2541b613c81df65067adc7a76d12a84e145592019cd1d4e8bad24ba7ff",
+      "size": 118969,
+      "role": "curated_synthetic_evidence_or_standalone_site"
+    },
+    {
+      "path": "machine/ARCHIVE_QA.json",
+      "sha256": "f37bf9c9c61fac61be47f09dd3d8d1c7a2c3691d179283a1e7ba1ffced70af88",
+      "size": 847,
       "role": "curated_synthetic_evidence_or_standalone_site"
     },
     {
@@ -26939,6 +26951,12 @@
       "path": "machine/EVENT_LEDGER.json",
       "sha256": "893a79557d60fe0219342f29ea330233b1d59fb96d1afec783584dd6e6f757ac",
       "size": 375881,
+      "role": "curated_synthetic_evidence_or_standalone_site"
+    },
+    {
+      "path": "machine/PARTICLE_SYNTHETIC_REGRESSION_INVENTORY.csv",
+      "sha256": "94d2d87d41ebbb15dde4aedeefc8be9ebd37fb7d53074075c2d887cb4c1d711f",
+      "size": 3178,
       "role": "curated_synthetic_evidence_or_standalone_site"
     },
     {
@@ -27278,7 +27296,19 @@
       "role": "curated_synthetic_evidence_or_standalone_site"
     },
     {
+      "path": "README.txt",
+      "sha256": "1fa6956a1c8fb64642859ab9295a0463038e32ac77b082651d5fcdd6bc7bbb8f",
+      "size": 2444,
+      "role": "curated_synthetic_evidence_or_standalone_site"
+    },
+    {
       "path": "SCIENCE_REPORT.md",
+      "sha256": "df36de4b1edc5e7f8530fd35b2f869c2c6676c69e5a072673049a953ec59ad12",
+      "size": 3229,
+      "role": "curated_synthetic_evidence_or_standalone_site"
+    },
+    {
+      "path": "SCIENCE_REPORT.txt",
       "sha256": "df36de4b1edc5e7f8530fd35b2f869c2c6676c69e5a072673049a953ec59ad12",
       "size": 3229,
       "role": "curated_synthetic_evidence_or_standalone_site"

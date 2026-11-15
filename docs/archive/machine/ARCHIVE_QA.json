@@ -1,0 +1,18 @@
+{
+  "status": "PASS_SYNTHETIC_PUBLIC_ARCHIVE",
+  "scope": "curated public static benchmark integrity; not experimental source validation",
+  "curated_fixture_count": 23,
+  "source_frozen_bubble_graph_count": 172,
+  "visual_bubble_topology_groups": 46,
+  "new_true_ternary_and_clutter_control_runs": 12,
+  "true_particle_source_smoke_pass": 1,
+  "original_particle_crossing_fail": 1,
+  "public_run_source_manifest_present": true,
+  "new_control_all_source_runs_complete": true,
+  "new_control_source_run_count": 12,
+  "pixel_exact_lossless_webp": true,
+  "protected_holdouts_included": false,
+  "experimental_raw_data_included": false,
+  "original_source_frozen_commit": "3f1343f90ce29ba42eede6d4de84531d8168768e",
+  "note": "This is a sanitized public QA summary; original detailed validation and source-path logs remain on X:."
+}
