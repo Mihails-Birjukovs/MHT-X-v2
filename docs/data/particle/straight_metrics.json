@@ -1,0 +1,17 @@
+{
+  "case": "straight_12x48",
+  "test_type": "ORIGINAL_TRACKER_SYNTHETIC_SMOKE",
+  "time_utc": "2026-11-13T17:09:52.273526+00:00",
+  "source_sha": "3f1343f90ce29ba42eede6d4de84531d8168768e",
+  "input_sha256": "ed8008f07b94ef954958962d974514858e50809934bab4fb6710e3c26dd56e96",
+  "python": "3.12.16",
+  "time_seconds": 66.59976070001721,
+  "tracemalloc_peak_bytes": 5931501,
+  "graph_nodes": 578,
+  "graph_edges_all": 588,
+  "non_special_edges": 564,
+  "correct_association_edges": 564,
+  "precision": 1.0,
+  "recall_of_consecutive_observation_pairs": 1.0,
+  "reference_caveat": "Synthetic truth, no historical output comparison, Python-level peak not RSS"
+}

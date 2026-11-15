@@ -1,0 +1,4370 @@
+{
+  "schema_version": 1,
+  "scenario": "curved_plume",
+  "role": "Independent synthetic truth, not fluid mechanics simulation",
+  "seed": 3102,
+  "frames": 60,
+  "units": {
+    "coordinates": "px",
+    "time": "frame",
+    "area": "px^2",
+    "volume": "synthetic volume units"
+  },
+  "roi": {
+    "xmin": 0,
+    "xmax": 450,
+    "ymin": 0,
+    "ymax": 1806,
+    "coordinate_frame": "upward-increasing Y"
+  },
+  "intended_motions": "scenario-dependent advection and shear; bubble branches approach contact before coalescence",
+  "explicit_true_edges": [
+    {
+      "source": "Entry",
+      "target": [
+        1,
+        0
+      ]
+    },
+    {
+      "source": "Entry",
+      "target": [
+        1,
+        1
+      ]
+    },
+    {
+      "source": [
+        1,
+        0
+      ],
+      "target": [
+        2,
+        1
+      ]
+    },
+    {
+      "source": [
+        1,
+        1
+      ],
+      "target": [
+        2,
+        0
+      ]
+    },
+    {
+      "source": [
+        10,
+        0
+      ],
+      "target": [
+        11,
+        0
+      ]
+    },
+    {
+      "source": [
+        10,
+        1
+      ],
+      "target": [
+        11,
+        1
+      ]
+    },
+    {
+      "source": [
+        11,
+        0
+      ],
+      "target": [
+        12,
+        0
+      ]
+    },
+    {
+      "source": [
+        11,
+        1
+      ],
+      "target": [
+        12,
+        1
+      ]
+    },
+    {
+      "source": [
+        12,
+        0
+      ],
+      "target": [
+        13,
+        1
+      ]
+    },
+    {
+      "source": [
+        12,
+        1
+      ],
+      "target": [
+        13,
+        0
+      ]
+    },
+    {
+      "source": [
+        13,
+        0
+      ],
+      "target": [
+        14,
+        1
+      ]
+    },
+    {
+      "source": [
+        13,
+        1
+      ],
+      "target": [
+        14,
+        0
+      ]
+    },
+    {
+      "source": [
+        14,
+        0
+      ],
+      "target": [
+        15,
+        0
+      ]
+    },
+    {
+      "source": [
+        14,
+        1
+      ],
+      "target": [
+        15,
+        1
+      ]
+    },
+    {
+      "source": [
+        15,
+        0
+      ],
+      "target": [
+        16,
+        2
+      ]
+    },
+    {
+      "source": [
+        15,
+        1
+      ],
+      "target": [
+        16,
+        4
+      ]
+    },
+    {
+      "source": [
+        16,
+        2
+      ],
+      "target": [
+        17,
+        0
+      ]
+    },
+    {
+      "source": [
+        16,
+        4
+      ],
+      "target": [
+        17,
+        1
+      ]
+    },
+    {
+      "source": [
+        17,
+        0
+      ],
+      "target": [
+        18,
+        1
+      ]
+    },
+    {
+      "source": [
+        17,
+        1
+      ],
+      "target": [
+        18,
+        0
+      ]
+    },
+    {
+      "source": [
+        18,
+        0
+      ],
+      "target": [
+        19,
+        0
+      ]
+    },
+    {
+      "source": [
+        18,
+        1
+      ],
+      "target": [
+        19,
+        1
+      ]
+    },
+    {
+      "source": [
+        19,
+        0
+      ],
+      "target": [
+        20,
+        0
+      ]
+    },
+    {
+      "source": [
+        19,
+        1
+      ],
+      "target": [
+        20,
+        1
+      ]
+    },
+    {
+      "source": [
+        2,
+        0
+      ],
+      "target": [
+        3,
+        1
+      ]
+    },
+    {
+      "source": [
+        2,
+        1
+      ],
+      "target": [
+        3,
+        0
+      ]
+    },
+    {
+      "source": [
+        20,
+        0
+      ],
+      "target": [
+        21,
+        1
+      ]
+    },
+    {
+      "source": [
+        20,
+        1
+      ],
+      "target": [
+        21,
+        0
+      ]
+    },
+    {
+      "source": [
+        20,
+        1
+      ],
+      "target": [
+        21,
+        2
+      ]
+    },
+    {
+      "source": [
+        21,
+        0
+      ],
+      "target": [
+        22,
+        2
+      ]
+    },
+    {
+      "source": [
+        21,
+        1
+      ],
+      "target": [
+        22,
+        1
+      ]
+    },
+    {
+      "source": [
+        21,
+        2
+      ],
+      "target": [
+        22,
+        0
+      ]
+    },
+    {
+      "source": [
+        22,
+        0
+      ],
+      "target": [
+        23,
+        2
+      ]
+    },
+    {
+      "source": [
+        22,
+        1
+      ],
+      "target": [
+        23,
+        1
+      ]
+    },
+    {
+      "source": [
+        22,
+        2
+      ],
+      "target": [
+        23,
+        0
+      ]
+    },
+    {
+      "source": [
+        23,
+        0
+      ],
+      "target": [
+        24,
+        0
+      ]
+    },
+    {
+      "source": [
+        23,
+        1
+      ],
+      "target": [
+        24,
+        4
+      ]
+    },
+    {
+      "source": [
+        23,
+        2
+      ],
+      "target": [
+        24,
+        2
+      ]
+    },
+    {
+      "source": [
+        24,
+        0
+      ],
+      "target": [
+        25,
+        2
+      ]
+    },
+    {
+      "source": [
+        24,
+        2
+      ],
+      "target": [
+        25,
+        1
+      ]
+    },
+    {
+      "source": [
+        24,
+        4
+      ],
+      "target": [
+        25,
+        0
+      ]
+    },
+    {
+      "source": [
+        25,
+        0
+      ],
+      "target": [
+        26,
+        1
+      ]
+    },
+    {
+      "source": [
+        25,
+        1
+      ],
+      "target": [
+        26,
+        0
+      ]
+    },
+    {
+      "source": [
+        25,
+        2
+      ],
+      "target": [
+        26,
+        2
+      ]
+    },
+    {
+      "source": [
+        26,
+        0
+      ],
+      "target": [
+        27,
+        2
+      ]
+    },
+    {
+      "source": [
+        26,
+        1
+      ],
+      "target": [
+        27,
+        0
+      ]
+    },
+    {
+      "source": [
+        26,
+        2
+      ],
+      "target": [
+        27,
+        1
+      ]
+    },
+    {
+      "source": [
+        27,
+        0
+      ],
+      "target": [
+        28,
+        2
+      ]
+    },
+    {
+      "source": [
+        27,
+        1
+      ],
+      "target": [
+        28,
+        0
+      ]
+    },
+    {
+      "source": [
+        27,
+        2
+      ],
+      "target": [
+        28,
+        1
+      ]
+    },
+    {
+      "source": [
+        28,
+        0
+      ],
+      "target": [
+        29,
+        2
+      ]
+    },
+    {
+      "source": [
+        28,
+        1
+      ],
+      "target": [
+        29,
+        1
+      ]
+    },
+    {
+      "source": [
+        28,
+        2
+      ],
+      "target": [
+        29,
+        0
+      ]
+    },
+    {
+      "source": [
+        29,
+        0
+      ],
+      "target": [
+        30,
+        1
+      ]
+    },
+    {
+      "source": [
+        29,
+        1
+      ],
+      "target": [
+        30,
+        0
+      ]
+    },
+    {
+      "source": [
+        29,
+        2
+      ],
+      "target": [
+        30,
+        2
+      ]
+    },
+    {
+      "source": [
+        3,
+        0
+      ],
+      "target": [
+        4,
+        0
+      ]
+    },
+    {
+      "source": [
+        3,
+        1
+      ],
+      "target": [
+        4,
+        1
+      ]
+    },
+    {
+      "source": [
+        30,
+        0
+      ],
+      "target": [
+        31,
+        2
+      ]
+    },
+    {
+      "source": [
+        30,
+        1
+      ],
+      "target": [
+        31,
+        1
+      ]
+    },
+    {
+      "source": [
+        30,
+        2
+      ],
+      "target": [
+        31,
+        0
+      ]
+    },
+    {
+      "source": [
+        31,
+        0
+      ],
+      "target": [
+        33,
+        0
+      ]
+    },
+    {
+      "source": [
+        31,
+        1
+      ],
+      "target": [
+        32,
+        4
+      ]
+    },
+    {
+      "source": [
+        31,
+        2
+      ],
+      "target": [
+        32,
+        2
+      ]
+    },
+    {
+      "source": [
+        32,
+        2
+      ],
+      "target": [
+        33,
+        2
+      ]
+    },
+    {
+      "source": [
+        32,
+        4
+      ],
+      "target": [
+        33,
+        1
+      ]
+    },
+    {
+      "source": [
+        33,
+        0
+      ],
+      "target": [
+        34,
+        1
+      ]
+    },
+    {
+      "source": [
+        33,
+        1
+      ],
+      "target": [
+        34,
+        0
+      ]
+    },
+    {
+      "source": [
+        33,
+        2
+      ],
+      "target": [
+        34,
+        2
+      ]
+    },
+    {
+      "source": [
+        34,
+        0
+      ],
+      "target": [
+        35,
+        2
+      ]
+    },
+    {
+      "source": [
+        34,
+        1
+      ],
+      "target": [
+        35,
+        0
+      ]
+    },
+    {
+      "source": [
+        34,
+        2
+      ],
+      "target": [
+        35,
+        1
+      ]
+    },
+    {
+      "source": [
+        35,
+        0
+      ],
+      "target": [
+        36,
+        1
+      ]
+    },
+    {
+      "source": [
+        35,
+        1
+      ],
+      "target": [
+        36,
+        0
+      ]
+    },
+    {
+      "source": [
+        35,
+        2
+      ],
+      "target": [
+        36,
+        2
+      ]
+    },
+    {
+      "source": [
+        36,
+        0
+      ],
+      "target": [
+        37,
+        1
+      ]
+    },
+    {
+      "source": [
+        36,
+        1
+      ],
+      "target": [
+        37,
+        0
+      ]
+    },
+    {
+      "source": [
+        36,
+        2
+      ],
+      "target": [
+        37,
+        2
+      ]
+    },
+    {
+      "source": [
+        37,
+        0
+      ],
+      "target": [
+        38,
+        0
+      ]
+    },
+    {
+      "source": [
+        37,
+        1
+      ],
+      "target": [
+        38,
+        1
+      ]
+    },
+    {
+      "source": [
+        37,
+        2
+      ],
+      "target": [
+        38,
+        2
+      ]
+    },
+    {
+      "source": [
+        38,
+        0
+      ],
+      "target": [
+        39,
+        2
+      ]
+    },
+    {
+      "source": [
+        38,
+        1
+      ],
+      "target": [
+        39,
+        0
+      ]
+    },
+    {
+      "source": [
+        38,
+        2
+      ],
+      "target": [
+        39,
+        1
+      ]
+    },
+    {
+      "source": [
+        39,
+        0
+      ],
+      "target": [
+        40,
+        5
+      ]
+    },
+    {
+      "source": [
+        39,
+        1
+      ],
+      "target": [
+        40,
+        3
+      ]
+    },
+    {
+      "source": [
+        39,
+        2
+      ],
+      "target": [
+        40,
+        4
+      ]
+    },
+    {
+      "source": [
+        4,
+        0
+      ],
+      "target": [
+        5,
+        0
+      ]
+    },
+    {
+      "source": [
+        4,
+        1
+      ],
+      "target": [
+        5,
+        1
+      ]
+    },
+    {
+      "source": [
+        40,
+        3
+      ],
+      "target": [
+        41,
+        0
+      ]
+    },
+    {
+      "source": [
+        40,
+        4
+      ],
+      "target": [
+        41,
+        1
+      ]
+    },
+    {
+      "source": [
+        40,
+        5
+      ],
+      "target": [
+        41,
+        1
+      ]
+    },
+    {
+      "source": [
+        41,
+        0
+      ],
+      "target": [
+        42,
+        1
+      ]
+    },
+    {
+      "source": [
+        41,
+        1
+      ],
+      "target": [
+        42,
+        0
+      ]
+    },
+    {
+      "source": [
+        42,
+        0
+      ],
+      "target": [
+        43,
+        0
+      ]
+    },
+    {
+      "source": [
+        42,
+        1
+      ],
+      "target": [
+        43,
+        1
+      ]
+    },
+    {
+      "source": [
+        43,
+        0
+      ],
+      "target": [
+        44,
+        1
+      ]
+    },
+    {
+      "source": [
+        43,
+        1
+      ],
+      "target": [
+        44,
+        0
+      ]
+    },
+    {
+      "source": [
+        44,
+        0
+      ],
+      "target": [
+        45,
+        1
+      ]
+    },
+    {
+      "source": [
+        44,
+        1
+      ],
+      "target": [
+        45,
+        0
+      ]
+    },
+    {
+      "source": [
+        45,
+        0
+      ],
+      "target": [
+        46,
+        1
+      ]
+    },
+    {
+      "source": [
+        45,
+        1
+      ],
+      "target": [
+        46,
+        0
+      ]
+    },
+    {
+      "source": [
+        46,
+        0
+      ],
+      "target": [
+        47,
+        0
+      ]
+    },
+    {
+      "source": [
+        46,
+        1
+      ],
+      "target": [
+        47,
+        1
+      ]
+    },
+    {
+      "source": [
+        47,
+        0
+      ],
+      "target": [
+        48,
+        2
+      ]
+    },
+    {
+      "source": [
+        47,
+        1
+      ],
+      "target": [
+        48,
+        4
+      ]
+    },
+    {
+      "source": [
+        48,
+        2
+      ],
+      "target": [
+        49,
+        1
+      ]
+    },
+    {
+      "source": [
+        48,
+        4
+      ],
+      "target": [
+        49,
+        0
+      ]
+    },
+    {
+      "source": [
+        49,
+        0
+      ],
+      "target": [
+        50,
+        0
+      ]
+    },
+    {
+      "source": [
+        49,
+        1
+      ],
+      "target": [
+        50,
+        1
+      ]
+    },
+    {
+      "source": [
+        5,
+        0
+      ],
+      "target": [
+        6,
+        1
+      ]
+    },
+    {
+      "source": [
+        5,
+        1
+      ],
+      "target": [
+        6,
+        0
+      ]
+    },
+    {
+      "source": [
+        50,
+        0
+      ],
+      "target": [
+        51,
+        1
+      ]
+    },
+    {
+      "source": [
+        50,
+        1
+      ],
+      "target": [
+        51,
+        0
+      ]
+    },
+    {
+      "source": [
+        51,
+        0
+      ],
+      "target": [
+        52,
+        1
+      ]
+    },
+    {
+      "source": [
+        51,
+        1
+      ],
+      "target": [
+        52,
+        0
+      ]
+    },
+    {
+      "source": [
+        52,
+        0
+      ],
+      "target": [
+        53,
+        1
+      ]
+    },
+    {
+      "source": [
+        52,
+        1
+      ],
+      "target": [
+        53,
+        0
+      ]
+    },
+    {
+      "source": [
+        53,
+        0
+      ],
+      "target": [
+        54,
+        1
+      ]
+    },
+    {
+      "source": [
+        53,
+        1
+      ],
+      "target": [
+        54,
+        0
+      ]
+    },
+    {
+      "source": [
+        54,
+        0
+      ],
+      "target": [
+        55,
+        0
+      ]
+    },
+    {
+      "source": [
+        54,
+        1
+      ],
+      "target": [
+        55,
+        1
+      ]
+    },
+    {
+      "source": [
+        55,
+        0
+      ],
+      "target": [
+        56,
+        1
+      ]
+    },
+    {
+      "source": [
+        55,
+        1
+      ],
+      "target": [
+        56,
+        4
+      ]
+    },
+    {
+      "source": [
+        56,
+        1
+      ],
+      "target": [
+        57,
+        1
+      ]
+    },
+    {
+      "source": [
+        56,
+        4
+      ],
+      "target": [
+        57,
+        0
+      ]
+    },
+    {
+      "source": [
+        57,
+        0
+      ],
+      "target": [
+        58,
+        1
+      ]
+    },
+    {
+      "source": [
+        57,
+        1
+      ],
+      "target": [
+        58,
+        0
+      ]
+    },
+    {
+      "source": [
+        58,
+        0
+      ],
+      "target": [
+        59,
+        1
+      ]
+    },
+    {
+      "source": [
+        58,
+        1
+      ],
+      "target": [
+        59,
+        0
+      ]
+    },
+    {
+      "source": [
+        59,
+        0
+      ],
+      "target": [
+        60,
+        0
+      ]
+    },
+    {
+      "source": [
+        59,
+        1
+      ],
+      "target": [
+        60,
+        1
+      ]
+    },
+    {
+      "source": [
+        6,
+        0
+      ],
+      "target": [
+        7,
+        0
+      ]
+    },
+    {
+      "source": [
+        6,
+        1
+      ],
+      "target": [
+        7,
+        1
+      ]
+    },
+    {
+      "source": [
+        60,
+        0
+      ],
+      "target": "Exit"
+    },
+    {
+      "source": [
+        60,
+        1
+      ],
+      "target": "Exit"
+    },
+    {
+      "source": [
+        7,
+        0
+      ],
+      "target": [
+        8,
+        3
+      ]
+    },
+    {
+      "source": [
+        7,
+        1
+      ],
+      "target": [
+        8,
+        1
+      ]
+    },
+    {
+      "source": [
+        8,
+        1
+      ],
+      "target": [
+        9,
+        1
+      ]
+    },
+    {
+      "source": [
+        8,
+        3
+      ],
+      "target": [
+        9,
+        0
+      ]
+    },
+    {
+      "source": [
+        9,
+        0
+      ],
+      "target": [
+        10,
+        1
+      ]
+    },
+    {
+      "source": [
+        9,
+        1
+      ],
+      "target": [
+        10,
+        0
+      ]
+    }
+  ],
+  "events": [
+    {
+      "type": "split",
+      "frame_before": 20,
+      "frame_after": 21,
+      "parents": [
+        [
+          20,
+          1
+        ]
+      ],
+      "children": [
+        [
+          21,
+          0
+        ],
+        [
+          21,
+          2
+        ]
+      ]
+    },
+    {
+      "type": "merge",
+      "frame_before": 40,
+      "frame_after": 41,
+      "parents": [
+        [
+          40,
+          4
+        ],
+        [
+          40,
+          5
+        ]
+      ],
+      "children": [
+        [
+          41,
+          1
+        ]
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "frame": 1,
+      "id": 0,
+      "actor": "trunk",
+      "true_position": [
+        250.0,
+        160.0
+      ],
+      "observed_position": [
+        251.07350079027216,
+        159.7247260926189
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 173.13748123588414,
+      "observed_volume": 400.4231482278828,
+      "is_false_positive": false
+    },
+    {
+      "frame": 1,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        342.9600333222242,
+        220.0
+      ],
+      "observed_position": [
+        343.93171440375363,
+        220.67435400488074
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 85.13369498555956,
+      "observed_volume": 207.1054341393285,
+      "is_false_positive": false
+    },
+    {
+      "frame": 2,
+      "id": 0,
+      "actor": "bystander",
+      "true_position": [
+        340.84053262272994,
+        240.5
+      ],
+      "observed_position": [
+        337.94697358968403,
+        239.14266644702724
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 67.71394464658634,
+      "observed_volume": 214.2808102311019,
+      "is_false_positive": false
+    },
+    {
+      "frame": 2,
+      "id": 1,
+      "actor": "trunk",
+      "true_position": [
+        253.70508555228386,
+        183.965
+      ],
+      "observed_position": [
+        252.349912783105,
+        184.21651427610558
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 160.80974494616885,
+      "observed_volume": 404.3056117973037,
+      "is_false_positive": false
+    },
+    {
+      "frame": 3,
+      "id": 0,
+      "actor": "trunk",
+      "true_position": [
+        257.38617866361113,
+        207.86
+      ],
+      "observed_position": [
+        258.53010950366905,
+        209.3884644853794
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 162.029853808722,
+      "observed_volume": 391.49478415484623,
+      "is_false_positive": false
+    },
+    {
+      "frame": 3,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        338.64269191300485,
+        261.0
+      ],
+      "observed_position": [
+        339.53904577318923,
+        261.65389219419563
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 75.36608198678526,
+      "observed_volume": 208.4596509422717,
+      "is_false_positive": false
+    },
+    {
+      "frame": 4,
+      "id": 0,
+      "actor": "trunk",
+      "true_position": [
+        261.01948504113915,
+        231.685
+      ],
+      "observed_position": [
+        259.98190155658597,
+        230.33151708166503
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 166.97918846180931,
+      "observed_volume": 397.58716933649794,
+      "is_false_positive": false
+    },
+    {
+      "frame": 4,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        336.3684879520231,
+        281.5
+      ],
+      "observed_position": [
+        337.49339270910855,
+        282.6720735612037
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 77.22232875534165,
+      "observed_volume": 213.3772156070097,
+      "is_false_positive": false
+    },
+    {
+      "frame": 5,
+      "id": 0,
+      "actor": "trunk",
+      "true_position": [
+        264.581605051793,
+        255.44
+      ],
+      "observed_position": [
+        264.0375620439969,
+        255.4215985035616
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 157.20595110462642,
+      "observed_volume": 400.54007610882206,
+      "is_false_positive": false
+    },
+    {
+      "frame": 5,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        334.02066049512297,
+        302.0
+      ],
+      "observed_position": [
+        333.8445521850692,
+        299.96234768241396
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 71.46444742074198,
+      "observed_volume": 218.86529482250359,
+      "is_false_positive": false
+    },
+    {
+      "frame": 6,
+      "id": 0,
+      "actor": "bystander",
+      "true_position": [
+        331.6026849192774,
+        322.5
+      ],
+      "observed_position": [
+        330.18287273724115,
+        324.3092904524242
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 77.12914502567276,
+      "observed_volume": 208.73859500237427,
+      "is_false_positive": false
+    },
+    {
+      "frame": 6,
+      "id": 1,
+      "actor": "trunk",
+      "true_position": [
+        268.04972697451393,
+        279.125
+      ],
+      "observed_position": [
+        267.54557435755254,
+        280.84983123572175
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 158.95826729947592,
+      "observed_volume": 407.252563313983,
+      "is_false_positive": false
+    },
+    {
+      "frame": 7,
+      "id": 0,
+      "actor": "bystander",
+      "true_position": [
+        329.1187374982759,
+        343.0
+      ],
+      "observed_position": [
+        330.3942235242251,
+        342.5618906830658
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 76.94056023627498,
+      "observed_volume": 206.46680679775574,
+      "is_false_positive": false
+    },
+    {
+      "frame": 7,
+      "id": 1,
+      "actor": "trunk",
+      "true_position": [
+        271.40181539707606,
+        302.74
+      ],
+      "observed_position": [
+        273.2630121236358,
+        303.0312457879011
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 158.19348489931164,
+      "observed_volume": 393.45635824803054,
+      "is_false_positive": false
+    },
+    {
+      "frame": 8,
+      "id": 0,
+      "actor": "false_positive_8_2",
+      "true_position": [
+        333.86372034164975,
+        1353.0145074636644
+      ],
+      "observed_position": [
+        333.40194675718874,
+        1352.6574459665467
+      ],
+      "true_area": 21.65231011698087,
+      "true_volume": 54.14105756902334,
+      "observed_area": 11.2240210874882,
+      "observed_volume": 60.137410297664935,
+      "is_false_positive": true
+    },
+    {
+      "frame": 8,
+      "id": 1,
+      "actor": "trunk",
+      "true_position": [
+        274.6167932015453,
+        326.285
+      ],
+      "observed_position": [
+        273.44986476722147,
+        326.99515417511753
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 150.06658299326074,
+      "observed_volume": 402.68733010954406,
+      "is_false_positive": false
+    },
+    {
+      "frame": 8,
+      "id": 2,
+      "actor": "false_positive_8_1",
+      "true_position": [
+        331.9340631238861,
+        479.82983461318776
+      ],
+      "observed_position": [
+        332.96683616789113,
+        479.7595620246428
+      ],
+      "true_area": 24.19651837288992,
+      "true_volume": 76.17490971440515,
+      "observed_area": 22.126915834414802,
+      "observed_volume": 76.22721608951409,
+      "is_false_positive": true
+    },
+    {
+      "frame": 8,
+      "id": 3,
+      "actor": "bystander",
+      "true_position": [
+        326.57365367477735,
+        363.5
+      ],
+      "observed_position": [
+        326.38959920495006,
+        363.7340473621386
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 81.29246313594724,
+      "observed_volume": 213.11353637146047,
+      "is_false_positive": false
+    },
+    {
+      "frame": 8,
+      "id": 4,
+      "actor": "false_positive_8_0",
+      "true_position": [
+        264.76118892582815,
+        685.6246449874126
+      ],
+      "observed_position": [
+        265.64258463191237,
+        684.7817490087692
+      ],
+      "true_area": 30.373823263607633,
+      "true_volume": 99.08051740102863,
+      "observed_area": 35.505978510613815,
+      "observed_volume": 109.5864266685306,
+      "is_false_positive": true
+    },
+    {
+      "frame": 9,
+      "id": 0,
+      "actor": "bystander",
+      "true_position": [
+        323.9728797461653,
+        384.0
+      ],
+      "observed_position": [
+        325.5255291445063,
+        385.177556260173
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 77.08207851348882,
+      "observed_volume": 225.6896377006402,
+      "is_false_positive": false
+    },
+    {
+      "frame": 9,
+      "id": 1,
+      "actor": "trunk",
+      "true_position": [
+        277.67471563540306,
+        349.76
+      ],
+      "observed_position": [
+        275.91789898632925,
+        346.7653473661019
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 153.09479607074496,
+      "observed_volume": 400.32649428420603,
+      "is_false_positive": false
+    },
+    {
+      "frame": 10,
+      "id": 0,
+      "actor": "trunk",
+      "true_position": [
+        280.55693503072234,
+        373.165
+      ],
+      "observed_position": [
+        280.3089527623946,
+        374.91075979037373
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 150.1079010265748,
+      "observed_volume": 384.25330970714947,
+      "is_false_positive": false
+    },
+    {
+      "frame": 10,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        321.3224184469451,
+        404.5
+      ],
+      "observed_position": [
+        320.0761232539643,
+        402.8954420045825
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 81.84212838705021,
+      "observed_volume": 196.76801907489443,
+      "is_false_positive": false
+    },
+    {
+      "frame": 11,
+      "id": 0,
+      "actor": "trunk",
+      "true_position": [
+        283.24625481101623,
+        396.5
+      ],
+      "observed_position": [
+        282.26196471932997,
+        397.64692968869724
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 159.88133548639462,
+      "observed_volume": 406.9793386435088,
+      "is_false_positive": false
+    },
+    {
+      "frame": 11,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        318.6287689714046,
+        425.0
+      ],
+      "observed_position": [
+        317.73442223308905,
+        425.7017707510659
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 89.07955604725403,
+      "observed_volume": 203.72208972286924,
+      "is_false_positive": false
+    },
+    {
+      "frame": 12,
+      "id": 0,
+      "actor": "trunk",
+      "true_position": [
+        285.7270715138527,
+        419.765
+      ],
+      "observed_position": [
+        287.8775390278601,
+        421.62617378220466
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 158.88197582684185,
+      "observed_volume": 401.87253159285785,
+      "is_false_positive": false
+    },
+    {
+      "frame": 12,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        315.8988620358134,
+        445.5
+      ],
+      "observed_position": [
+        316.88367904459375,
+        444.6680419440314
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 81.89949176380173,
+      "observed_volume": 215.0977591855323,
+      "is_false_positive": false
+    },
+    {
+      "frame": 13,
+      "id": 0,
+      "actor": "bystander",
+      "true_position": [
+        313.1399906289967,
+        466.0
+      ],
+      "observed_position": [
+        312.5079640566075,
+        466.8848679747493
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 80.4799335414531,
+      "observed_volume": 205.19192331930398,
+      "is_false_positive": false
+    },
+    {
+      "frame": 13,
+      "id": 1,
+      "actor": "trunk",
+      "true_position": [
+        287.9855036563026,
+        442.96
+      ],
+      "observed_position": [
+        289.73515113234805,
+        442.0439169176433
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 164.91277922906417,
+      "observed_volume": 402.83124079837233,
+      "is_false_positive": false
+    },
+    {
+      "frame": 14,
+      "id": 0,
+      "actor": "trunk",
+      "true_position": [
+        290.00950637895056,
+        466.085
+      ],
+      "observed_position": [
+        290.2259066990427,
+        466.16103133250715
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 159.74507885969118,
+      "observed_volume": 396.58034301600253,
+      "is_false_positive": false
+    },
+    {
+      "frame": 14,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        310.3597371432019,
+        486.5
+      ],
+      "observed_position": [
+        310.47901733417484,
+        486.3866890571484
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 91.80136918393518,
+      "observed_volume": 217.8751324694526,
+      "is_false_positive": false
+    },
+    {
+      "frame": 15,
+      "id": 0,
+      "actor": "trunk",
+      "true_position": [
+        291.7889709216499,
+        489.14
+      ],
+      "observed_position": [
+        292.7778687061191,
+        488.8366011989427
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 154.48025472823917,
+      "observed_volume": 428.5494547861818,
+      "is_false_positive": false
+    },
+    {
+      "frame": 15,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        307.56589761334163,
+        507.0
+      ],
+      "observed_position": [
+        307.00658598751426,
+        507.6858218363327
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 75.03774538871113,
+      "observed_volume": 197.29028345186939,
+      "is_false_positive": false
+    },
+    {
+      "frame": 16,
+      "id": 0,
+      "actor": "false_positive_16_0",
+      "true_position": [
+        104.74668666347307,
+        433.63921701596246
+      ],
+      "observed_position": [
+        104.22285354267336,
+        432.5594646119906
+      ],
+      "true_area": 46.63856631290738,
+      "true_volume": 80.11878806382728,
+      "observed_area": 54.02784900616828,
+      "observed_volume": 79.16896034136404,
+      "is_false_positive": true
+    },
+    {
+      "frame": 16,
+      "id": 1,
+      "actor": "false_positive_16_1",
+      "true_position": [
+        284.5317915977994,
+        675.1355269890149
+      ],
+      "observed_position": [
+        285.546271504881,
+        674.2280441904328
+      ],
+      "true_area": 42.4879364745637,
+      "true_volume": 69.57561172152114,
+      "observed_area": 29.358696154351726,
+      "observed_volume": 61.465152526387804,
+      "is_false_positive": true
+    },
+    {
+      "frame": 16,
+      "id": 2,
+      "actor": "trunk",
+      "true_position": [
+        293.3158081094737,
+        512.125
+      ],
+      "observed_position": [
+        291.17064222642256,
+        516.0229034494214
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 155.07276260069602,
+      "observed_volume": 395.47551584167934,
+      "is_false_positive": false
+    },
+    {
+      "frame": 16,
+      "id": 3,
+      "actor": "false_positive_16_2",
+      "true_position": [
+        331.8837528370163,
+        712.7545607893474
+      ],
+      "observed_position": [
+        331.37838065870227,
+        710.7583419223213
+      ],
+      "true_area": 23.32294003379193,
+      "true_volume": 88.1254399845624,
+      "observed_area": 23.99281369077004,
+      "observed_volume": 97.33666167911939,
+      "is_false_positive": true
+    },
+    {
+      "frame": 16,
+      "id": 4,
+      "actor": "bystander",
+      "true_position": [
+        304.7664038215897,
+        527.5
+      ],
+      "observed_position": [
+        306.00953621709124,
+        526.553408327262
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 87.0352189447104,
+      "observed_volume": 205.55167246997826,
+      "is_false_positive": false
+    },
+    {
+      "frame": 17,
+      "id": 0,
+      "actor": "trunk",
+      "true_position": [
+        294.58401515937146,
+        535.04
+      ],
+      "observed_position": [
+        295.27957908548797,
+        537.0716358661924
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 160.28290927505375,
+      "observed_volume": 404.5332916783859,
+      "is_false_positive": false
+    },
+    {
+      "frame": 17,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        301.9692440456358,
+        548.0
+      ],
+      "observed_position": [
+        302.7164660089335,
+        546.073343150143
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 86.32121478948213,
+      "observed_volume": 202.36424883084317,
+      "is_false_positive": false
+    },
+    {
+      "frame": 18,
+      "id": 0,
+      "actor": "bystander",
+      "true_position": [
+        299.18238324245533,
+        568.5
+      ],
+      "observed_position": [
+        298.87580890323983,
+        565.6727142433117
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 85.98105702619597,
+      "observed_volume": 202.39403008833142,
+      "is_false_positive": false
+    },
+    {
+      "frame": 18,
+      "id": 1,
+      "actor": "trunk",
+      "true_position": [
+        295.5897252557887,
+        557.885
+      ],
+      "observed_position": [
+        296.1519733747824,
+        555.8335329924802
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 161.66156380833826,
+      "observed_volume": 405.94370606307155,
+      "is_false_positive": false
+    },
+    {
+      "frame": 19,
+      "id": 0,
+      "actor": "bystander",
+      "true_position": [
+        296.413683465092,
+        589.0
+      ],
+      "observed_position": [
+        296.51508649272296,
+        589.6127111274805
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 87.32660695705411,
+      "observed_volume": 214.5374255400226,
+      "is_false_positive": false
+    },
+    {
+      "frame": 19,
+      "id": 1,
+      "actor": "trunk",
+      "true_position": [
+        296.33123948581795,
+        580.66
+      ],
+      "observed_position": [
+        294.5159289826392,
+        579.4956578043361
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 158.1704804884252,
+      "observed_volume": 412.52755365265847,
+      "is_false_positive": false
+    },
+    {
+      "frame": 20,
+      "id": 0,
+      "actor": "bystander",
+      "true_position": [
+        293.67082530762286,
+        609.5
+      ],
+      "observed_position": [
+        297.67315788513685,
+        610.1720282410306
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 83.96586540580779,
+      "observed_volume": 221.09520682089678,
+      "is_false_positive": false
+    },
+    {
+      "frame": 20,
+      "id": 1,
+      "actor": "trunk",
+      "true_position": [
+        296.80904087013363,
+        603.365
+      ],
+      "observed_position": [
+        295.1129231925374,
+        601.2437003270725
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 152.945248392674,
+      "observed_volume": 401.26812793921874,
+      "is_false_positive": false
+    },
+    {
+      "frame": 21,
+      "id": 0,
+      "actor": "left",
+      "true_position": [
+        293.5057903738344,
+        628.64
+      ],
+      "observed_position": [
+        295.07877821237616,
+        630.0285601295237
+      ],
+      "true_area": 77.0,
+      "true_volume": 180.0,
+      "observed_area": 67.84476148184068,
+      "observed_volume": 184.73049685839402,
+      "is_false_positive": false
+    },
+    {
+      "frame": 21,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        290.96123116320115,
+        630.0
+      ],
+      "observed_position": [
+        291.0031399236797,
+        630.6077351249053
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 81.90850832416851,
+      "observed_volume": 208.45005534465272,
+      "is_false_positive": false
+    },
+    {
+      "frame": 21,
+      "id": 2,
+      "actor": "right",
+      "true_position": [
+        300.54579037383434,
+        623.36
+      ],
+      "observed_position": [
+        300.401372929116,
+        624.6439147910532
+      ],
+      "true_area": 83.0,
+      "true_volume": 220.0,
+      "observed_area": 69.64549343191806,
+      "observed_volume": 214.93362548687918,
+      "is_false_positive": false
+    },
+    {
+      "frame": 22,
+      "id": 0,
+      "actor": "right",
+      "true_position": [
+        301.8230616523831,
+        644.9374324583157
+      ],
+      "observed_position": [
+        300.21893641652116,
+        646.9381962463143
+      ],
+      "true_area": 83.0,
+      "true_volume": 220.0,
+      "observed_area": 81.33227539303802,
+      "observed_volume": 227.204164826089,
+      "is_false_positive": false
+    },
+    {
+      "frame": 22,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        288.2919910619572,
+        650.5
+      ],
+      "observed_position": [
+        287.8432362183154,
+        649.6042048293739
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 85.64519812860895,
+      "observed_volume": 197.26148554136688,
+      "is_false_positive": false
+    },
+    {
+      "frame": 22,
+      "id": 2,
+      "actor": "left",
+      "true_position": [
+        292.14954820789137,
+        652.1925675416844
+      ],
+      "observed_position": [
+        291.6499200790994,
+        651.5850962849985
+      ],
+      "true_area": 77.0,
+      "true_volume": 180.0,
+      "observed_area": 76.42938696305318,
+      "observed_volume": 174.46343576683455,
+      "is_false_positive": false
+    },
+    {
+      "frame": 23,
+      "id": 0,
+      "actor": "left",
+      "true_position": [
+        290.5799219047843,
+        675.6481968152281
+      ],
+      "observed_position": [
+        289.432032906335,
+        677.4643460588015
+      ],
+      "true_area": 77.0,
+      "true_volume": 180.0,
+      "observed_area": 76.73496400473158,
+      "observed_volume": 175.21604319111356,
+      "is_false_positive": false
+    },
+    {
+      "frame": 23,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        285.6697918297614,
+        671.0
+      ],
+      "observed_position": [
+        284.09256286821466,
+        671.5632962420442
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 81.98078441229552,
+      "observed_volume": 208.86273152861764,
+      "is_false_positive": false
+    },
+    {
+      "frame": 23,
+      "id": 2,
+      "actor": "right",
+      "true_position": [
+        302.8151134120593,
+        666.4718031847718
+      ],
+      "observed_position": [
+        303.67744599523013,
+        668.2905265041445
+      ],
+      "true_area": 83.0,
+      "true_volume": 220.0,
+      "observed_area": 80.18337425935984,
+      "observed_volume": 199.76960740085804,
+      "is_false_positive": false
+    },
+    {
+      "frame": 24,
+      "id": 0,
+      "actor": "left",
+      "true_position": [
+        288.8408414608772,
+        698.9806843582224
+      ],
+      "observed_position": [
+        288.49071256063655,
+        695.8174467488095
+      ],
+      "true_area": 77.0,
+      "true_volume": 180.0,
+      "observed_area": 81.99933446636427,
+      "observed_volume": 170.95851501052314,
+      "is_false_positive": false
+    },
+    {
+      "frame": 24,
+      "id": 1,
+      "actor": "false_positive_24_0",
+      "true_position": [
+        264.6499707668331,
+        1483.6254837541142
+      ],
+      "observed_position": [
+        263.8367186139103,
+        1483.4936858472672
+      ],
+      "true_area": 36.58663144850182,
+      "true_volume": 76.77789242247741,
+      "observed_area": 28.71147802939371,
+      "observed_volume": 90.90210122841744,
+      "is_false_positive": true
+    },
+    {
+      "frame": 24,
+      "id": 2,
+      "actor": "right",
+      "true_position": [
+        303.49599974947034,
+        687.9893156417776
+      ],
+      "observed_position": [
+        301.26636005346023,
+        688.1785107526853
+      ],
+      "true_area": 83.0,
+      "true_volume": 220.0,
+      "observed_area": 91.94973196726023,
+      "observed_volume": 216.44518288296482,
+      "is_false_positive": false
+    },
+    {
+      "frame": 24,
+      "id": 3,
+      "actor": "false_positive_24_2",
+      "true_position": [
+        309.72635303097235,
+        1249.9618008461216
+      ],
+      "observed_position": [
+        310.68890738999755,
+        1250.5546834406148
+      ],
+      "true_area": 20.76414602201879,
+      "true_volume": 54.04017305915926,
+      "observed_area": 18.42831972050983,
+      "observed_volume": 63.69937378366399,
+      "is_false_positive": true
+    },
+    {
+      "frame": 24,
+      "id": 4,
+      "actor": "bystander",
+      "true_position": [
+        283.10085027567004,
+        691.5
+      ],
+      "observed_position": [
+        284.20850419036935,
+        689.7932962184815
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 90.2670737238254,
+      "observed_volume": 212.06800960177725,
+      "is_false_positive": false
+    },
+    {
+      "frame": 24,
+      "id": 5,
+      "actor": "false_positive_24_1",
+      "true_position": [
+        214.89239769116986,
+        932.6607190164291
+      ],
+      "observed_position": [
+        214.65980738170032,
+        932.2967274119532
+      ],
+      "true_area": 24.919982973788592,
+      "true_volume": 92.33623680907175,
+      "observed_area": 22.76422206995227,
+      "observed_volume": 88.22589944687516,
+      "is_false_positive": true
+    },
+    {
+      "frame": 25,
+      "id": 0,
+      "actor": "bystander",
+      "true_position": [
+        280.5908510756245,
+        712.0
+      ],
+      "observed_position": [
+        280.7625980701,
+        712.1193261251067
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 85.89237748106035,
+      "observed_volume": 206.15389588052113,
+      "is_false_positive": false
+    },
+    {
+      "frame": 25,
+      "id": 1,
+      "actor": "right",
+      "true_position": [
+        303.84369218223503,
+        709.5147237238621
+      ],
+      "observed_position": [
+        303.76896209283217,
+        708.3713881999378
+      ],
+      "true_area": 83.0,
+      "true_volume": 220.0,
+      "observed_area": 87.98517963550333,
+      "observed_volume": 219.46210748871624,
+      "is_false_positive": false
+    },
+    {
+      "frame": 25,
+      "id": 2,
+      "actor": "left",
+      "true_position": [
+        286.97628877920033,
+        722.165276276138
+      ],
+      "observed_position": [
+        288.9976002346759,
+        722.848362444058
+      ],
+      "true_area": 77.0,
+      "true_volume": 180.0,
+      "observed_area": 73.14138583601036,
+      "observed_volume": 165.76950594537814,
+      "is_false_positive": false
+    },
+    {
+      "frame": 26,
+      "id": 0,
+      "actor": "right",
+      "true_position": [
+        303.84088929044776,
+        731.0706565359612
+      ],
+      "observed_position": [
+        304.8226210668399,
+        728.9500538674746
+      ],
+      "true_area": 83.0,
+      "true_volume": 220.0,
+      "observed_area": 86.73947137653792,
+      "observed_volume": 225.0442978029634,
+      "is_false_positive": false
+    },
+    {
+      "frame": 26,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        278.1448899730484,
+        732.5
+      ],
+      "observed_position": [
+        278.59915607389974,
+        735.0748987201341
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 82.87004521264495,
+      "observed_volume": 200.3863139434463,
+      "is_false_positive": false
+    },
+    {
+      "frame": 26,
+      "id": 2,
+      "actor": "left",
+      "true_position": [
+        285.0293067196776,
+        745.1793434640388
+      ],
+      "observed_position": [
+        284.9763845014733,
+        744.6309008968029
+      ],
+      "true_area": 77.0,
+      "true_volume": 180.0,
+      "observed_area": 74.08929608127502,
+      "observed_volume": 182.53774483430766,
+      "is_false_positive": false
+    },
+    {
+      "frame": 27,
+      "id": 0,
+      "actor": "bystander",
+      "true_position": [
+        275.7674228638635,
+        753.0
+      ],
+      "observed_position": [
+        275.4721229876101,
+        751.3855243807
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 85.98759077930576,
+      "observed_volume": 217.15084483990742,
+      "is_false_positive": false
+    },
+    {
+      "frame": 27,
+      "id": 1,
+      "actor": "left",
+      "true_position": [
+        283.04106978545246,
+        768.0029988695752
+      ],
+      "observed_position": [
+        282.5688669409116,
+        767.6617894347696
+      ],
+      "true_area": 77.0,
+      "true_volume": 180.0,
+      "observed_area": 75.87256230160658,
+      "observed_volume": 166.61785220294223,
+      "is_false_positive": false
+    },
+    {
+      "frame": 27,
+      "id": 2,
+      "actor": "right",
+      "true_position": [
+        303.47573343765293,
+        752.6770011304249
+      ],
+      "observed_position": [
+        304.0815059753916,
+        754.9502174714218
+      ],
+      "true_area": 83.0,
+      "true_volume": 220.0,
+      "observed_area": 88.96660137188206,
+      "observed_volume": 210.121826721265,
+      "is_false_positive": false
+    },
+    {
+      "frame": 28,
+      "id": 0,
+      "actor": "left",
+      "true_position": [
+        281.05003977295826,
+        790.6196399599304
+      ],
+      "observed_position": [
+        282.34196591122253,
+        790.0540327809598
+      ],
+      "true_area": 77.0,
+      "true_volume": 180.0,
+      "observed_area": 80.66897895552007,
+      "observed_volume": 205.70094652161725,
+      "is_false_positive": false
+    },
+    {
+      "frame": 28,
+      "id": 1,
+      "actor": "right",
+      "true_position": [
+        302.7424129994391,
+        774.3503600400696
+      ],
+      "observed_position": [
+        301.3024717252196,
+        775.9532435028055
+      ],
+      "true_area": 83.0,
+      "true_volume": 220.0,
+      "observed_area": 78.26545273351209,
+      "observed_volume": 214.02926547621507,
+      "is_false_positive": false
+    },
+    {
+      "frame": 28,
+      "id": 2,
+      "actor": "bystander",
+      "true_position": [
+        273.46222127465074,
+        773.5
+      ],
+      "observed_position": [
+        272.89978572042025,
+        773.301860202835
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 82.88240249806583,
+      "observed_volume": 225.05986069726023,
+      "is_false_positive": false
+    },
+    {
+      "frame": 29,
+      "id": 0,
+      "actor": "bystander",
+      "true_position": [
+        271.2323346788033,
+        794.0
+      ],
+      "observed_position": [
+        272.5597776999118,
+        792.6375179722512
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 87.56118997086608,
+      "observed_volume": 213.46602723880486,
+      "is_false_positive": false
+    },
+    {
+      "frame": 29,
+      "id": 1,
+      "actor": "right",
+      "true_position": [
+        301.6416313700204,
+        796.103598404364
+      ],
+      "observed_position": [
+        300.2276097208716,
+        795.6537544059074
+      ],
+      "true_area": 83.0,
+      "true_volume": 220.0,
+      "observed_area": 82.22302255923813,
+      "observed_volume": 209.15263541826621,
+      "is_false_positive": false
+    },
+    {
+      "frame": 29,
+      "id": 2,
+      "actor": "left",
+      "true_position": [
+        279.09122711499106,
+        813.0164015956359
+      ],
+      "observed_position": [
+        280.78585301379786,
+        815.392394636785
+      ],
+      "true_area": 77.0,
+      "true_volume": 180.0,
+      "observed_area": 81.43859766392094,
+      "observed_volume": 175.3542951072432,
+      "is_false_positive": false
+    },
+    {
+      "frame": 30,
+      "id": 0,
+      "actor": "right",
+      "true_position": [
+        300.1809273893386,
+        817.94549304196
+      ],
+      "observed_position": [
+        300.3649098005739,
+        817.0513743440689
+      ],
+      "true_area": 83.0,
+      "true_volume": 220.0,
+      "observed_area": 84.52874467487719,
+      "observed_volume": 222.99302941304316,
+      "is_false_positive": false
+    },
+    {
+      "frame": 30,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        269.08006002719645,
+        814.5
+      ],
+      "observed_position": [
+        269.7836194010177,
+        812.7191932238992
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 81.94477837064713,
+      "observed_volume": 210.17921404712106,
+      "is_false_positive": false
+    },
+    {
+      "frame": 30,
+      "id": 2,
+      "actor": "left",
+      "true_position": [
+        277.1955755012319,
+        835.1845069580401
+      ],
+      "observed_position": [
+        277.1421114420223,
+        831.3184171949207
+      ],
+      "true_area": 77.0,
+      "true_volume": 180.0,
+      "observed_area": 74.76464717385512,
+      "observed_volume": 186.17046883340106,
+      "is_false_positive": false
+    },
+    {
+      "frame": 31,
+      "id": 0,
+      "actor": "left",
+      "true_position": [
+        275.38948375737056,
+        857.11950695804
+      ],
+      "observed_position": [
+        276.0155915235524,
+        856.9324467276044
+      ],
+      "true_area": 77.0,
+      "true_volume": 180.0,
+      "observed_area": 86.69289970270206,
+      "observed_volume": 180.13430054628313,
+      "is_false_positive": false
+    },
+    {
+      "frame": 31,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        267.00691879781374,
+        835.0
+      ],
+      "observed_position": [
+        268.6482901430134,
+        836.3166361304836
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 86.12569603741841,
+      "observed_volume": 210.09272892512953,
+      "is_false_positive": false
+    },
+    {
+      "frame": 31,
+      "id": 2,
+      "actor": "right",
+      "true_position": [
+        298.3748356454773,
+        839.88049304196
+      ],
+      "observed_position": [
+        300.0679795706954,
+        838.2637701071689
+      ],
+      "true_area": 83.0,
+      "true_volume": 220.0,
+      "observed_area": 81.5564882370815,
+      "observed_volume": 217.6625372129226,
+      "is_false_positive": false
+    },
+    {
+      "frame": 32,
+      "id": 0,
+      "actor": "false_positive_32_0",
+      "true_position": [
+        383.59870327760495,
+        1641.664874283106
+      ],
+      "observed_position": [
+        382.5415142446525,
+        1641.1391202021262
+      ],
+      "true_area": 30.051527171724572,
+      "true_volume": 94.0163972225022,
+      "observed_area": 34.50601510639673,
+      "observed_volume": 101.45115001188029,
+      "is_false_positive": true
+    },
+    {
+      "frame": 32,
+      "id": 1,
+      "actor": "false_positive_32_1",
+      "true_position": [
+        261.6482734913751,
+        1571.5715872626342
+      ],
+      "observed_position": [
+        261.417043207626,
+        1569.877556757828
+      ],
+      "true_area": 23.42156786767086,
+      "true_volume": 62.527584987586515,
+      "observed_area": 28.768398165369142,
+      "observed_volume": 54.89706104757221,
+      "is_false_positive": true
+    },
+    {
+      "frame": 32,
+      "id": 2,
+      "actor": "right",
+      "true_position": [
+        296.2448792575208,
+        861.908598404364
+      ],
+      "observed_position": [
+        296.01175919944296,
+        859.887287823074
+      ],
+      "true_area": 83.0,
+      "true_volume": 220.0,
+      "observed_area": 89.24247367202149,
+      "observed_volume": 223.01129642042113,
+      "is_false_positive": false
+    },
+    {
+      "frame": 32,
+      "id": 3,
+      "actor": "false_positive_32_2",
+      "true_position": [
+        225.0721817919429,
+        1272.8466828038784
+      ],
+      "observed_position": [
+        225.03009071254885,
+        1273.9922526279788
+      ],
+      "true_area": 35.0211616511631,
+      "true_volume": 87.19046931455959,
+      "observed_area": 39.0845472535693,
+      "observed_volume": 84.36655694850889,
+      "is_false_positive": true
+    },
+    {
+      "frame": 32,
+      "id": 4,
+      "actor": "bystander",
+      "true_position": [
+        265.01364179364197,
+        855.5
+      ],
+      "observed_position": [
+        265.9860877636962,
+        857.7270878102771
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 76.9971702166315,
+      "observed_volume": 229.9213229491101,
+      "is_false_positive": false
+    },
+    {
+      "frame": 33,
+      "id": 0,
+      "actor": "left",
+      "true_position": [
+        272.1270188945272,
+        900.2946399599304
+      ],
+      "observed_position": [
+        273.5738150341092,
+        901.376122689211
+      ],
+      "true_area": 77.0,
+      "true_volume": 180.0,
+      "observed_area": 85.85015894047193,
+      "observed_volume": 177.80876895152895,
+      "is_false_positive": false
+    },
+    {
+      "frame": 33,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        263.1001618407291,
+        876.0
+      ],
+      "observed_position": [
+        261.9061563807876,
+        876.359766629523
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 83.75018184877273,
+      "observed_volume": 202.46627550815836,
+      "is_false_positive": false
+    },
+    {
+      "frame": 33,
+      "id": 2,
+      "actor": "right",
+      "true_position": [
+        293.8193921210081,
+        884.0253600400696
+      ],
+      "observed_position": [
+        295.0661038122771,
+        881.6134670075687
+      ],
+      "true_area": 83.0,
+      "true_volume": 220.0,
+      "observed_area": 96.46466777783174,
+      "observed_volume": 229.69933123599236,
+      "is_false_positive": false
+    },
+    {
+      "frame": 34,
+      "id": 0,
+      "actor": "bystander",
+      "true_position": [
+        261.2656144593643,
+        896.5
+      ],
+      "observed_position": [
+        260.40255521256506,
+        896.3972733678315
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 81.9257924960123,
+      "observed_volume": 213.99322877649954,
+      "is_false_positive": false
+    },
+    {
+      "frame": 34,
+      "id": 1,
+      "actor": "left",
+      "true_position": [
+        270.6985084318155,
+        921.5479988695752
+      ],
+      "observed_position": [
+        271.1513550243081,
+        923.1343735196929
+      ],
+      "true_area": 77.0,
+      "true_volume": 180.0,
+      "observed_area": 81.73722059070667,
+      "observed_volume": 182.77708675065486,
+      "is_false_positive": false
+    },
+    {
+      "frame": 34,
+      "id": 2,
+      "actor": "right",
+      "true_position": [
+        291.133172084016,
+        906.2220011304248
+      ],
+      "observed_position": [
+        291.13248178940114,
+        906.780523845165
+      ],
+      "true_area": 83.0,
+      "true_volume": 220.0,
+      "observed_area": 73.56033936524906,
+      "observed_volume": 227.6079782055797,
+      "is_false_positive": false
+    },
+    {
+      "frame": 35,
+      "id": 0,
+      "actor": "left",
+      "true_position": [
+        269.4153884248958,
+        942.5943434640387
+      ],
+      "observed_position": [
+        269.86953090554647,
+        940.8104309197404
+      ],
+      "true_area": 77.0,
+      "true_volume": 180.0,
+      "observed_area": 76.74222761341781,
+      "observed_volume": 189.94310224733331,
+      "is_false_positive": false
+    },
+    {
+      "frame": 35,
+      "id": 1,
+      "actor": "right",
+      "true_position": [
+        288.22697099566597,
+        928.4856565359612
+      ],
+      "observed_position": [
+        286.344321924875,
+        929.0480668759006
+      ],
+      "true_area": 83.0,
+      "true_volume": 220.0,
+      "observed_area": 83.25313830935835,
+      "observed_volume": 224.00949324291003,
+      "is_false_positive": false
+    },
+    {
+      "frame": 35,
+      "id": 2,
+      "actor": "bystander",
+      "true_position": [
+        259.50834650167366,
+        917.0
+      ],
+      "observed_position": [
+        259.2461351148461,
+        917.4366730274035
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 93.21799405414436,
+      "observed_volume": 214.94071413532572,
+      "is_false_positive": false
+    },
+    {
+      "frame": 36,
+      "id": 0,
+      "actor": "right",
+      "true_position": [
+        285.14683190959425,
+        950.799723723862
+      ],
+      "observed_position": [
+        286.2574872459465,
+        952.2996488119679
+      ],
+      "true_area": 83.0,
+      "true_volume": 220.0,
+      "observed_area": 75.81299915985085,
+      "observed_volume": 209.2879225270499,
+      "is_false_positive": false
+    },
+    {
+      "frame": 36,
+      "id": 1,
+      "actor": "left",
+      "true_position": [
+        268.27942850655955,
+        963.450276276138
+      ],
+      "observed_position": [
+        269.5439368529123,
+        963.0791262855971
+      ],
+      "true_area": 77.0,
+      "true_volume": 180.0,
+      "observed_area": 76.92097305097086,
+      "observed_volume": 184.59210409832966,
+      "is_false_positive": false
+    },
+    {
+      "frame": 36,
+      "id": 2,
+      "actor": "bystander",
+      "true_position": [
+        257.82593266932685,
+        937.5
+      ],
+      "observed_position": [
+        259.78163068899585,
+        937.9930699067894
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 77.7265837732505,
+      "observed_volume": 201.3611791854447,
+      "is_false_positive": false
+    },
+    {
+      "frame": 37,
+      "id": 0,
+      "actor": "left",
+      "true_position": [
+        267.2881295265522,
+        984.1356843582224
+      ],
+      "observed_position": [
+        268.4155240049489,
+        984.6898723177446
+      ],
+      "true_area": 77.0,
+      "true_volume": 180.0,
+      "observed_area": 74.7822897097397,
+      "observed_volume": 193.96480379814372,
+      "is_false_positive": false
+    },
+    {
+      "frame": 37,
+      "id": 1,
+      "actor": "right",
+      "true_position": [
+        281.94328781514537,
+        973.1443156417776
+      ],
+      "observed_position": [
+        281.87103616940783,
+        972.9778751332071
+      ],
+      "true_area": 83.0,
+      "true_volume": 220.0,
+      "observed_area": 81.3924621096262,
+      "observed_volume": 206.9773956057575,
+      "is_false_positive": false
+    },
+    {
+      "frame": 37,
+      "id": 2,
+      "actor": "bystander",
+      "true_position": [
+        256.2151997463167,
+        958.0
+      ],
+      "observed_position": [
+        254.68143736778737,
+        958.9837712881821
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 87.25599596363568,
+      "observed_volume": 200.09760770803024,
+      "is_false_positive": false
+    },
+    {
+      "frame": 38,
+      "id": 0,
+      "actor": "left",
+      "true_position": [
+        266.4352484905581,
+        1004.6731968152282
+      ],
+      "observed_position": [
+        265.8834282197028,
+        1001.7376514269058
+      ],
+      "true_area": 77.0,
+      "true_volume": 180.0,
+      "observed_area": 85.58729335229573,
+      "observed_volume": 183.43930821569325,
+      "is_false_positive": false
+    },
+    {
+      "frame": 38,
+      "id": 1,
+      "actor": "right",
+      "true_position": [
+        278.67043999783306,
+        995.4968031847719
+      ],
+      "observed_position": [
+        277.37694861940497,
+        993.1194981208911
+      ],
+      "true_area": 83.0,
+      "true_volume": 220.0,
+      "observed_area": 75.92013354043273,
+      "observed_volume": 205.88606231436688,
+      "is_false_positive": false
+    },
+    {
+      "frame": 38,
+      "id": 2,
+      "actor": "bystander",
+      "true_position": [
+        254.67225830468468,
+        978.5
+      ],
+      "observed_position": [
+        255.41040245730167,
+        977.4544437009429
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 83.81466866943448,
+      "observed_volume": 210.46374239190413,
+      "is_false_positive": false
+    },
+    {
+      "frame": 39,
+      "id": 0,
+      "actor": "right",
+      "true_position": [
+        275.38493739664426,
+        1017.8324324583157
+      ],
+      "observed_position": [
+        276.4213535229464,
+        1016.9938212279308
+      ],
+      "true_area": 83.0,
+      "true_volume": 220.0,
+      "observed_area": 75.94654779014964,
+      "observed_volume": 222.0035965167809,
+      "is_false_positive": false
+    },
+    {
+      "frame": 39,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        253.1925415663989,
+        999.0
+      ],
+      "observed_position": [
+        250.9612750708708,
+        999.0622061092922
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 87.56447521811275,
+      "observed_volume": 208.76776714946106,
+      "is_false_positive": false
+    },
+    {
+      "frame": 39,
+      "id": 2,
+      "actor": "left",
+      "true_position": [
+        265.71142395215253,
+        1025.0875675416844
+      ],
+      "observed_position": [
+        266.0902243786071,
+        1025.1737040227515
+      ],
+      "true_area": 77.0,
+      "true_volume": 180.0,
+      "observed_area": 75.74187433930409,
+      "observed_volume": 181.88328128786358,
+      "is_false_positive": false
+    },
+    {
+      "frame": 40,
+      "id": 0,
+      "actor": "false_positive_40_1",
+      "true_position": [
+        211.86530900375482,
+        425.67904577776363
+      ],
+      "observed_position": [
+        211.88151028607095,
+        423.79268794611454
+      ],
+      "true_area": 39.55704184564121,
+      "true_volume": 77.09745890744335,
+      "observed_area": 37.928339147485055,
+      "observed_volume": 74.81747342865138,
+      "is_false_positive": true
+    },
+    {
+      "frame": 40,
+      "id": 1,
+      "actor": "false_positive_40_0",
+      "true_position": [
+        301.40634467659515,
+        1199.607242492786
+      ],
+      "observed_position": [
+        301.5475795695132,
+        1198.9434558840665
+      ],
+      "true_area": 23.52069163193168,
+      "true_volume": 75.46052432295491,
+      "observed_area": 19.43392352332188,
+      "observed_volume": 71.33126504164619,
+      "is_false_positive": true
+    },
+    {
+      "frame": 40,
+      "id": 2,
+      "actor": "false_positive_40_2",
+      "true_position": [
+        127.57092943700312,
+        1075.839723207264
+      ],
+      "observed_position": [
+        125.86668549584485,
+        1074.0619208562994
+      ],
+      "true_area": 20.22219143435952,
+      "true_volume": 59.266566602027964,
+      "observed_area": 15.795966747825126,
+      "observed_volume": 56.224802282577414,
+      "is_false_positive": true
+    },
+    {
+      "frame": 40,
+      "id": 3,
+      "actor": "bystander",
+      "true_position": [
+        251.7708510330911,
+        1019.5
+      ],
+      "observed_position": [
+        250.1603510069225,
+        1018.5050503272823
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 73.03209531559608,
+      "observed_volume": 215.6152808626232,
+      "is_false_positive": false
+    },
+    {
+      "frame": 40,
+      "id": 4,
+      "actor": "left",
+      "true_position": [
+        265.1048810400966,
+        1045.4050000000002
+      ],
+      "observed_position": [
+        265.0978671088955,
+        1043.7667642546214
+      ],
+      "true_area": 77.0,
+      "true_volume": 180.0,
+      "observed_area": 80.82909562829738,
+      "observed_volume": 187.0290028285623,
+      "is_false_positive": false
+    },
+    {
+      "frame": 40,
+      "id": 5,
+      "actor": "right",
+      "true_position": [
+        272.14488104009655,
+        1040.125
+      ],
+      "observed_position": [
+        270.5176803650989,
+        1042.359815149537
+      ],
+      "true_area": 83.0,
+      "true_volume": 220.0,
+      "observed_area": 82.63655419899816,
+      "observed_volume": 222.62979047432262,
+      "is_false_positive": false
+    },
+    {
+      "frame": 41,
+      "id": 0,
+      "actor": "bystander",
+      "true_position": [
+        250.40140842773386,
+        1040.0
+      ],
+      "observed_position": [
+        248.3414442624621,
+        1037.7250298439849
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 76.79540960681584,
+      "observed_volume": 210.1979105871105,
+      "is_false_positive": false
+    },
+    {
+      "frame": 41,
+      "id": 1,
+      "actor": "merged",
+      "true_position": [
+        266.80543645368834,
+        1064.0
+      ],
+      "observed_position": [
+        265.78527389053085,
+        1061.8819622138894
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 160.92066906883744,
+      "observed_volume": 408.40236122204493,
+      "is_false_positive": false
+    },
+    {
+      "frame": 42,
+      "id": 0,
+      "actor": "merged",
+      "true_position": [
+        265.11148031234825,
+        1085.165
+      ],
+      "observed_position": [
+        266.7145741886922,
+        1083.6424733200495
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 172.56299777109967,
+      "observed_volume": 398.23190441795714,
+      "is_false_positive": false
+    },
+    {
+      "frame": 42,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        249.07791342927442,
+        1060.5
+      ],
+      "observed_position": [
+        248.5625312924404,
+        1062.6727218931915
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 89.31182065072323,
+      "observed_volume": 208.5685445035133,
+      "is_false_positive": false
+    },
+    {
+      "frame": 43,
+      "id": 0,
+      "actor": "merged",
+      "true_position": [
+        263.56360963271925,
+        1106.26
+      ],
+      "observed_position": [
+        263.4883379323943,
+        1107.5223536897265
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 157.28044530559671,
+      "observed_volume": 399.899832981118,
+      "is_false_positive": false
+    },
+    {
+      "frame": 43,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        247.7936066233602,
+        1081.0
+      ],
+      "observed_position": [
+        246.76844069799827,
+        1080.2809422551338
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 76.75144538830209,
+      "observed_volume": 222.7811088455762,
+      "is_false_positive": false
+    },
+    {
+      "frame": 44,
+      "id": 0,
+      "actor": "bystander",
+      "true_position": [
+        246.54133704017264,
+        1101.5
+      ],
+      "observed_position": [
+        245.62140499770607,
+        1101.042486247749
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 81.05382495806654,
+      "observed_volume": 189.63342971628686,
+      "is_false_positive": false
+    },
+    {
+      "frame": 44,
+      "id": 1,
+      "actor": "merged",
+      "true_position": [
+        262.1812149448358,
+        1127.285
+      ],
+      "observed_position": [
+        261.78911554793166,
+        1127.3244270435957
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 160.21059481658367,
+      "observed_volume": 391.5079545618019,
+      "is_false_positive": false
+    },
+    {
+      "frame": 45,
+      "id": 0,
+      "actor": "merged",
+      "true_position": [
+        260.9823201501463,
+        1148.24
+      ],
+      "observed_position": [
+        262.35419679379885,
+        1148.4861365138454
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 165.9154669313345,
+      "observed_volume": 397.06926473929366,
+      "is_false_positive": false
+    },
+    {
+      "frame": 45,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        245.31363360455376,
+        1122.0
+      ],
+      "observed_position": [
+        245.9911041357839,
+        1120.353047211616
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 79.65226632087995,
+      "observed_volume": 222.11105036370748,
+      "is_false_positive": false
+    },
+    {
+      "frame": 46,
+      "id": 0,
+      "actor": "bystander",
+      "true_position": [
+        244.10277978451956,
+        1142.5
+      ],
+      "observed_position": [
+        244.54617462085037,
+        1142.7134241027404
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 77.10228324967403,
+      "observed_volume": 218.9726754457665,
+      "is_false_positive": false
+    },
+    {
+      "frame": 46,
+      "id": 1,
+      "actor": "merged",
+      "true_position": [
+        259.98343366620907,
+        1169.125
+      ],
+      "observed_position": [
+        260.455161051097,
+        1169.182676221571
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 162.41854173066437,
+      "observed_volume": 397.8078379645687,
+      "is_false_positive": false
+    },
+    {
+      "frame": 47,
+      "id": 0,
+      "actor": "bystander",
+      "true_position": [
+        242.90089069229688,
+        1163.0
+      ],
+      "observed_position": [
+        243.47679463678054,
+        1163.9758356120044
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 88.4654730353895,
+      "observed_volume": 210.75822085903224,
+      "is_false_positive": false
+    },
+    {
+      "frame": 47,
+      "id": 1,
+      "actor": "merged",
+      "true_position": [
+        259.19941208742614,
+        1189.94
+      ],
+      "observed_position": [
+        259.20958146811495,
+        1190.2540918040118
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 157.78476791047765,
+      "observed_volume": 403.9038332312261,
+      "is_false_positive": false
+    },
+    {
+      "frame": 48,
+      "id": 0,
+      "actor": "false_positive_48_0",
+      "true_position": [
+        281.7814802755107,
+        1593.0128048681233
+      ],
+      "observed_position": [
+        283.3222986864298,
+        1593.628936259741
+      ],
+      "true_area": 42.006100385924455,
+      "true_volume": 58.45766100966341,
+      "observed_area": 43.17645040389156,
+      "observed_volume": 51.76684277515464,
+      "is_false_positive": true
+    },
+    {
+      "frame": 48,
+      "id": 1,
+      "actor": "false_positive_48_2",
+      "true_position": [
+        289.1930323911438,
+        556.0699682705036
+      ],
+      "observed_position": [
+        287.01915428442373,
+        556.9586712976715
+      ],
+      "true_area": 36.49082164091797,
+      "true_volume": 43.9524279492522,
+      "observed_area": 29.52737311192209,
+      "observed_volume": 40.08427408504525,
+      "is_false_positive": true
+    },
+    {
+      "frame": 48,
+      "id": 2,
+      "actor": "bystander",
+      "true_position": [
+        241.69999186751556,
+        1183.5
+      ],
+      "observed_position": [
+        241.0936398583193,
+        1182.1425964194725
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 88.13817308205988,
+      "observed_volume": 206.06736999738888,
+      "is_false_positive": false
+    },
+    {
+      "frame": 48,
+      "id": 3,
+      "actor": "false_positive_48_1",
+      "true_position": [
+        77.86683154384613,
+        1581.6027220273645
+      ],
+      "observed_position": [
+        76.1629037474523,
+        1581.5195758737696
+      ],
+      "true_area": 31.902825931789174,
+      "true_volume": 84.26823435829326,
+      "observed_area": 43.56239576806213,
+      "observed_volume": 91.71330420652875,
+      "is_false_positive": true
+    },
+    {
+      "frame": 48,
+      "id": 4,
+      "actor": "merged",
+      "true_position": [
+        258.6433374878084,
+        1210.685
+      ],
+      "observed_position": [
+        257.1967524297853,
+        1209.8611472342243
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 166.86187910204535,
+      "observed_volume": 404.8356261570468,
+      "is_false_positive": false
+    },
+    {
+      "frame": 49,
+      "id": 0,
+      "actor": "merged",
+      "true_position": [
+        258.32640937910116,
+        1231.36
+      ],
+      "observed_position": [
+        256.3586293799401,
+        1234.6194428698668
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 164.88866534971896,
+      "observed_volume": 404.83458839441425,
+      "is_false_positive": false
+    },
+    {
+      "frame": 49,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        240.4920989553806,
+        1204.0
+      ],
+      "observed_position": [
+        243.6416610152728,
+        1204.2816152364144
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 87.56794312703887,
+      "observed_volume": 214.24658991540056,
+      "is_false_positive": false
+    },
+    {
+      "frame": 50,
+      "id": 0,
+      "actor": "merged",
+      "true_position": [
+        258.25785221656366,
+        1251.965
+      ],
+      "observed_position": [
+        260.4153201724063,
+        1249.693624053707
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 168.69459279413917,
+      "observed_volume": 401.17348631279,
+      "is_false_positive": false
+    },
+    {
+      "frame": 50,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        239.2692974837058,
+        1224.5
+      ],
+      "observed_position": [
+        240.759946050462,
+        1224.836820238782
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 84.44693573940428,
+      "observed_volume": 202.50390665702338,
+      "is_false_positive": false
+    },
+    {
+      "frame": 51,
+      "id": 0,
+      "actor": "bystander",
+      "true_position": [
+        238.02382194170383,
+        1245.0
+      ],
+      "observed_position": [
+        236.4160345743077,
+        1244.4106678539222
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 89.59552861412732,
+      "observed_volume": 202.43062053767318,
+      "is_false_positive": false
+    },
+    {
+      "frame": 51,
+      "id": 1,
+      "actor": "merged",
+      "true_position": [
+        258.44483921629023,
+        1272.5
+      ],
+      "observed_position": [
+        258.30610839134414,
+        1272.578259692956
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 180.34428486493576,
+      "observed_volume": 411.8428520310564,
+      "is_false_positive": false
+    },
+    {
+      "frame": 52,
+      "id": 0,
+      "actor": "merged",
+      "true_position": [
+        258.89243311325043,
+        1292.965
+      ],
+      "observed_position": [
+        259.6988010703887,
+        1292.6894300977895
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 166.57840780809818,
+      "observed_volume": 407.4596857038783,
+      "is_false_positive": false
+    },
+    {
+      "frame": 52,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        236.74813337040302,
+        1265.5
+      ],
+      "observed_position": [
+        235.3116656304864,
+        1267.9508353493718
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 92.40894740374415,
+      "observed_volume": 208.9141104049052,
+      "is_false_positive": false
+    },
+    {
+      "frame": 53,
+      "id": 0,
+      "actor": "bystander",
+      "true_position": [
+        235.4349946894333,
+        1286.0
+      ],
+      "observed_position": [
+        236.29619416228257,
+        1286.035244339509
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 81.2748156237107,
+      "observed_volume": 212.57174125783095,
+      "is_false_positive": false
+    },
+    {
+      "frame": 53,
+      "id": 1,
+      "actor": "merged",
+      "true_position": [
+        259.6035443493117,
+        1313.36
+      ],
+      "observed_position": [
+        257.2017123723765,
+        1313.5658259445302
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 179.24725793176958,
+      "observed_volume": 392.9769611636885,
+      "is_false_positive": false
+    },
+    {
+      "frame": 54,
+      "id": 0,
+      "actor": "merged",
+      "true_position": [
+        260.5789070365619,
+        1333.685
+      ],
+      "observed_position": [
+        259.5172783281596,
+        1331.4959840813824
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 168.81267592377333,
+      "observed_volume": 397.3606575608918,
+      "is_false_positive": false
+    },
+    {
+      "frame": 54,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        234.07754300754107,
+        1306.5
+      ],
+      "observed_position": [
+        232.94723687768533,
+        1306.6413705383757
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 78.42889301815714,
+      "observed_volume": 226.67028866340604,
+      "is_false_positive": false
+    },
+    {
+      "frame": 55,
+      "id": 0,
+      "actor": "merged",
+      "true_position": [
+        261.81707289444483,
+        1353.94
+      ],
+      "observed_position": [
+        263.6778631785853,
+        1353.4016576159265
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 162.23599077355163,
+      "observed_volume": 406.6262205238,
+      "is_false_positive": false
+    },
+    {
+      "frame": 55,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        232.66935819433007,
+        1327.0
+      ],
+      "observed_position": [
+        231.11385630486086,
+        1327.4298347657764
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 91.50367648766199,
+      "observed_volume": 202.46098076005995,
+      "is_false_positive": false
+    },
+    {
+      "frame": 56,
+      "id": 0,
+      "actor": "false_positive_56_2",
+      "true_position": [
+        237.85549934241556,
+        1334.8397501734194
+      ],
+      "observed_position": [
+        237.39179340788309,
+        1337.243568706389
+      ],
+      "true_area": 20.434843363854014,
+      "true_volume": 91.34150057214876,
+      "observed_area": 21.863074584786713,
+      "observed_volume": 83.63781244470758,
+      "is_false_positive": true
+    },
+    {
+      "frame": 56,
+      "id": 1,
+      "actor": "merged",
+      "true_position": [
+        263.3144232107796,
+        1374.125
+      ],
+      "observed_position": [
+        264.17252914334614,
+        1373.4907349161845
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 167.21366994653258,
+      "observed_volume": 397.56394035461676,
+      "is_false_positive": false
+    },
+    {
+      "frame": 56,
+      "id": 2,
+      "actor": "false_positive_56_1",
+      "true_position": [
+        253.6144848242639,
+        1545.7161792914665
+      ],
+      "observed_position": [
+        253.39748953887934,
+        1545.6978300091407
+      ],
+      "true_area": 21.778423249715853,
+      "true_volume": 66.4469235157381,
+      "observed_area": 20.11161670454192,
+      "observed_volume": 70.68214724535027,
+      "is_false_positive": true
+    },
+    {
+      "frame": 56,
+      "id": 3,
+      "actor": "false_positive_56_0",
+      "true_position": [
+        200.322221737314,
+        1531.0068209636809
+      ],
+      "observed_position": [
+        199.1471219888467,
+        1533.7065326997551
+      ],
+      "true_area": 43.58294066818861,
+      "true_volume": 63.77614461471822,
+      "observed_area": 52.96670047445195,
+      "observed_volume": 61.49284720305392,
+      "is_false_positive": true
+    },
+    {
+      "frame": 56,
+      "id": 4,
+      "actor": "bystander",
+      "true_position": [
+        231.204527028082,
+        1347.5
+      ],
+      "observed_position": [
+        232.56444558412116,
+        1350.2113851418826
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 89.65463446374923,
+      "observed_volume": 218.27265298106948,
+      "is_false_positive": false
+    },
+    {
+      "frame": 57,
+      "id": 0,
+      "actor": "bystander",
+      "true_position": [
+        229.67770227871327,
+        1368.0
+      ],
+      "observed_position": [
+        231.22841852258318,
+        1367.5971496969903
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 91.69827488891494,
+      "observed_volume": 213.02979971052793,
+      "is_false_positive": false
+    },
+    {
+      "frame": 57,
+      "id": 1,
+      "actor": "merged",
+      "true_position": [
+        265.0651987278818,
+        1394.24
+      ],
+      "observed_position": [
+        262.41465309198037,
+        1392.6047082428738
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 167.60308663321297,
+      "observed_volume": 398.4113296166348,
+      "is_false_positive": false
+    },
+    {
+      "frame": 58,
+      "id": 0,
+      "actor": "merged",
+      "true_position": [
+        267.06154720696316,
+        1414.285
+      ],
+      "observed_position": [
+        265.75907044667326,
+        1414.4296213604034
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 160.20118414459162,
+      "observed_volume": 402.5894427839748,
+      "is_false_positive": false
+    },
+    {
+      "frame": 58,
+      "id": 1,
+      "actor": "bystander",
+      "true_position": [
+        228.08415613553055,
+        1388.5
+      ],
+      "observed_position": [
+        226.15580688190116,
+        1388.4336957614546
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 73.62359164508754,
+      "observed_volume": 208.54375671321273,
+      "is_false_positive": false
+    },
+    {
+      "frame": 59,
+      "id": 0,
+      "actor": "bystander",
+      "true_position": [
+        226.41982744595228,
+        1409.0
+      ],
+      "observed_position": [
+        225.49033103309307,
+        1407.7517575162292
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 83.07693044360902,
+      "observed_volume": 207.3863827079543,
+      "is_false_positive": false
+    },
+    {
+      "frame": 59,
+      "id": 1,
+      "actor": "merged",
+      "true_position": [
+        269.2935882779859,
+        1434.26
+      ],
+      "observed_position": [
+        267.97077352516953,
+        1433.0592568608047
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 162.9027208102534,
+      "observed_volume": 406.5998401747435,
+      "is_false_positive": false
+    },
+    {
+      "frame": 60,
+      "id": 0,
+      "actor": "bystander",
+      "true_position": [
+        224.68136229320294,
+        1429.5
+      ],
+      "observed_position": [
+        225.04100019499148,
+        1430.0229500081866
+      ],
+      "true_area": 82.0,
+      "true_volume": 210.0,
+      "observed_area": 80.29371672155838,
+      "observed_volume": 201.3455104167842,
+      "is_false_positive": false
+    },
+    {
+      "frame": 60,
+      "id": 1,
+      "actor": "merged",
+      "true_position": [
+        271.74949503939223,
+        1454.165
+      ],
+      "observed_position": [
+        271.66920672169914,
+        1455.602005392161
+      ],
+      "true_area": 160.0,
+      "true_volume": 400.0,
+      "observed_area": 154.57585522856826,
+      "observed_volume": 412.69213746842576,
+      "is_false_positive": false
+    }
+  ],
+  "observation_noise": {
+    "position_sigma_px": 1.25,
+    "area_sigma_px2": 6.0,
+    "volume_sigma_synthetic": 8.0
+  },
+  "occluded_actor_frames": [
+    {
+      "actor": "left",
+      "frame": 32
+    }
+  ],
+  "false_positives_are_unlinked": true,
+  "limitations": "Contact-compatible is necessary but not sufficient for physical hydrodynamic plausibility; latent areas additive by design."
+}

@@ -1,0 +1,401 @@
+{
+  "source_branch": "particle",
+  "status": "PASS",
+  "true_internal_edges": 564,
+  "selected_true_edges": 564,
+  "pixel_exact_webp": true,
+  "assets": [
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_001.png",
+      "original_sha256": "146b40de6146944e19f905ce81b847560f34aa6fdfcd17c1489637b8f53c5765",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_001.webp",
+      "published_sha256": "c192f37e49ac99f89b4a9ae5ba8ab5ac538e7337b07d71d4da5bf2f1558e9316",
+      "original_bytes": 26789,
+      "published_bytes": 11512
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_002.png",
+      "original_sha256": "db146d7adca70e40ba04284b744bace099eca7e2adb982ffd1751ace3f9e6093",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_002.webp",
+      "published_sha256": "259b181c461b94c32f0d1da116cb0e539a0cb0a112cef7242e177e286b004c66",
+      "original_bytes": 26913,
+      "published_bytes": 11570
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_003.png",
+      "original_sha256": "964ee40444c4392b43c4a94132c86150dce84bb59df09e2b5a7c167d99450435",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_003.webp",
+      "published_sha256": "e831f52b9fa504f20185dbe4052101c73433c579798ceade645ae04b7fa9e0be",
+      "original_bytes": 26909,
+      "published_bytes": 11596
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_004.png",
+      "original_sha256": "b7a13356bdedfdd7a7ab7fde1592cbf526c027da174de42b8533616e8b26f279",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_004.webp",
+      "published_sha256": "d9704fc6add351a8bbfcc09f81b358762cc69282eb78dd139ff10b6c752fc209",
+      "original_bytes": 26685,
+      "published_bytes": 11506
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_005.png",
+      "original_sha256": "83a803929bafdb7109857c2bbd8072c18898cd57ea2fd8cf6416ae19fd2b27bc",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_005.webp",
+      "published_sha256": "68a7d07c13782e36fdc148318142bc0faf10275539fc8587173984af7f94c9d2",
+      "original_bytes": 26820,
+      "published_bytes": 11546
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_006.png",
+      "original_sha256": "f9a69076ebfe016ce30cf7c7e0e153b330439bfbc6425f313a4da9370ad4a0ed",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_006.webp",
+      "published_sha256": "575e01485a809cfae70c1fd72d2c1f0f6e5a3609db12da272a71bf94894e7e18",
+      "original_bytes": 26843,
+      "published_bytes": 11590
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_007.png",
+      "original_sha256": "6a9ae84d2f69c3a8cfe992e5a47eac4e7698bb7734b0129a489c159e8a505a13",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_007.webp",
+      "published_sha256": "78a4c7c3d3583d53aae86ba9c6836fff3d0e85d586f46dd1efe279d4403d02f9",
+      "original_bytes": 27067,
+      "published_bytes": 11644
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_008.png",
+      "original_sha256": "cd12f1f4c59377d79e9f5779ce34581eed8c41d960e684b2973b19d1e3498581",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_008.webp",
+      "published_sha256": "68cbc6b4185e9e7ca44db17552f35827aa770d4f10ff64a13da6f3f523f26b0f",
+      "original_bytes": 27014,
+      "published_bytes": 11628
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_009.png",
+      "original_sha256": "1637a0d10547d2d2a08e053f3b3295e8fdfd7bac8639ad4766940f7bfa1be6d8",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_009.webp",
+      "published_sha256": "9aadbd5f13cdb37c5100cc72d792c58ec07e6c60b89710ad0a42f22bf27ac3f3",
+      "original_bytes": 27262,
+      "published_bytes": 11712
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_010.png",
+      "original_sha256": "5d18a93952e5899de26a02a141f9b2dbc902f64a8fa9b9d48698a741083941c5",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_010.webp",
+      "published_sha256": "31bff418432909eafad6370376069fd764552aa8fd13389b7fc8a7ee8b8047ae",
+      "original_bytes": 27191,
+      "published_bytes": 11688
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_011.png",
+      "original_sha256": "0dce1f375fa69bb464ff929b810e8bb02eeca83e8c9f450eb64510d086089233",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_011.webp",
+      "published_sha256": "dc64e9d3a3442633aa9b5f7227d9a490c7c828aa1bbed3e67e3344104ef2c6bc",
+      "original_bytes": 26977,
+      "published_bytes": 11632
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_012.png",
+      "original_sha256": "3b351d9f22f5c022db553c519a6786381a3951c804aa7a1417f2f4f8af0f9d4f",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_012.webp",
+      "published_sha256": "9b8105efee1b1bd640c3d7de7bdfc285a37deff4cc19f7b3d8cac723df719069",
+      "original_bytes": 27258,
+      "published_bytes": 11702
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_013.png",
+      "original_sha256": "5bcabeb4882d85997eb96d202cbdde16e01e2132294c6cfe537d0192e820f47d",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_013.webp",
+      "published_sha256": "9ebd9ccc817263c1f6a11f73868203bd9b82e454b0e246ac86c4249c910c7d3b",
+      "original_bytes": 27365,
+      "published_bytes": 11722
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_014.png",
+      "original_sha256": "9a00e31c829dd06ad6d245edd2b806bf23d4cc656e1309b7c1cfb02c948123df",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_014.webp",
+      "published_sha256": "fe55ec9fe97c6f63876b22d3dbb5b1bba19bf236964529dc168623d834419ccd",
+      "original_bytes": 27050,
+      "published_bytes": 11602
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_015.png",
+      "original_sha256": "22071e4dfca565a542ad4672cb4fc2ddcdb074d20876c43e9dbf99d8bfd26db6",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_015.webp",
+      "published_sha256": "23b52a237dbc1cb2d7a267432bace128c3691cb0969d4c4d3c4e13e32a803fa9",
+      "original_bytes": 27148,
+      "published_bytes": 11654
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_016.png",
+      "original_sha256": "d57b801d64b5979081beb9b74ede3128f2287ace8a44527ea35ff19649f70a8f",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_016.webp",
+      "published_sha256": "a282644b2e4a1c72d0c1615401fdd05b0a2bae13ea22e7c0545bd0105090714e",
+      "original_bytes": 27153,
+      "published_bytes": 11650
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_017.png",
+      "original_sha256": "7d8a57e792067bc6f0678fed7918d0acd557955ed981bf02d7054e7dd523680e",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_017.webp",
+      "published_sha256": "1a83c7491770495efd4096f2c47991c2f1083255830b93f7d0249546ed14e954",
+      "original_bytes": 27238,
+      "published_bytes": 11704
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_018.png",
+      "original_sha256": "955ad29e6965337552c00f360b2edafc7082a6a0f34841b196db10bfd32a2082",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_018.webp",
+      "published_sha256": "ccc450ca2bbeb0fd51fa4d48a52fc1daaf9bd59c8be129b16fb334e7e93bcb8a",
+      "original_bytes": 27283,
+      "published_bytes": 11718
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_019.png",
+      "original_sha256": "800f54b3ee8414ca69dd124f1d67d50d63d8f54a1eef82efa14625265c4ea43c",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_019.webp",
+      "published_sha256": "f68689f5fdd0f56467bc6cbb8f53184eefc898b6303f80d93d0b9d20eecbebad",
+      "original_bytes": 27440,
+      "published_bytes": 11760
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_020.png",
+      "original_sha256": "6cc508fb9845c5e71fdadd4c7c5ab8841c9566ffe54bccd4157157f6a2626204",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_020.webp",
+      "published_sha256": "d527eea1e0bca8e3e20258df4f48f5075e04f675390be3c468879407d31b4000",
+      "original_bytes": 27482,
+      "published_bytes": 11840
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_021.png",
+      "original_sha256": "4b4d2de93b4c6c8e995ee4259aa739e20642e8077c89ab603b29d632865df953",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_021.webp",
+      "published_sha256": "646ba6f3c14e0947390091bb9dfa461f73567e2d2e71e9079c0595bdf301438f",
+      "original_bytes": 27395,
+      "published_bytes": 11786
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_022.png",
+      "original_sha256": "607d9585cea780bf09ee68abab3897fd728362e2f859de08f5fba3978b5c1988",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_022.webp",
+      "published_sha256": "24c15b36ab6da44ed7edcdfe2a13aa0f2c3b7835ff788f114b31a4cfbb9e2d15",
+      "original_bytes": 27290,
+      "published_bytes": 11732
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_023.png",
+      "original_sha256": "bd7bf59fca8ef449947d906229717e12d812d944ee3397f6710cc7170e3afb47",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_023.webp",
+      "published_sha256": "3bef1927f875df813ac1a16a6e3ff83cb739fd6d204e2d593929c3c51aac1af4",
+      "original_bytes": 27516,
+      "published_bytes": 11820
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_024.png",
+      "original_sha256": "5c95e778e44f4ac21977969de770086d5701569807a6038d7abf34349bf8b0ae",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_024.webp",
+      "published_sha256": "b7debe726ddc0d3d57c13e1a11738da8d042781b0e24bcabb82f3bca096bf307",
+      "original_bytes": 27261,
+      "published_bytes": 11734
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_025.png",
+      "original_sha256": "9df4dbf78d40a3c07866c81d220f4cb9ed3b198867d63b5cfcc73afa8270ec15",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_025.webp",
+      "published_sha256": "f76ba987ce3a3104c7b8bafa0c2e0e4a7c9f2f23281407c44b153dc56204eaef",
+      "original_bytes": 27354,
+      "published_bytes": 11744
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_026.png",
+      "original_sha256": "8aa22c878e3825105c3435836413aaaafbb83813d533ad9628f3e393bbea28a2",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_026.webp",
+      "published_sha256": "81a471553c07225895a265fbfb4d17bfd6a41393c0920d9c47974c179f97c5f1",
+      "original_bytes": 27362,
+      "published_bytes": 11756
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_027.png",
+      "original_sha256": "dc4bdea4f9d379987bcf0ca5ff2e3c51ec884a027831e334ab8e8d3a2e99c5dd",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_027.webp",
+      "published_sha256": "744a7a791eefdfc60307e59e16064434bbce4649a62c3b6a88c0aa540164c377",
+      "original_bytes": 27436,
+      "published_bytes": 11774
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_028.png",
+      "original_sha256": "37631f4ee76943758cc7a5c8d54e3bda80d19f09d73ddc433e489499270cc008",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_028.webp",
+      "published_sha256": "ebffa0019b33d53277188ccdc80fafc2607d969834bc12304e2166a2d7bba800",
+      "original_bytes": 27326,
+      "published_bytes": 11774
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_029.png",
+      "original_sha256": "1568f18f77c7b9f27b1b0f4e930f5e08be4e00c2ea28fccd8c6959d174157ae0",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_029.webp",
+      "published_sha256": "8eeb8756fdbb08ba9be33c30784be1a37de8a11656b8d5ab6d91242ac81ff6c7",
+      "original_bytes": 27529,
+      "published_bytes": 11832
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_030.png",
+      "original_sha256": "154de9999f23dd85d16ee07484d56d7a18cc210b2e39f9a1f22332acaa4399d8",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_030.webp",
+      "published_sha256": "375f826daadc73e4ffc398cd571994d06b9ab88d8cb97a0bf2a5068f08322479",
+      "original_bytes": 27531,
+      "published_bytes": 11862
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_031.png",
+      "original_sha256": "9edffd10a41863cd1d15cdd512fe7267fff6ebac93629984481bd6a589dfe49d",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_031.webp",
+      "published_sha256": "6edf67979ccc1864e38cc0cfc86d2bef3ca1d5748ab4635fb555149396605b87",
+      "original_bytes": 27436,
+      "published_bytes": 11788
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_032.png",
+      "original_sha256": "f25dd8a95652a48bf9f2ef8a1ec8e1a5c515cd5479a21917ed105f6822102777",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_032.webp",
+      "published_sha256": "2ca6724d9b9d1e110241b5beae87b431f720b2642f269a7d353fc2fd997c94db",
+      "original_bytes": 27569,
+      "published_bytes": 11822
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_033.png",
+      "original_sha256": "765455945440fc5e95665e21d1f260c8a79c0a0d54007b647b8fd8c5737ce329",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_033.webp",
+      "published_sha256": "8bf8661e9ffad20bc5c2dd85c3157a8d271f0314267c7bd1df171bc58f4f92fa",
+      "original_bytes": 27366,
+      "published_bytes": 11766
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_034.png",
+      "original_sha256": "1baf77e85e97f312ff550ef08c85c97bf574679726d72cfb24f7d291f2e50512",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_034.webp",
+      "published_sha256": "d74f02a96cc3791f90b2daceb42b3f536e9d4908cdb0ca65e32da7218f1c8abc",
+      "original_bytes": 27351,
+      "published_bytes": 11754
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_035.png",
+      "original_sha256": "6c2668374e0cf956a7a57d4d3691505e50df6206b6cfd672740de57aa0b15367",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_035.webp",
+      "published_sha256": "c1ed25a8befa738818cd1de9979490bd0da630098319b733a8662aa624f00eb9",
+      "original_bytes": 27379,
+      "published_bytes": 11784
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_036.png",
+      "original_sha256": "39bf9c5c8267bd0229fe2d6ab72eb4c542b10fdc09b19c199e054240e8fb341f",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_036.webp",
+      "published_sha256": "033ddebe15f42e1ee96e08324ad14e6fa264f5ba237ea56834729ccee5599bbe",
+      "original_bytes": 27290,
+      "published_bytes": 11774
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_037.png",
+      "original_sha256": "863b27eae9227ead0bc934f2eedb4e2cdd685e5e46a9c94af5f604dcd496308c",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_037.webp",
+      "published_sha256": "32d802e56643c1fbde13d2ff176e4c110a304688ba26421e691b20e4900f36e9",
+      "original_bytes": 27476,
+      "published_bytes": 11810
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_038.png",
+      "original_sha256": "96264a739a60ef9e110658b4229f9ca8966c57ee60e7968d7d0b54ddf2bae12c",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_038.webp",
+      "published_sha256": "61b697680c6a8a005e8390700aaf1b5e3ab117f38283949421a2396a6da6e62b",
+      "original_bytes": 27331,
+      "published_bytes": 11738
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_039.png",
+      "original_sha256": "c4082aefc223a4b4a4579d1408ba1d6ca2ebf3a5305c8d73e9961b083e5ec374",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_039.webp",
+      "published_sha256": "6c14a8982fc5425c9012f89d0abd9123776dcf36073b35433145e1bac1161bfc",
+      "original_bytes": 27590,
+      "published_bytes": 11850
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_040.png",
+      "original_sha256": "57a50b7e8e221db93a23660fe52c1aae4f0fa6747af4ab3bd6f3476240998038",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_040.webp",
+      "published_sha256": "2e0c67f9b22a34637caeb03a91c73372634006ad2b03091ed0215740c94d548d",
+      "original_bytes": 27376,
+      "published_bytes": 11780
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_041.png",
+      "original_sha256": "939674b77be670621bf0d9a9ff6b51b7bab6d7263ace001e03f2f36940819e3f",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_041.webp",
+      "published_sha256": "9f587bbfe34d004ac3df926cdd18df8cb9ab974e752234e2302719dcbc76d956",
+      "original_bytes": 27191,
+      "published_bytes": 11686
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_042.png",
+      "original_sha256": "bd42e08542b2aba054bddc0c3661ca674d55ca72f8087fbcf485c2a2acf3eaf5",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_042.webp",
+      "published_sha256": "c9dca954e68e0f1f27d2ffc0432762f7cd1b1a1773afb83403df3ec604d356ea",
+      "original_bytes": 27308,
+      "published_bytes": 11738
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_043.png",
+      "original_sha256": "60470073491b644ddf0635a733dad0aace36fde43a29db71a315c2afe43162f6",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_043.webp",
+      "published_sha256": "c0d8a37fbd9e7c2bc08ecec60dde74d8731e2b46697e2d3fa138f0e43170de87",
+      "original_bytes": 27262,
+      "published_bytes": 11724
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_044.png",
+      "original_sha256": "c091b93207a8273960f3cabeed9677a5f099e2829dca552c5322b7a7b52db196",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_044.webp",
+      "published_sha256": "338b6092181808e15b1a54092e8a3dae8c66e39f85001604844cbddc1ce125b9",
+      "original_bytes": 27008,
+      "published_bytes": 11658
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_045.png",
+      "original_sha256": "2acd76fb196f48297578773af44bf7627310726d19f31c81fa66e724f104f39d",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_045.webp",
+      "published_sha256": "be667bda40840d7176cad3d479880bddfd759d26522f77446dea895cbf34ae47",
+      "original_bytes": 27061,
+      "published_bytes": 11696
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_046.png",
+      "original_sha256": "059e3bfaf4690caae3ca606d1df6c9e263da38d8b37a8a9599a2b561aa95c9e8",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_046.webp",
+      "published_sha256": "4dfad6ebad43d4fbd8f46b00590428a4d4aefcafdac0fc5e69c650800c53b758",
+      "original_bytes": 27066,
+      "published_bytes": 11696
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_047.png",
+      "original_sha256": "836e61619621d747cd0813eeecf9dbebaded327121c83cddce55b1c5f678e27a",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_047.webp",
+      "published_sha256": "3675d788205ccbf047d642090b09b7a9aba881fbf58756411bd7e436966482ae",
+      "original_bytes": 27172,
+      "published_bytes": 11700
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/frames/frame_048.png",
+      "original_sha256": "de19672b016ca740839a5dd307dddcf9467aab531fd2943f9e55ca5ad27b7e61",
+      "published": "particle_source_tracking_sequences/straight_12x48/frames/frame_048.webp",
+      "published_sha256": "07a98fd2678c6c3cd86aeebc3b6ecfa2371262791a9c6a792ef270e06f77dcf1",
+      "original_bytes": 26975,
+      "published_bytes": 11686
+    },
+    {
+      "original": "particle_source_tracking_sequences/straight_12x48/TRACKING_STORYBOARD.png",
+      "original_sha256": "2b12ab80d5cd2892407d3a290dd0654ffc2d97ff07751e93bf33d963e9443856",
+      "published": "particle_source_tracking_sequences/straight_12x48/TRACKING_STORYBOARD.webp",
+      "published_sha256": "ad3fa3526cdc01ceecb30f0b8464189d8c128911752959833a3568398ac63d02",
+      "original_bytes": 92362,
+      "published_bytes": 29506
+    }
+  ]
+}
