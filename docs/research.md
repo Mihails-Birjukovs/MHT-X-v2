@@ -19,4 +19,6 @@
 
 These are candidates for scientific design, not implementation claims. Individual model priors and hyper-event constraints need independent, dimensionally consistent derivation for MHT-X.
 
-IEEE Xplore document 11730494 has not been source-verified and no methods are attributed to it here.
+- Rajapaksha, Gostar, Blair & Hoseinnezhad (2026), [Multisensor Swarm Tracking Using Labeled Multi-Bernoulli Filters: A Swarm Geometry-Informed Approach](https://doi.org/10.1109/TAES.2026.3741814), IEEE TAES (online 9 October 2026). The authors combine an SMC swarm-geometry estimator with individual-target LMB filtering and generalized covariance intersection across sensors. For MHT-X the most transferable idea is a **conditional individual-detection likelihood informed by independently established collective geometry**; its full multisensor architecture is not required by the current single-camera tracker. The institution-licensed source PDF is **not redistributed** in this repository.
+
+The cited models are research candidates, not baseline MHT-X implementations. Chen et al. require association-event probabilities that the frozen best-cover optimizer does not directly expose, and Koch's unresolved extended-object model does not preserve member identities.
