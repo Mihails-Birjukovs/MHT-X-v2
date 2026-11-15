@@ -1,0 +1,5086 @@
+{
+  "schema_version": 1,
+  "scenario": "near_pass_clean",
+  "role": "negative_control",
+  "seed": 5012,
+  "frames": 60,
+  "units": {
+    "coordinates": "pixels",
+    "time": "frame",
+    "area": "px^2",
+    "volume": "synthetic arbitrary volume units"
+  },
+  "roi": {
+    "xmin": 0,
+    "xmax": 450,
+    "ymin": 0,
+    "ymax": 1806,
+    "coordinate_frame": "upward-increasing Y"
+  },
+  "intended_motions": "rising analytic advection; intentionally simplified, not CFD",
+  "explicit_true_edges": [
+    {
+      "source": "Entry",
+      "target": [
+        1,
+        0
+      ]
+    },
+    {
+      "source": "Entry",
+      "target": [
+        1,
+        1
+      ]
+    },
+    {
+      "source": "Entry",
+      "target": [
+        1,
+        2
+      ]
+    },
+    {
+      "source": [
+        1,
+        0
+      ],
+      "target": [
+        2,
+        1
+      ]
+    },
+    {
+      "source": [
+        1,
+        1
+      ],
+      "target": [
+        2,
+        2
+      ]
+    },
+    {
+      "source": [
+        1,
+        2
+      ],
+      "target": [
+        2,
+        0
+      ]
+    },
+    {
+      "source": [
+        10,
+        0
+      ],
+      "target": [
+        11,
+        1
+      ]
+    },
+    {
+      "source": [
+        10,
+        1
+      ],
+      "target": [
+        11,
+        2
+      ]
+    },
+    {
+      "source": [
+        10,
+        2
+      ],
+      "target": [
+        11,
+        0
+      ]
+    },
+    {
+      "source": [
+        11,
+        0
+      ],
+      "target": [
+        12,
+        0
+      ]
+    },
+    {
+      "source": [
+        11,
+        1
+      ],
+      "target": [
+        12,
+        2
+      ]
+    },
+    {
+      "source": [
+        11,
+        2
+      ],
+      "target": [
+        12,
+        1
+      ]
+    },
+    {
+      "source": [
+        12,
+        0
+      ],
+      "target": [
+        13,
+        2
+      ]
+    },
+    {
+      "source": [
+        12,
+        1
+      ],
+      "target": [
+        13,
+        1
+      ]
+    },
+    {
+      "source": [
+        12,
+        2
+      ],
+      "target": [
+        13,
+        0
+      ]
+    },
+    {
+      "source": [
+        13,
+        0
+      ],
+      "target": [
+        14,
+        2
+      ]
+    },
+    {
+      "source": [
+        13,
+        1
+      ],
+      "target": [
+        14,
+        0
+      ]
+    },
+    {
+      "source": [
+        13,
+        2
+      ],
+      "target": [
+        14,
+        1
+      ]
+    },
+    {
+      "source": [
+        14,
+        0
+      ],
+      "target": [
+        15,
+        2
+      ]
+    },
+    {
+      "source": [
+        14,
+        1
+      ],
+      "target": [
+        15,
+        1
+      ]
+    },
+    {
+      "source": [
+        14,
+        2
+      ],
+      "target": [
+        15,
+        0
+      ]
+    },
+    {
+      "source": [
+        15,
+        0
+      ],
+      "target": [
+        16,
+        1
+      ]
+    },
+    {
+      "source": [
+        15,
+        1
+      ],
+      "target": [
+        16,
+        0
+      ]
+    },
+    {
+      "source": [
+        15,
+        2
+      ],
+      "target": [
+        16,
+        2
+      ]
+    },
+    {
+      "source": [
+        16,
+        0
+      ],
+      "target": [
+        17,
+        2
+      ]
+    },
+    {
+      "source": [
+        16,
+        1
+      ],
+      "target": [
+        17,
+        1
+      ]
+    },
+    {
+      "source": [
+        16,
+        2
+      ],
+      "target": [
+        17,
+        0
+      ]
+    },
+    {
+      "source": [
+        17,
+        0
+      ],
+      "target": [
+        18,
+        1
+      ]
+    },
+    {
+      "source": [
+        17,
+        1
+      ],
+      "target": [
+        18,
+        2
+      ]
+    },
+    {
+      "source": [
+        17,
+        2
+      ],
+      "target": [
+        18,
+        0
+      ]
+    },
+    {
+      "source": [
+        18,
+        0
+      ],
+      "target": [
+        19,
+        1
+      ]
+    },
+    {
+      "source": [
+        18,
+        1
+      ],
+      "target": [
+        19,
+        2
+      ]
+    },
+    {
+      "source": [
+        18,
+        2
+      ],
+      "target": [
+        19,
+        0
+      ]
+    },
+    {
+      "source": [
+        19,
+        0
+      ],
+      "target": [
+        20,
+        0
+      ]
+    },
+    {
+      "source": [
+        19,
+        1
+      ],
+      "target": [
+        20,
+        2
+      ]
+    },
+    {
+      "source": [
+        19,
+        2
+      ],
+      "target": [
+        20,
+        1
+      ]
+    },
+    {
+      "source": [
+        2,
+        0
+      ],
+      "target": [
+        3,
+        2
+      ]
+    },
+    {
+      "source": [
+        2,
+        1
+      ],
+      "target": [
+        3,
+        0
+      ]
+    },
+    {
+      "source": [
+        2,
+        2
+      ],
+      "target": [
+        3,
+        1
+      ]
+    },
+    {
+      "source": [
+        20,
+        0
+      ],
+      "target": [
+        21,
+        2
+      ]
+    },
+    {
+      "source": [
+        20,
+        1
+      ],
+      "target": [
+        21,
+        0
+      ]
+    },
+    {
+      "source": [
+        20,
+        2
+      ],
+      "target": [
+        21,
+        1
+      ]
+    },
+    {
+      "source": [
+        21,
+        0
+      ],
+      "target": [
+        22,
+        0
+      ]
+    },
+    {
+      "source": [
+        21,
+        1
+      ],
+      "target": [
+        22,
+        2
+      ]
+    },
+    {
+      "source": [
+        21,
+        2
+      ],
+      "target": [
+        22,
+        1
+      ]
+    },
+    {
+      "source": [
+        22,
+        0
+      ],
+      "target": [
+        23,
+        2
+      ]
+    },
+    {
+      "source": [
+        22,
+        1
+      ],
+      "target": [
+        23,
+        0
+      ]
+    },
+    {
+      "source": [
+        22,
+        2
+      ],
+      "target": [
+        23,
+        1
+      ]
+    },
+    {
+      "source": [
+        23,
+        0
+      ],
+      "target": [
+        24,
+        1
+      ]
+    },
+    {
+      "source": [
+        23,
+        1
+      ],
+      "target": [
+        24,
+        2
+      ]
+    },
+    {
+      "source": [
+        23,
+        2
+      ],
+      "target": [
+        24,
+        0
+      ]
+    },
+    {
+      "source": [
+        24,
+        0
+      ],
+      "target": [
+        25,
+        1
+      ]
+    },
+    {
+      "source": [
+        24,
+        1
+      ],
+      "target": [
+        25,
+        2
+      ]
+    },
+    {
+      "source": [
+        24,
+        2
+      ],
+      "target": [
+        25,
+        0
+      ]
+    },
+    {
+      "source": [
+        25,
+        0
+      ],
+      "target": [
+        26,
+        1
+      ]
+    },
+    {
+      "source": [
+        25,
+        1
+      ],
+      "target": [
+        26,
+        0
+      ]
+    },
+    {
+      "source": [
+        25,
+        2
+      ],
+      "target": [
+        26,
+        2
+      ]
+    },
+    {
+      "source": [
+        26,
+        0
+      ],
+      "target": [
+        27,
+        1
+      ]
+    },
+    {
+      "source": [
+        26,
+        1
+      ],
+      "target": [
+        27,
+        2
+      ]
+    },
+    {
+      "source": [
+        26,
+        2
+      ],
+      "target": [
+        27,
+        0
+      ]
+    },
+    {
+      "source": [
+        27,
+        0
+      ],
+      "target": [
+        28,
+        1
+      ]
+    },
+    {
+      "source": [
+        27,
+        1
+      ],
+      "target": [
+        28,
+        2
+      ]
+    },
+    {
+      "source": [
+        27,
+        2
+      ],
+      "target": [
+        28,
+        0
+      ]
+    },
+    {
+      "source": [
+        28,
+        0
+      ],
+      "target": [
+        29,
+        0
+      ]
+    },
+    {
+      "source": [
+        28,
+        1
+      ],
+      "target": [
+        29,
+        2
+      ]
+    },
+    {
+      "source": [
+        28,
+        2
+      ],
+      "target": [
+        29,
+        1
+      ]
+    },
+    {
+      "source": [
+        29,
+        0
+      ],
+      "target": [
+        30,
+        2
+      ]
+    },
+    {
+      "source": [
+        29,
+        1
+      ],
+      "target": [
+        30,
+        0
+      ]
+    },
+    {
+      "source": [
+        29,
+        2
+      ],
+      "target": [
+        30,
+        1
+      ]
+    },
+    {
+      "source": [
+        3,
+        0
+      ],
+      "target": [
+        4,
+        2
+      ]
+    },
+    {
+      "source": [
+        3,
+        1
+      ],
+      "target": [
+        4,
+        1
+      ]
+    },
+    {
+      "source": [
+        3,
+        2
+      ],
+      "target": [
+        4,
+        0
+      ]
+    },
+    {
+      "source": [
+        30,
+        0
+      ],
+      "target": [
+        31,
+        0
+      ]
+    },
+    {
+      "source": [
+        30,
+        1
+      ],
+      "target": [
+        31,
+        2
+      ]
+    },
+    {
+      "source": [
+        30,
+        2
+      ],
+      "target": [
+        31,
+        1
+      ]
+    },
+    {
+      "source": [
+        31,
+        0
+      ],
+      "target": [
+        32,
+        1
+      ]
+    },
+    {
+      "source": [
+        31,
+        1
+      ],
+      "target": [
+        32,
+        2
+      ]
+    },
+    {
+      "source": [
+        31,
+        2
+      ],
+      "target": [
+        32,
+        0
+      ]
+    },
+    {
+      "source": [
+        32,
+        0
+      ],
+      "target": [
+        33,
+        0
+      ]
+    },
+    {
+      "source": [
+        32,
+        1
+      ],
+      "target": [
+        33,
+        2
+      ]
+    },
+    {
+      "source": [
+        32,
+        2
+      ],
+      "target": [
+        33,
+        1
+      ]
+    },
+    {
+      "source": [
+        33,
+        0
+      ],
+      "target": [
+        34,
+        1
+      ]
+    },
+    {
+      "source": [
+        33,
+        1
+      ],
+      "target": [
+        34,
+        0
+      ]
+    },
+    {
+      "source": [
+        33,
+        2
+      ],
+      "target": [
+        34,
+        2
+      ]
+    },
+    {
+      "source": [
+        34,
+        0
+      ],
+      "target": [
+        35,
+        0
+      ]
+    },
+    {
+      "source": [
+        34,
+        1
+      ],
+      "target": [
+        35,
+        2
+      ]
+    },
+    {
+      "source": [
+        34,
+        2
+      ],
+      "target": [
+        35,
+        1
+      ]
+    },
+    {
+      "source": [
+        35,
+        0
+      ],
+      "target": [
+        36,
+        2
+      ]
+    },
+    {
+      "source": [
+        35,
+        1
+      ],
+      "target": [
+        36,
+        1
+      ]
+    },
+    {
+      "source": [
+        35,
+        2
+      ],
+      "target": [
+        36,
+        0
+      ]
+    },
+    {
+      "source": [
+        36,
+        0
+      ],
+      "target": [
+        37,
+        1
+      ]
+    },
+    {
+      "source": [
+        36,
+        1
+      ],
+      "target": [
+        37,
+        0
+      ]
+    },
+    {
+      "source": [
+        36,
+        2
+      ],
+      "target": [
+        37,
+        2
+      ]
+    },
+    {
+      "source": [
+        37,
+        0
+      ],
+      "target": [
+        38,
+        2
+      ]
+    },
+    {
+      "source": [
+        37,
+        1
+      ],
+      "target": [
+        38,
+        0
+      ]
+    },
+    {
+      "source": [
+        37,
+        2
+      ],
+      "target": [
+        38,
+        1
+      ]
+    },
+    {
+      "source": [
+        38,
+        0
+      ],
+      "target": [
+        39,
+        1
+      ]
+    },
+    {
+      "source": [
+        38,
+        1
+      ],
+      "target": [
+        39,
+        2
+      ]
+    },
+    {
+      "source": [
+        38,
+        2
+      ],
+      "target": [
+        39,
+        0
+      ]
+    },
+    {
+      "source": [
+        39,
+        0
+      ],
+      "target": [
+        40,
+        2
+      ]
+    },
+    {
+      "source": [
+        39,
+        1
+      ],
+      "target": [
+        40,
+        0
+      ]
+    },
+    {
+      "source": [
+        39,
+        2
+      ],
+      "target": [
+        40,
+        1
+      ]
+    },
+    {
+      "source": [
+        4,
+        0
+      ],
+      "target": [
+        5,
+        1
+      ]
+    },
+    {
+      "source": [
+        4,
+        1
+      ],
+      "target": [
+        5,
+        0
+      ]
+    },
+    {
+      "source": [
+        4,
+        2
+      ],
+      "target": [
+        5,
+        2
+      ]
+    },
+    {
+      "source": [
+        40,
+        0
+      ],
+      "target": [
+        41,
+        0
+      ]
+    },
+    {
+      "source": [
+        40,
+        1
+      ],
+      "target": [
+        41,
+        1
+      ]
+    },
+    {
+      "source": [
+        40,
+        2
+      ],
+      "target": [
+        41,
+        2
+      ]
+    },
+    {
+      "source": [
+        41,
+        0
+      ],
+      "target": [
+        42,
+        0
+      ]
+    },
+    {
+      "source": [
+        41,
+        1
+      ],
+      "target": [
+        42,
+        2
+      ]
+    },
+    {
+      "source": [
+        41,
+        2
+      ],
+      "target": [
+        42,
+        1
+      ]
+    },
+    {
+      "source": [
+        42,
+        0
+      ],
+      "target": [
+        43,
+        0
+      ]
+    },
+    {
+      "source": [
+        42,
+        1
+      ],
+      "target": [
+        43,
+        1
+      ]
+    },
+    {
+      "source": [
+        42,
+        2
+      ],
+      "target": [
+        43,
+        2
+      ]
+    },
+    {
+      "source": [
+        43,
+        0
+      ],
+      "target": [
+        44,
+        1
+      ]
+    },
+    {
+      "source": [
+        43,
+        1
+      ],
+      "target": [
+        44,
+        2
+      ]
+    },
+    {
+      "source": [
+        43,
+        2
+      ],
+      "target": [
+        44,
+        0
+      ]
+    },
+    {
+      "source": [
+        44,
+        0
+      ],
+      "target": [
+        45,
+        0
+      ]
+    },
+    {
+      "source": [
+        44,
+        1
+      ],
+      "target": [
+        45,
+        2
+      ]
+    },
+    {
+      "source": [
+        44,
+        2
+      ],
+      "target": [
+        45,
+        1
+      ]
+    },
+    {
+      "source": [
+        45,
+        0
+      ],
+      "target": [
+        46,
+        0
+      ]
+    },
+    {
+      "source": [
+        45,
+        1
+      ],
+      "target": [
+        46,
+        1
+      ]
+    },
+    {
+      "source": [
+        45,
+        2
+      ],
+      "target": [
+        46,
+        2
+      ]
+    },
+    {
+      "source": [
+        46,
+        0
+      ],
+      "target": [
+        47,
+        0
+      ]
+    },
+    {
+      "source": [
+        46,
+        1
+      ],
+      "target": [
+        47,
+        1
+      ]
+    },
+    {
+      "source": [
+        46,
+        2
+      ],
+      "target": [
+        47,
+        2
+      ]
+    },
+    {
+      "source": [
+        47,
+        0
+      ],
+      "target": [
+        48,
+        2
+      ]
+    },
+    {
+      "source": [
+        47,
+        1
+      ],
+      "target": [
+        48,
+        0
+      ]
+    },
+    {
+      "source": [
+        47,
+        2
+      ],
+      "target": [
+        48,
+        1
+      ]
+    },
+    {
+      "source": [
+        48,
+        0
+      ],
+      "target": [
+        49,
+        0
+      ]
+    },
+    {
+      "source": [
+        48,
+        1
+      ],
+      "target": [
+        49,
+        2
+      ]
+    },
+    {
+      "source": [
+        48,
+        2
+      ],
+      "target": [
+        49,
+        1
+      ]
+    },
+    {
+      "source": [
+        49,
+        0
+      ],
+      "target": [
+        50,
+        2
+      ]
+    },
+    {
+      "source": [
+        49,
+        1
+      ],
+      "target": [
+        50,
+        1
+      ]
+    },
+    {
+      "source": [
+        49,
+        2
+      ],
+      "target": [
+        50,
+        0
+      ]
+    },
+    {
+      "source": [
+        5,
+        0
+      ],
+      "target": [
+        6,
+        0
+      ]
+    },
+    {
+      "source": [
+        5,
+        1
+      ],
+      "target": [
+        6,
+        2
+      ]
+    },
+    {
+      "source": [
+        5,
+        2
+      ],
+      "target": [
+        6,
+        1
+      ]
+    },
+    {
+      "source": [
+        50,
+        0
+      ],
+      "target": [
+        51,
+        2
+      ]
+    },
+    {
+      "source": [
+        50,
+        1
+      ],
+      "target": [
+        51,
+        0
+      ]
+    },
+    {
+      "source": [
+        50,
+        2
+      ],
+      "target": [
+        51,
+        1
+      ]
+    },
+    {
+      "source": [
+        51,
+        0
+      ],
+      "target": [
+        52,
+        2
+      ]
+    },
+    {
+      "source": [
+        51,
+        1
+      ],
+      "target": [
+        52,
+        1
+      ]
+    },
+    {
+      "source": [
+        51,
+        2
+      ],
+      "target": [
+        52,
+        0
+      ]
+    },
+    {
+      "source": [
+        52,
+        0
+      ],
+      "target": [
+        53,
+        0
+      ]
+    },
+    {
+      "source": [
+        52,
+        1
+      ],
+      "target": [
+        53,
+        1
+      ]
+    },
+    {
+      "source": [
+        52,
+        2
+      ],
+      "target": [
+        53,
+        2
+      ]
+    },
+    {
+      "source": [
+        53,
+        0
+      ],
+      "target": [
+        54,
+        1
+      ]
+    },
+    {
+      "source": [
+        53,
+        1
+      ],
+      "target": [
+        54,
+        0
+      ]
+    },
+    {
+      "source": [
+        53,
+        2
+      ],
+      "target": [
+        54,
+        2
+      ]
+    },
+    {
+      "source": [
+        54,
+        0
+      ],
+      "target": [
+        55,
+        2
+      ]
+    },
+    {
+      "source": [
+        54,
+        1
+      ],
+      "target": [
+        55,
+        0
+      ]
+    },
+    {
+      "source": [
+        54,
+        2
+      ],
+      "target": [
+        55,
+        1
+      ]
+    },
+    {
+      "source": [
+        55,
+        0
+      ],
+      "target": [
+        56,
+        1
+      ]
+    },
+    {
+      "source": [
+        55,
+        1
+      ],
+      "target": [
+        56,
+        0
+      ]
+    },
+    {
+      "source": [
+        55,
+        2
+      ],
+      "target": [
+        56,
+        2
+      ]
+    },
+    {
+      "source": [
+        56,
+        0
+      ],
+      "target": [
+        57,
+        0
+      ]
+    },
+    {
+      "source": [
+        56,
+        1
+      ],
+      "target": [
+        57,
+        1
+      ]
+    },
+    {
+      "source": [
+        56,
+        2
+      ],
+      "target": [
+        57,
+        2
+      ]
+    },
+    {
+      "source": [
+        57,
+        0
+      ],
+      "target": [
+        58,
+        0
+      ]
+    },
+    {
+      "source": [
+        57,
+        1
+      ],
+      "target": [
+        58,
+        1
+      ]
+    },
+    {
+      "source": [
+        57,
+        2
+      ],
+      "target": [
+        58,
+        2
+      ]
+    },
+    {
+      "source": [
+        58,
+        0
+      ],
+      "target": [
+        59,
+        0
+      ]
+    },
+    {
+      "source": [
+        58,
+        1
+      ],
+      "target": [
+        59,
+        1
+      ]
+    },
+    {
+      "source": [
+        58,
+        2
+      ],
+      "target": [
+        59,
+        2
+      ]
+    },
+    {
+      "source": [
+        59,
+        0
+      ],
+      "target": [
+        60,
+        1
+      ]
+    },
+    {
+      "source": [
+        59,
+        1
+      ],
+      "target": [
+        60,
+        2
+      ]
+    },
+    {
+      "source": [
+        59,
+        2
+      ],
+      "target": [
+        60,
+        0
+      ]
+    },
+    {
+      "source": [
+        6,
+        0
+      ],
+      "target": [
+        7,
+        1
+      ]
+    },
+    {
+      "source": [
+        6,
+        1
+      ],
+      "target": [
+        7,
+        0
+      ]
+    },
+    {
+      "source": [
+        6,
+        2
+      ],
+      "target": [
+        7,
+        2
+      ]
+    },
+    {
+      "source": [
+        60,
+        0
+      ],
+      "target": "Exit"
+    },
+    {
+      "source": [
+        60,
+        1
+      ],
+      "target": "Exit"
+    },
+    {
+      "source": [
+        60,
+        2
+      ],
+      "target": "Exit"
+    },
+    {
+      "source": [
+        7,
+        0
+      ],
+      "target": [
+        8,
+        0
+      ]
+    },
+    {
+      "source": [
+        7,
+        1
+      ],
+      "target": [
+        8,
+        1
+      ]
+    },
+    {
+      "source": [
+        7,
+        2
+      ],
+      "target": [
+        8,
+        2
+      ]
+    },
+    {
+      "source": [
+        8,
+        0
+      ],
+      "target": [
+        9,
+        1
+      ]
+    },
+    {
+      "source": [
+        8,
+        1
+      ],
+      "target": [
+        9,
+        0
+      ]
+    },
+    {
+      "source": [
+        8,
+        2
+      ],
+      "target": [
+        9,
+        2
+      ]
+    },
+    {
+      "source": [
+        9,
+        0
+      ],
+      "target": [
+        10,
+        0
+      ]
+    },
+    {
+      "source": [
+        9,
+        1
+      ],
+      "target": [
+        10,
+        2
+      ]
+    },
+    {
+      "source": [
+        9,
+        2
+      ],
+      "target": [
+        10,
+        1
+      ]
+    }
+  ],
+  "events": [],
+  "nodes": [
+    {
+      "frame": 1,
+      "id": 0,
+      "actor": "B",
+      "true_position": [
+        194.68779130457708,
+        181.2
+      ],
+      "observed_position": [
+        194.40718412296036,
+        181.5799007990956
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.2787981354254,
+      "observed_volume": 192.45993455637313,
+      "is_false_positive": false
+    },
+    {
+      "frame": 1,
+      "id": 1,
+      "actor": "independent",
+      "true_position": [
+        350.0,
+        270.0
+      ],
+      "observed_position": [
+        350.4314402556867,
+        270.02996257555515
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 89.25184573365604,
+      "observed_volume": 219.5011789097767,
+      "is_false_positive": false
+    },
+    {
+      "frame": 1,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        185.68623289557863,
+        180
+      ],
+      "observed_position": [
+        186.18797350306826,
+        181.11969667063158
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 82.68259530891854,
+      "observed_volume": 206.34211424362974,
+      "is_false_positive": false
+    },
+    {
+      "frame": 2,
+      "id": 0,
+      "actor": "A",
+      "true_position": [
+        185.8697280972395,
+        205
+      ],
+      "observed_position": [
+        184.99041634775892,
+        205.0140200397577
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 83.47864914779319,
+      "observed_volume": 204.25582616295546,
+      "is_false_positive": false
+    },
+    {
+      "frame": 2,
+      "id": 1,
+      "actor": "B",
+      "true_position": [
+        194.87248378052408,
+        206.2
+      ],
+      "observed_position": [
+        194.3597600422739,
+        206.20841138640628
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.96789601327278,
+      "observed_volume": 195.3593225123914,
+      "is_false_positive": false
+    },
+    {
+      "frame": 2,
+      "id": 2,
+      "actor": "independent",
+      "true_position": [
+        349.3,
+        292.7
+      ],
+      "observed_position": [
+        349.18199977421784,
+        292.64289832603686
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 86.67426195705619,
+      "observed_volume": 221.31891488143745,
+      "is_false_positive": false
+    },
+    {
+      "frame": 3,
+      "id": 0,
+      "actor": "B",
+      "true_position": [
+        195.05179694181373,
+        231.2
+      ],
+      "observed_position": [
+        194.56364155352267,
+        231.46638093211388
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 79.12071283828473,
+      "observed_volume": 197.4159372094284,
+      "is_false_positive": false
+    },
+    {
+      "frame": 3,
+      "id": 1,
+      "actor": "independent",
+      "true_position": [
+        348.6,
+        315.4
+      ],
+      "observed_position": [
+        349.3105383493934,
+        315.14132813521417
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 87.97587725974466,
+      "observed_volume": 221.94350604542993,
+      "is_false_positive": false
+    },
+    {
+      "frame": 3,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        186.04702064544443,
+        230
+      ],
+      "observed_position": [
+        186.6610198614065,
+        229.643491298582
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 84.13679222556559,
+      "observed_volume": 204.28460648855787,
+      "is_false_positive": false
+    },
+    {
+      "frame": 4,
+      "id": 0,
+      "actor": "A",
+      "true_position": [
+        186.21508100579763,
+        255
+      ],
+      "observed_position": [
+        186.56808685729305,
+        254.69848697613543
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 82.5573700673256,
+      "observed_volume": 202.16037506686058,
+      "is_false_positive": false
+    },
+    {
+      "frame": 4,
+      "id": 1,
+      "actor": "independent",
+      "true_position": [
+        347.9,
+        338.1
+      ],
+      "observed_position": [
+        347.1986473596097,
+        338.05324865060396
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.93636436556972,
+      "observed_volume": 220.01806236954747,
+      "is_false_positive": false
+    },
+    {
+      "frame": 4,
+      "id": 2,
+      "actor": "B",
+      "true_position": [
+        195.22319561001495,
+        256.2
+      ],
+      "observed_position": [
+        195.35318143142942,
+        256.56761827638076
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 76.19308076715605,
+      "observed_volume": 195.7651311574237,
+      "is_false_positive": false
+    },
+    {
+      "frame": 5,
+      "id": 0,
+      "actor": "independent",
+      "true_position": [
+        347.2,
+        360.8
+      ],
+      "observed_position": [
+        347.31167651907845,
+        360.81567046517335
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.36622413040479,
+      "observed_volume": 220.1330238086611,
+      "is_false_positive": false
+    },
+    {
+      "frame": 5,
+      "id": 1,
+      "actor": "A",
+      "true_position": [
+        186.3708893199339,
+        280
+      ],
+      "observed_position": [
+        186.79608914453635,
+        280.7335984506809
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 82.59586587508007,
+      "observed_volume": 203.49284596514525,
+      "is_false_positive": false
+    },
+    {
+      "frame": 5,
+      "id": 2,
+      "actor": "B",
+      "true_position": [
+        195.38440249888748,
+        281.2
+      ],
+      "observed_position": [
+        196.24121714629194,
+        281.23138816893896
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 77.26306307038841,
+      "observed_volume": 195.28009206326624,
+      "is_false_positive": false
+    },
+    {
+      "frame": 6,
+      "id": 0,
+      "actor": "independent",
+      "true_position": [
+        346.5,
+        383.5
+      ],
+      "observed_position": [
+        346.66792850139336,
+        383.39618271276805
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 86.77752037673113,
+      "observed_volume": 220.94013476534187,
+      "is_false_positive": false
+    },
+    {
+      "frame": 6,
+      "id": 1,
+      "actor": "B",
+      "true_position": [
+        195.53348703062957,
+        306.2
+      ],
+      "observed_position": [
+        195.8549161261828,
+        306.6023989755027
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 76.57450980143582,
+      "observed_volume": 192.80586072331946,
+      "is_false_positive": false
+    },
+    {
+      "frame": 6,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        186.51142924944045,
+        305
+      ],
+      "observed_position": [
+        186.4925130394495,
+        304.7614787945968
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 80.99202521292258,
+      "observed_volume": 202.1951499484424,
+      "is_false_positive": false
+    },
+    {
+      "frame": 7,
+      "id": 0,
+      "actor": "B",
+      "true_position": [
+        195.66896141426295,
+        331.2
+      ],
+      "observed_position": [
+        195.43467495370922,
+        330.95595549305943
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.75896389998898,
+      "observed_volume": 197.2075731342095,
+      "is_false_positive": false
+    },
+    {
+      "frame": 7,
+      "id": 1,
+      "actor": "independent",
+      "true_position": [
+        345.8,
+        406.2
+      ],
+      "observed_position": [
+        346.0616664925316,
+        405.56246680614174
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.44665832943802,
+      "observed_volume": 221.6908092643418,
+      "is_false_positive": false
+    },
+    {
+      "frame": 7,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        186.6336690924451,
+        330
+      ],
+      "observed_position": [
+        186.82069800628355,
+        329.8516097024307
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 80.65270126481231,
+      "observed_volume": 203.57762896010135,
+      "is_false_positive": false
+    },
+    {
+      "frame": 8,
+      "id": 0,
+      "actor": "B",
+      "true_position": [
+        195.7898811663924,
+        356.2
+      ],
+      "observed_position": [
+        195.58716169890934,
+        355.7726232306809
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.9567916909162,
+      "observed_volume": 195.72483322224346,
+      "is_false_positive": false
+    },
+    {
+      "frame": 8,
+      "id": 1,
+      "actor": "independent",
+      "true_position": [
+        345.1,
+        428.9
+      ],
+      "observed_position": [
+        345.40164154887935,
+        428.757316093494
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 89.04924626439654,
+      "observed_volume": 219.51869345944584,
+      "is_false_positive": false
+    },
+    {
+      "frame": 8,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        186.73453178803126,
+        355
+      ],
+      "observed_position": [
+        186.7815618206385,
+        355.12098108379155
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 82.01209953498173,
+      "observed_volume": 206.63039291266438,
+      "is_false_positive": false
+    },
+    {
+      "frame": 9,
+      "id": 0,
+      "actor": "independent",
+      "true_position": [
+        344.4,
+        451.6
+      ],
+      "observed_position": [
+        344.3642923372299,
+        452.1602795529238
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 87.86895619277301,
+      "observed_volume": 218.0791206781759,
+      "is_false_positive": false
+    },
+    {
+      "frame": 9,
+      "id": 1,
+      "actor": "B",
+      "true_position": [
+        195.89594451530334,
+        381.2
+      ],
+      "observed_position": [
+        195.97364345836215,
+        381.6613270371604
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.82002209679027,
+      "observed_volume": 197.49321720053578,
+      "is_false_positive": false
+    },
+    {
+      "frame": 9,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        186.81085826699396,
+        380
+      ],
+      "observed_position": [
+        186.56147897610134,
+        380.4638345392401
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 81.44766839420558,
+      "observed_volume": 203.680669687724,
+      "is_false_positive": false
+    },
+    {
+      "frame": 10,
+      "id": 0,
+      "actor": "independent",
+      "true_position": [
+        343.7,
+        474.29999999999995
+      ],
+      "observed_position": [
+        343.46534173867525,
+        474.09730098986427
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.62449883873751,
+      "observed_volume": 221.57449620064642,
+      "is_false_positive": false
+    },
+    {
+      "frame": 10,
+      "id": 1,
+      "actor": "A",
+      "true_position": [
+        186.8593721929228,
+        405
+      ],
+      "observed_position": [
+        186.5460821674175,
+        405.3666903607294
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 81.81904096342471,
+      "observed_volume": 201.7430169957857,
+      "is_false_positive": false
+    },
+    {
+      "frame": 10,
+      "id": 2,
+      "actor": "B",
+      "true_position": [
+        195.98758166514395,
+        406.2
+      ],
+      "observed_position": [
+        196.4274846341409,
+        406.1670406697638
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.34662138345243,
+      "observed_volume": 193.35687139444843,
+      "is_false_positive": false
+    },
+    {
+      "frame": 11,
+      "id": 0,
+      "actor": "B",
+      "true_position": [
+        196.06602104956696,
+        431.2
+      ],
+      "observed_position": [
+        195.29951795298862,
+        430.7159073066978
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 80.06163629224575,
+      "observed_volume": 196.1360120417755,
+      "is_false_positive": false
+    },
+    {
+      "frame": 11,
+      "id": 1,
+      "actor": "independent",
+      "true_position": [
+        343.0,
+        497.0
+      ],
+      "observed_position": [
+        343.5168014992436,
+        496.97672441115327
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 89.95590483952131,
+      "observed_volume": 219.62552206061835,
+      "is_false_positive": false
+    },
+    {
+      "frame": 11,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        186.87665812150252,
+        430
+      ],
+      "observed_position": [
+        186.93346201682567,
+        429.5970868350058
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 80.38757876996218,
+      "observed_volume": 204.3318849373607,
+      "is_false_positive": false
+    },
+    {
+      "frame": 12,
+      "id": 0,
+      "actor": "B",
+      "true_position": [
+        196.13331611275254,
+        456.2
+      ],
+      "observed_position": [
+        196.18698374870078,
+        455.9786472927736
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.62961028037462,
+      "observed_volume": 195.70623742608677,
+      "is_false_positive": false
+    },
+    {
+      "frame": 12,
+      "id": 1,
+      "actor": "A",
+      "true_position": [
+        186.8591688470596,
+        455
+      ],
+      "observed_position": [
+        186.80808898473214,
+        454.70293603615954
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 81.57566811943076,
+      "observed_volume": 204.516597243101,
+      "is_false_positive": false
+    },
+    {
+      "frame": 12,
+      "id": 2,
+      "actor": "independent",
+      "true_position": [
+        342.3,
+        519.7
+      ],
+      "observed_position": [
+        342.2646352103803,
+        519.2316836727409
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 89.09851369409222,
+      "observed_volume": 216.1027946654687,
+      "is_false_positive": false
+    },
+    {
+      "frame": 13,
+      "id": 0,
+      "actor": "independent",
+      "true_position": [
+        341.6,
+        542.4
+      ],
+      "observed_position": [
+        341.16007292072055,
+        542.6840765185209
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 87.94651864457285,
+      "observed_volume": 221.50079821792795,
+      "is_false_positive": false
+    },
+    {
+      "frame": 13,
+      "id": 1,
+      "actor": "A",
+      "true_position": [
+        186.80328026666953,
+        480
+      ],
+      "observed_position": [
+        187.08341003078377,
+        480.89485975108465
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 81.73357797818636,
+      "observed_volume": 210.14647161405483,
+      "is_false_positive": false
+    },
+    {
+      "frame": 13,
+      "id": 2,
+      "actor": "B",
+      "true_position": [
+        196.19231375494994,
+        481.2
+      ],
+      "observed_position": [
+        196.32212185911254,
+        481.3177106753173
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 79.72303098933341,
+      "observed_volume": 195.79470217990146,
+      "is_false_positive": false
+    },
+    {
+      "frame": 14,
+      "id": 0,
+      "actor": "A",
+      "true_position": [
+        186.70541232875934,
+        505
+      ],
+      "observed_position": [
+        186.82484619350618,
+        504.78095447628897
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 81.0983522554094,
+      "observed_volume": 204.62239666622452,
+      "is_false_positive": false
+    },
+    {
+      "frame": 14,
+      "id": 1,
+      "actor": "B",
+      "true_position": [
+        196.24654551186245,
+        506.2
+      ],
+      "observed_position": [
+        195.9136094673676,
+        506.11919884200677
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 77.62043279459819,
+      "observed_volume": 193.91022683099803,
+      "is_false_positive": false
+    },
+    {
+      "frame": 14,
+      "id": 2,
+      "actor": "independent",
+      "true_position": [
+        340.9,
+        565.0999999999999
+      ],
+      "observed_position": [
+        341.3295869474433,
+        564.9699389762228
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 87.57533561437361,
+      "observed_volume": 219.5841051426497,
+      "is_false_positive": false
+    },
+    {
+      "frame": 15,
+      "id": 0,
+      "actor": "independent",
+      "true_position": [
+        340.2,
+        587.8
+      ],
+      "observed_position": [
+        339.91625966220033,
+        587.486201392188
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.3688609073621,
+      "observed_volume": 219.2345726020156,
+      "is_false_positive": false
+    },
+    {
+      "frame": 15,
+      "id": 1,
+      "actor": "B",
+      "true_position": [
+        196.30002595838107,
+        531.2
+      ],
+      "observed_position": [
+        196.23360984579594,
+        531.5959058847872
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 79.4794132484562,
+      "observed_volume": 193.80601974948672,
+      "is_false_positive": false
+    },
+    {
+      "frame": 15,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        186.562231386448,
+        530
+      ],
+      "observed_position": [
+        186.76495156414782,
+        529.7569214763379
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 81.23223293067387,
+      "observed_volume": 205.29759260448446,
+      "is_false_positive": false
+    },
+    {
+      "frame": 16,
+      "id": 0,
+      "actor": "B",
+      "true_position": [
+        196.35695061346217,
+        556.2
+      ],
+      "observed_position": [
+        196.1115566579172,
+        555.6319243204084
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.88976518039516,
+      "observed_volume": 193.9234621538069,
+      "is_false_positive": false
+    },
+    {
+      "frame": 16,
+      "id": 1,
+      "actor": "independent",
+      "true_position": [
+        339.5,
+        610.5
+      ],
+      "observed_position": [
+        339.610817072579,
+        610.3945647660897
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 87.9227671649092,
+      "observed_volume": 221.24105327728353,
+      "is_false_positive": false
+    },
+    {
+      "frame": 16,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        186.37094166701485,
+        555
+      ],
+      "observed_position": [
+        186.18378914395285,
+        555.2872814521063
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 81.15065255476685,
+      "observed_volume": 205.9461924483831,
+      "is_false_positive": false
+    },
+    {
+      "frame": 17,
+      "id": 0,
+      "actor": "A",
+      "true_position": [
+        186.12966135075223,
+        580
+      ],
+      "observed_position": [
+        186.03861910838572,
+        580.195824175985
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 80.4666627630695,
+      "observed_volume": 206.4020650222229,
+      "is_false_positive": false
+    },
+    {
+      "frame": 17,
+      "id": 1,
+      "actor": "independent",
+      "true_position": [
+        338.8,
+        633.2
+      ],
+      "observed_position": [
+        338.5658979502548,
+        633.3409789554997
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.3878920994931,
+      "observed_volume": 219.91042065683965,
+      "is_false_positive": false
+    },
+    {
+      "frame": 17,
+      "id": 2,
+      "actor": "B",
+      "true_position": [
+        196.42129801870314,
+        581.2
+      ],
+      "observed_position": [
+        196.4664355820035,
+        581.109189404129
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.042431097891,
+      "observed_volume": 194.01954372016442,
+      "is_false_positive": false
+    },
+    {
+      "frame": 18,
+      "id": 0,
+      "actor": "B",
+      "true_position": [
+        196.4963569507193,
+        606.2
+      ],
+      "observed_position": [
+        196.37622215023478,
+        605.6625564208118
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 76.78137683930083,
+      "observed_volume": 197.01559709047118,
+      "is_false_positive": false
+    },
+    {
+      "frame": 18,
+      "id": 1,
+      "actor": "A",
+      "true_position": [
+        185.83786263994443,
+        605
+      ],
+      "observed_position": [
+        186.08763443135211,
+        604.9306537098016
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 80.62109513855613,
+      "observed_volume": 206.1218133428051,
+      "is_false_positive": false
+    },
+    {
+      "frame": 18,
+      "id": 2,
+      "actor": "independent",
+      "true_position": [
+        338.1,
+        655.9
+      ],
+      "observed_position": [
+        337.8070417609869,
+        656.259805454935
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 89.83703471448344,
+      "observed_volume": 220.28279219993587,
+      "is_false_positive": false
+    },
+    {
+      "frame": 19,
+      "id": 0,
+      "actor": "independent",
+      "true_position": [
+        337.4,
+        678.5999999999999
+      ],
+      "observed_position": [
+        337.5947779793471,
+        679.3198661550613
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.22996192300474,
+      "observed_volume": 218.22296904480083,
+      "is_false_positive": false
+    },
+    {
+      "frame": 19,
+      "id": 1,
+      "actor": "B",
+      "true_position": [
+        196.58421802593452,
+        631.2
+      ],
+      "observed_position": [
+        197.27944431735162,
+        631.3952005002717
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 76.80367081781456,
+      "observed_volume": 194.60112218332375,
+      "is_false_positive": false
+    },
+    {
+      "frame": 19,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        185.4968370699253,
+        630
+      ],
+      "observed_position": [
+        185.79260270423984,
+        630.4305359793975
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 81.74300834821881,
+      "observed_volume": 207.03919223204858,
+      "is_false_positive": false
+    },
+    {
+      "frame": 20,
+      "id": 0,
+      "actor": "independent",
+      "true_position": [
+        336.7,
+        701.3
+      ],
+      "observed_position": [
+        336.4123116038484,
+        701.5335020709533
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.70239698769193,
+      "observed_volume": 223.25197857807376,
+      "is_false_positive": false
+    },
+    {
+      "frame": 20,
+      "id": 1,
+      "actor": "A",
+      "true_position": [
+        185.11013017205588,
+        655
+      ],
+      "observed_position": [
+        184.5310657569238,
+        655.3209486315178
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 81.43365351856528,
+      "observed_volume": 205.0564576507256,
+      "is_false_positive": false
+    },
+    {
+      "frame": 20,
+      "id": 2,
+      "actor": "B",
+      "true_position": [
+        196.685286260256,
+        656.2
+      ],
+      "observed_position": [
+        197.15709293134643,
+        655.8826003878772
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 77.70764165938277,
+      "observed_volume": 193.69154130428117,
+      "is_false_positive": false
+    },
+    {
+      "frame": 21,
+      "id": 0,
+      "actor": "A",
+      "true_position": [
+        184.68387721613485,
+        680
+      ],
+      "observed_position": [
+        184.58654277026753,
+        680.1531413560326
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 82.42265400806379,
+      "observed_volume": 202.04756776213208,
+      "is_false_positive": false
+    },
+    {
+      "frame": 21,
+      "id": 1,
+      "actor": "B",
+      "true_position": [
+        196.79788367969545,
+        681.2
+      ],
+      "observed_position": [
+        197.3036035270846,
+        681.2989918461113
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 77.69760609405861,
+      "observed_volume": 192.6407346293028,
+      "is_false_positive": false
+    },
+    {
+      "frame": 21,
+      "id": 2,
+      "actor": "independent",
+      "true_position": [
+        336.0,
+        724.0
+      ],
+      "observed_position": [
+        335.98016141386137,
+        724.3312312614496
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.807622191472,
+      "observed_volume": 219.21869603504967,
+      "is_false_positive": false
+    },
+    {
+      "frame": 22,
+      "id": 0,
+      "actor": "A",
+      "true_position": [
+        184.22696800392782,
+        705
+      ],
+      "observed_position": [
+        183.69489265460425,
+        705.0675569449644
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 81.51149305790415,
+      "observed_volume": 205.12832423908208,
+      "is_false_positive": false
+    },
+    {
+      "frame": 22,
+      "id": 1,
+      "actor": "independent",
+      "true_position": [
+        335.3,
+        746.7
+      ],
+      "observed_position": [
+        335.3209341553445,
+        746.472218701016
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 86.67918299053446,
+      "observed_volume": 223.35691352280955,
+      "is_false_positive": false
+    },
+    {
+      "frame": 22,
+      "id": 2,
+      "actor": "B",
+      "true_position": [
+        196.91801497222917,
+        706.2
+      ],
+      "observed_position": [
+        196.75563845052315,
+        705.2896596124162
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.40354666258537,
+      "observed_volume": 191.58286476104638,
+      "is_false_positive": false
+    },
+    {
+      "frame": 23,
+      "id": 0,
+      "actor": "independent",
+      "true_position": [
+        334.6,
+        769.4
+      ],
+      "observed_position": [
+        334.6185274986825,
+        769.7097032399189
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 89.0427070274154,
+      "observed_volume": 220.29496529363848,
+      "is_false_positive": false
+    },
+    {
+      "frame": 23,
+      "id": 1,
+      "actor": "B",
+      "true_position": [
+        197.0393613696906,
+        731.2
+      ],
+      "observed_position": [
+        196.7816288850614,
+        731.335157500317
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.66170180074991,
+      "observed_volume": 196.16939184206055,
+      "is_false_positive": false
+    },
+    {
+      "frame": 23,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        183.75097661039968,
+        730
+      ],
+      "observed_position": [
+        183.80800280930728,
+        729.5704715617444
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 82.51621538526562,
+      "observed_volume": 201.8362296459618,
+      "is_false_positive": false
+    },
+    {
+      "frame": 24,
+      "id": 0,
+      "actor": "A",
+      "true_position": [
+        183.26981287084118,
+        755
+      ],
+      "observed_position": [
+        184.10009328911673,
+        755.4423039548371
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 82.01464232467282,
+      "observed_volume": 203.14173094150246,
+      "is_false_positive": false
+    },
+    {
+      "frame": 24,
+      "id": 1,
+      "actor": "independent",
+      "true_position": [
+        333.9,
+        792.1
+      ],
+      "observed_position": [
+        333.6356909502407,
+        792.2769078792697
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 87.32076210990081,
+      "observed_volume": 218.62298154801996,
+      "is_false_positive": false
+    },
+    {
+      "frame": 24,
+      "id": 2,
+      "actor": "B",
+      "true_position": [
+        197.15354715333842,
+        756.2
+      ],
+      "observed_position": [
+        196.7527283050596,
+        756.377056801867
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 75.81058245837362,
+      "observed_volume": 192.40187470282282,
+      "is_false_positive": false
+    },
+    {
+      "frame": 25,
+      "id": 0,
+      "actor": "B",
+      "true_position": [
+        197.25069057909394,
+        781.2
+      ],
+      "observed_position": [
+        196.61852100690768,
+        781.0223732841528
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.4740381519019,
+      "observed_volume": 193.81649420474062,
+      "is_false_positive": false
+    },
+    {
+      "frame": 25,
+      "id": 1,
+      "actor": "A",
+      "true_position": [
+        182.79908509759412,
+        780
+      ],
+      "observed_position": [
+        182.79734411584215,
+        779.4672126588905
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 82.27562148906114,
+      "observed_volume": 205.65318101774932,
+      "is_false_positive": false
+    },
+    {
+      "frame": 25,
+      "id": 2,
+      "actor": "independent",
+      "true_position": [
+        333.2,
+        814.8
+      ],
+      "observed_position": [
+        333.43747883983593,
+        814.4345497032174
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 90.13355946737286,
+      "observed_volume": 218.53196142910912,
+      "is_false_positive": false
+    },
+    {
+      "frame": 26,
+      "id": 0,
+      "actor": "A",
+      "true_position": [
+        182.3552040368231,
+        805
+      ],
+      "observed_position": [
+        182.3281407135581,
+        805.3931929289753
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 81.326665246437,
+      "observed_volume": 204.01146650750593,
+      "is_false_positive": false
+    },
+    {
+      "frame": 26,
+      "id": 1,
+      "actor": "B",
+      "true_position": [
+        197.32021055958657,
+        806.2
+      ],
+      "observed_position": [
+        197.77254228478148,
+        806.4383395916913
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 77.8960444582473,
+      "observed_volume": 193.9850294561725,
+      "is_false_positive": false
+    },
+    {
+      "frame": 26,
+      "id": 2,
+      "actor": "independent",
+      "true_position": [
+        332.5,
+        837.5
+      ],
+      "observed_position": [
+        332.7900104797829,
+        837.2793418256335
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.88361253732063,
+      "observed_volume": 221.43633887635272,
+      "is_false_positive": false
+    },
+    {
+      "frame": 27,
+      "id": 0,
+      "actor": "independent",
+      "true_position": [
+        331.8,
+        860.1999999999999
+      ],
+      "observed_position": [
+        331.6437521345798,
+        860.1481121229626
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 86.79784604350598,
+      "observed_volume": 220.5437031132437,
+      "is_false_positive": false
+    },
+    {
+      "frame": 27,
+      "id": 1,
+      "actor": "A",
+      "true_position": [
+        181.95430013294765,
+        830
+      ],
+      "observed_position": [
+        181.25978863110507,
+        830.1278017006525
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 83.23915506688859,
+      "observed_volume": 208.07904878768002,
+      "is_false_positive": false
+    },
+    {
+      "frame": 27,
+      "id": 2,
+      "actor": "B",
+      "true_position": [
+        197.35181842984628,
+        831.2
+      ],
+      "observed_position": [
+        197.1971305442572,
+        830.9124226195905
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 77.1592359010362,
+      "observed_volume": 200.04817124967772,
+      "is_false_positive": false
+    },
+    {
+      "frame": 28,
+      "id": 0,
+      "actor": "B",
+      "true_position": [
+        197.33658819549868,
+        856.2
+      ],
+      "observed_position": [
+        197.53401639165332,
+        855.9702914686798
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 77.80152822632303,
+      "observed_volume": 194.77505295414463,
+      "is_false_positive": false
+    },
+    {
+      "frame": 28,
+      "id": 1,
+      "actor": "independent",
+      "true_position": [
+        331.1,
+        882.9
+      ],
+      "observed_position": [
+        330.59912056064206,
+        883.4482642005506
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.16081026461167,
+      "observed_volume": 221.69486937917242,
+      "is_false_positive": false
+    },
+    {
+      "frame": 28,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        181.61106212143244,
+        855
+      ],
+      "observed_position": [
+        181.63161165339838,
+        855.2011296166042
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 81.23182756346833,
+      "observed_volume": 202.53730876313557,
+      "is_false_positive": false
+    },
+    {
+      "frame": 29,
+      "id": 0,
+      "actor": "B",
+      "true_position": [
+        197.26797623607467,
+        881.2
+      ],
+      "observed_position": [
+        197.20626114292617,
+        881.7111404652389
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 77.41416763949981,
+      "observed_volume": 194.644227988678,
+      "is_false_positive": false
+    },
+    {
+      "frame": 29,
+      "id": 1,
+      "actor": "A",
+      "true_position": [
+        181.33762739983052,
+        880
+      ],
+      "observed_position": [
+        180.46466811514404,
+        879.8739085813314
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 81.9861079617707,
+      "observed_volume": 207.6083199089094,
+      "is_false_positive": false
+    },
+    {
+      "frame": 29,
+      "id": 2,
+      "actor": "independent",
+      "true_position": [
+        330.4,
+        905.6
+      ],
+      "observed_position": [
+        330.3424313435567,
+        905.4114506642705
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 87.4792676602475,
+      "observed_volume": 219.15621860678002,
+      "is_false_positive": false
+    },
+    {
+      "frame": 30,
+      "id": 0,
+      "actor": "A",
+      "true_position": [
+        181.1426580218865,
+        905
+      ],
+      "observed_position": [
+        181.56894723827935,
+        904.8417894924023
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 82.51175644350823,
+      "observed_volume": 205.4050730845129,
+      "is_false_positive": false
+    },
+    {
+      "frame": 30,
+      "id": 1,
+      "actor": "independent",
+      "true_position": [
+        329.7,
+        928.3
+      ],
+      "observed_position": [
+        329.32657600326814,
+        928.0733967834858
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 87.75883601086122,
+      "observed_volume": 218.90478202487725,
+      "is_false_positive": false
+    },
+    {
+      "frame": 30,
+      "id": 2,
+      "actor": "B",
+      "true_position": [
+        197.1426580218865,
+        906.2
+      ],
+      "observed_position": [
+        197.14631778662599,
+        906.2786494724191
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 77.20102390281218,
+      "observed_volume": 194.23459054145755,
+      "is_false_positive": false
+    },
+    {
+      "frame": 31,
+      "id": 0,
+      "actor": "A",
+      "true_position": [
+        181.0307183425213,
+        930
+      ],
+      "observed_position": [
+        181.52324766323662,
+        930.4631602280184
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 82.15666693744558,
+      "observed_volume": 205.3006593059793,
+      "is_false_positive": false
+    },
+    {
+      "frame": 31,
+      "id": 1,
+      "actor": "B",
+      "true_position": [
+        196.96106717876546,
+        931.2
+      ],
+      "observed_position": [
+        197.23908528928976,
+        931.6025897213449
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 79.27128487985436,
+      "observed_volume": 195.59162913385586,
+      "is_false_positive": false
+    },
+    {
+      "frame": 31,
+      "id": 2,
+      "actor": "independent",
+      "true_position": [
+        329.0,
+        951.0
+      ],
+      "observed_position": [
+        328.6667839656597,
+        950.8112602139666
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.43076548237396,
+      "observed_volume": 220.59567906990642,
+      "is_false_positive": false
+    },
+    {
+      "frame": 32,
+      "id": 0,
+      "actor": "independent",
+      "true_position": [
+        328.3,
+        973.6999999999999
+      ],
+      "observed_position": [
+        327.9734256185469,
+        973.6230550386066
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 86.23128622568014,
+      "observed_volume": 222.96384237772966,
+      "is_false_positive": false
+    },
+    {
+      "frame": 32,
+      "id": 1,
+      "actor": "A",
+      "true_position": [
+        181.002033220005,
+        955
+      ],
+      "observed_position": [
+        180.41378384591548,
+        955.0360845762827
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 81.97853286977676,
+      "observed_volume": 204.74518351992603,
+      "is_false_positive": false
+    },
+    {
+      "frame": 32,
+      "id": 2,
+      "actor": "B",
+      "true_position": [
+        196.72755929407123,
+        956.2
+      ],
+      "observed_position": [
+        197.32178227075562,
+        956.2221122338939
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 77.59674635381646,
+      "observed_volume": 194.0729142972407,
+      "is_false_positive": false
+    },
+    {
+      "frame": 33,
+      "id": 0,
+      "actor": "independent",
+      "true_position": [
+        327.6,
+        996.4
+      ],
+      "observed_position": [
+        327.505154872218,
+        996.4562109065462
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.06170218706208,
+      "observed_volume": 218.9288900003872,
+      "is_false_positive": false
+    },
+    {
+      "frame": 33,
+      "id": 1,
+      "actor": "B",
+      "true_position": [
+        196.45017337661233,
+        981.2
+      ],
+      "observed_position": [
+        196.54974576690802,
+        981.1574405451223
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 77.52894991039798,
+      "observed_volume": 195.8052700198654,
+      "is_false_positive": false
+    },
+    {
+      "frame": 33,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        181.0526550797137,
+        980
+      ],
+      "observed_position": [
+        180.95954899842224,
+        979.3664454104263
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 80.7726529235909,
+      "observed_volume": 203.74317402915355,
+      "is_false_positive": false
+    },
+    {
+      "frame": 34,
+      "id": 0,
+      "actor": "B",
+      "true_position": [
+        196.14001922403887,
+        1006.2
+      ],
+      "observed_position": [
+        196.28503360038425,
+        1005.9861680504447
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.8096833748745,
+      "observed_volume": 196.8220867870718,
+      "is_false_positive": false
+    },
+    {
+      "frame": 34,
+      "id": 1,
+      "actor": "independent",
+      "true_position": [
+        326.9,
+        1019.1
+      ],
+      "observed_position": [
+        326.6192885557047,
+        1019.097672836054
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.31698228452439,
+      "observed_volume": 218.622726273041,
+      "is_false_positive": false
+    },
+    {
+      "frame": 34,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        181.1750127012754,
+        1005
+      ],
+      "observed_position": [
+        180.91869591755403,
+        1004.8742820101414
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 81.6228443727999,
+      "observed_volume": 203.2962758223163,
+      "is_false_positive": false
+    },
+    {
+      "frame": 35,
+      "id": 0,
+      "actor": "B",
+      "true_position": [
+        195.81036945229846,
+        1031.2
+      ],
+      "observed_position": [
+        196.33784706314486,
+        1031.2577736810617
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.12022874077789,
+      "observed_volume": 192.83709064629699,
+      "is_false_positive": false
+    },
+    {
+      "frame": 35,
+      "id": 1,
+      "actor": "A",
+      "true_position": [
+        181.35876397079863,
+        1030
+      ],
+      "observed_position": [
+        181.3561521050025,
+        1030.1448085348188
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 82.13682968775672,
+      "observed_volume": 202.63159354729103,
+      "is_false_positive": false
+    },
+    {
+      "frame": 35,
+      "id": 2,
+      "actor": "independent",
+      "true_position": [
+        326.2,
+        1041.8
+      ],
+      "observed_position": [
+        325.87687549174126,
+        1042.1310777507365
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 87.88982253353889,
+      "observed_volume": 219.4238500660187,
+      "is_false_positive": false
+    },
+    {
+      "frame": 36,
+      "id": 0,
+      "actor": "independent",
+      "true_position": [
+        325.5,
+        1064.5
+      ],
+      "observed_position": [
+        325.8829739413245,
+        1064.909846908937
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 89.00957428204421,
+      "observed_volume": 218.459726825736,
+      "is_false_positive": false
+    },
+    {
+      "frame": 36,
+      "id": 1,
+      "actor": "A",
+      "true_position": [
+        181.59183768225373,
+        1055
+      ],
+      "observed_position": [
+        181.31885642293474,
+        1054.661392011907
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 83.75267266562453,
+      "observed_volume": 205.80631547781672,
+      "is_false_positive": false
+    },
+    {
+      "frame": 36,
+      "id": 2,
+      "actor": "B",
+      "true_position": [
+        195.47557196475097,
+        1056.2
+      ],
+      "observed_position": [
+        195.30181281765167,
+        1056.2328480950916
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 77.66877268862059,
+      "observed_volume": 194.02760904804424,
+      "is_false_positive": false
+    },
+    {
+      "frame": 37,
+      "id": 0,
+      "actor": "A",
+      "true_position": [
+        181.86153160162482,
+        1080
+      ],
+      "observed_position": [
+        182.3710280814338,
+        1080.652246613133
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 82.51668501341348,
+      "observed_volume": 202.8567667632584,
+      "is_false_positive": false
+    },
+    {
+      "frame": 37,
+      "id": 1,
+      "actor": "independent",
+      "true_position": [
+        324.8,
+        1087.1999999999998
+      ],
+      "observed_position": [
+        324.54995306701574,
+        1087.353776177042
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.54750169138677,
+      "observed_volume": 224.26600587094154,
+      "is_false_positive": false
+    },
+    {
+      "frame": 37,
+      "id": 2,
+      "actor": "B",
+      "true_position": [
+        195.14991636091574,
+        1081.2
+      ],
+      "observed_position": [
+        195.6394554251602,
+        1081.0039983686052
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 77.20824822259708,
+      "observed_volume": 194.76405251343215,
+      "is_false_positive": false
+    },
+    {
+      "frame": 38,
+      "id": 0,
+      "actor": "independent",
+      "true_position": [
+        324.1,
+        1109.9
+      ],
+      "observed_position": [
+        323.82886301153974,
+        1109.6273511829647
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 87.75428714114555,
+      "observed_volume": 219.63265629140204,
+      "is_false_positive": false
+    },
+    {
+      "frame": 38,
+      "id": 1,
+      "actor": "B",
+      "true_position": [
+        194.8465843006876,
+        1106.2
+      ],
+      "observed_position": [
+        194.67275256483967,
+        1105.5910726239968
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 77.66937276277619,
+      "observed_volume": 195.3177902183531,
+      "is_false_positive": false
+    },
+    {
+      "frame": 38,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        182.15553733238625,
+        1105
+      ],
+      "observed_position": [
+        182.18282427006807,
+        1104.6158354934355
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 81.15540237600693,
+      "observed_volume": 209.66144273815587,
+      "is_false_positive": false
+    },
+    {
+      "frame": 39,
+      "id": 0,
+      "actor": "A",
+      "true_position": [
+        182.46278486464803,
+        1130
+      ],
+      "observed_position": [
+        182.54253594690445,
+        1129.8173123667389
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 83.67715528696687,
+      "observed_volume": 207.12661581305989,
+      "is_false_positive": false
+    },
+    {
+      "frame": 39,
+      "id": 1,
+      "actor": "independent",
+      "true_position": [
+        323.4,
+        1132.6
+      ],
+      "observed_position": [
+        323.511129349876,
+        1132.5871002434592
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 86.36109943215119,
+      "observed_volume": 220.9132395073353,
+      "is_false_positive": false
+    },
+    {
+      "frame": 39,
+      "id": 2,
+      "actor": "B",
+      "true_position": [
+        194.57679132820863,
+        1131.2
+      ],
+      "observed_position": [
+        194.40511414778103,
+        1131.2635542108358
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.7715688858185,
+      "observed_volume": 194.8136173251188,
+      "is_false_positive": false
+    },
+    {
+      "frame": 40,
+      "id": 0,
+      "actor": "independent",
+      "true_position": [
+        322.7,
+        1155.3
+      ],
+      "observed_position": [
+        322.5541648336433,
+        1155.3120777065874
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.07393421566812,
+      "observed_volume": 219.70617323989845,
+      "is_false_positive": false
+    },
+    {
+      "frame": 40,
+      "id": 1,
+      "actor": "B",
+      "true_position": [
+        194.34919163210535,
+        1156.2
+      ],
+      "observed_position": [
+        194.03424261851904,
+        1156.390618582705
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 77.14542435632836,
+      "observed_volume": 193.7723921243937,
+      "is_false_positive": false
+    },
+    {
+      "frame": 40,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        182.77403554390523,
+        1155
+      ],
+      "observed_position": [
+        182.01936135536778,
+        1155.0446636675076
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 80.12465470062854,
+      "observed_volume": 206.49731245556853,
+      "is_false_positive": false
+    },
+    {
+      "frame": 41,
+      "id": 0,
+      "actor": "independent",
+      "true_position": [
+        322.0,
+        1178.0
+      ],
+      "observed_position": [
+        322.7001660703588,
+        1177.7636039914512
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.78975930574408,
+      "observed_volume": 223.16466792830923,
+      "is_false_positive": false
+    },
+    {
+      "frame": 41,
+      "id": 1,
+      "actor": "B",
+      "true_position": [
+        194.16957509646525,
+        1181.2
+      ],
+      "observed_position": [
+        194.93565162654278,
+        1181.4928951915128
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.90278830786218,
+      "observed_volume": 194.74250325541655,
+      "is_false_positive": false
+    },
+    {
+      "frame": 41,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        183.08219414045604,
+        1180
+      ],
+      "observed_position": [
+        183.6988001761337,
+        1180.1058274924583
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 79.68140422140313,
+      "observed_volume": 206.57574311329955,
+      "is_false_positive": false
+    },
+    {
+      "frame": 42,
+      "id": 0,
+      "actor": "independent",
+      "true_position": [
+        321.3,
+        1200.6999999999998
+      ],
+      "observed_position": [
+        321.9454273149247,
+        1200.9381486561165
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 86.6208518663609,
+      "observed_volume": 219.60226680307275,
+      "is_false_positive": false
+    },
+    {
+      "frame": 42,
+      "id": 1,
+      "actor": "A",
+      "true_position": [
+        183.3823511044727,
+        1205
+      ],
+      "observed_position": [
+        183.1923707903525,
+        1205.4268567146642
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 81.06044167255143,
+      "observed_volume": 205.71243866011324,
+      "is_false_positive": false
+    },
+    {
+      "frame": 42,
+      "id": 2,
+      "actor": "B",
+      "true_position": [
+        194.04084541524756,
+        1206.2
+      ],
+      "observed_position": [
+        193.92327526064966,
+        1206.1242424655218
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 77.13088328609199,
+      "observed_volume": 195.07872784732712,
+      "is_false_positive": false
+    },
+    {
+      "frame": 43,
+      "id": 0,
+      "actor": "independent",
+      "true_position": [
+        320.6,
+        1223.4
+      ],
+      "observed_position": [
+        320.43707205942616,
+        1222.7808270307262
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.20768024956487,
+      "observed_volume": 221.13256304309044,
+      "is_false_positive": false
+    },
+    {
+      "frame": 43,
+      "id": 1,
+      "actor": "A",
+      "true_position": [
+        183.6715986455219,
+        1230
+      ],
+      "observed_position": [
+        182.84468944770933,
+        1229.8599753848603
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 80.73576386398935,
+      "observed_volume": 210.15751340726086,
+      "is_false_positive": false
+    },
+    {
+      "frame": 43,
+      "id": 2,
+      "actor": "B",
+      "true_position": [
+        193.9632353134728,
+        1231.2
+      ],
+      "observed_position": [
+        194.18978538201878,
+        1231.4777053933624
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.24508628669163,
+      "observed_volume": 196.77087542061332,
+      "is_false_positive": false
+    },
+    {
+      "frame": 44,
+      "id": 0,
+      "actor": "B",
+      "true_position": [
+        193.93469398486806,
+        1256.2
+      ],
+      "observed_position": [
+        193.83151496479596,
+        1256.0603698857556
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.82724811548806,
+      "observed_volume": 194.2317591107143,
+      "is_false_positive": false
+    },
+    {
+      "frame": 44,
+      "id": 1,
+      "actor": "independent",
+      "true_position": [
+        319.9,
+        1246.1
+      ],
+      "observed_position": [
+        320.27778115198663,
+        1245.8188582928922
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 89.21743287520773,
+      "observed_volume": 223.50502805058954,
+      "is_false_positive": false
+    },
+    {
+      "frame": 44,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        183.94868503842073,
+        1255
+      ],
+      "observed_position": [
+        183.46628800251602,
+        1255.320392132455
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 82.13213641664352,
+      "observed_volume": 203.80051175691372,
+      "is_false_positive": false
+    },
+    {
+      "frame": 45,
+      "id": 0,
+      "actor": "B",
+      "true_position": [
+        193.95137391096767,
+        1281.2
+      ],
+      "observed_position": [
+        193.94281024722437,
+        1280.807680374387
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.87038901474857,
+      "observed_volume": 193.67257278947133,
+      "is_false_positive": false
+    },
+    {
+      "frame": 45,
+      "id": 1,
+      "actor": "A",
+      "true_position": [
+        184.21357933903465,
+        1280
+      ],
+      "observed_position": [
+        184.16539959543258,
+        1280.304300071416
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 82.15769769605166,
+      "observed_volume": 202.64678364308713,
+      "is_false_positive": false
+    },
+    {
+      "frame": 45,
+      "id": 2,
+      "actor": "independent",
+      "true_position": [
+        319.2,
+        1268.8
+      ],
+      "observed_position": [
+        318.9139989314053,
+        1269.0602016508544
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.8497727586021,
+      "observed_volume": 217.39043903714236,
+      "is_false_positive": false
+    },
+    {
+      "frame": 46,
+      "id": 0,
+      "actor": "B",
+      "true_position": [
+        194.00814797530268,
+        1306.2
+      ],
+      "observed_position": [
+        194.32900647133513,
+        1306.0863168357434
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 79.02657240656004,
+      "observed_volume": 195.46827722237458,
+      "is_false_positive": false
+    },
+    {
+      "frame": 46,
+      "id": 1,
+      "actor": "A",
+      "true_position": [
+        184.46701479219956,
+        1305
+      ],
+      "observed_position": [
+        184.21982140624263,
+        1305.5957261655085
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 82.12005817287005,
+      "observed_volume": 205.1815691877388,
+      "is_false_positive": false
+    },
+    {
+      "frame": 46,
+      "id": 2,
+      "actor": "independent",
+      "true_position": [
+        318.5,
+        1291.5
+      ],
+      "observed_position": [
+        318.69719377644986,
+        1291.9279902539522
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.97131103864689,
+      "observed_volume": 220.8339303659734,
+      "is_false_positive": false
+    },
+    {
+      "frame": 47,
+      "id": 0,
+      "actor": "B",
+      "true_position": [
+        194.09910017415032,
+        1331.2
+      ],
+      "observed_position": [
+        194.17235458231116,
+        1331.8037325390649
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 77.46865958602831,
+      "observed_volume": 194.41043704024258,
+      "is_false_positive": false
+    },
+    {
+      "frame": 47,
+      "id": 1,
+      "actor": "A",
+      "true_position": [
+        184.71006668586992,
+        1330
+      ],
+      "observed_position": [
+        184.92172416128633,
+        1330.6894487183088
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 80.92036639280315,
+      "observed_volume": 205.29608085498228,
+      "is_false_positive": false
+    },
+    {
+      "frame": 47,
+      "id": 2,
+      "actor": "independent",
+      "true_position": [
+        317.8,
+        1314.2
+      ],
+      "observed_position": [
+        317.88023579472593,
+        1313.5252840516334
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 87.56790160791437,
+      "observed_volume": 220.67194958787695,
+      "is_false_positive": false
+    },
+    {
+      "frame": 48,
+      "id": 0,
+      "actor": "A",
+      "true_position": [
+        184.94380311985515,
+        1355
+      ],
+      "observed_position": [
+        183.62966552474504,
+        1354.4219789912327
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 82.43276637400129,
+      "observed_volume": 204.69835577331673,
+      "is_false_positive": false
+    },
+    {
+      "frame": 48,
+      "id": 1,
+      "actor": "independent",
+      "true_position": [
+        317.1,
+        1336.8999999999999
+      ],
+      "observed_position": [
+        317.2686674275618,
+        1336.6614949274958
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.054109525936,
+      "observed_volume": 218.20238669774432,
+      "is_false_positive": false
+    },
+    {
+      "frame": 48,
+      "id": 2,
+      "actor": "B",
+      "true_position": [
+        194.21795038554808,
+        1356.2
+      ],
+      "observed_position": [
+        194.36207780495948,
+        1355.7623453532256
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 77.40941104587712,
+      "observed_volume": 194.407404782152,
+      "is_false_positive": false
+    },
+    {
+      "frame": 49,
+      "id": 0,
+      "actor": "A",
+      "true_position": [
+        185.16902888945557,
+        1380
+      ],
+      "observed_position": [
+        184.8843287920769,
+        1380.0217810480035
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 80.49000059580217,
+      "observed_volume": 207.12334704548869,
+      "is_false_positive": false
+    },
+    {
+      "frame": 49,
+      "id": 1,
+      "actor": "B",
+      "true_position": [
+        194.35839181752002,
+        1381.2
+      ],
+      "observed_position": [
+        193.9227068157094,
+        1381.1224067388825
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 77.74792636774619,
+      "observed_volume": 194.87094919880275,
+      "is_false_positive": false
+    },
+    {
+      "frame": 49,
+      "id": 2,
+      "actor": "independent",
+      "true_position": [
+        316.4,
+        1359.6
+      ],
+      "observed_position": [
+        316.49559576497245,
+        1359.777550485196
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 90.1137486461125,
+      "observed_volume": 221.77093978245588,
+      "is_false_positive": false
+    },
+    {
+      "frame": 50,
+      "id": 0,
+      "actor": "independent",
+      "true_position": [
+        315.7,
+        1382.3
+      ],
+      "observed_position": [
+        315.8235764151339,
+        1382.1765577409678
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.82366658680675,
+      "observed_volume": 220.4820253659034,
+      "is_false_positive": false
+    },
+    {
+      "frame": 50,
+      "id": 1,
+      "actor": "B",
+      "true_position": [
+        194.51433591128924,
+        1406.2
+      ],
+      "observed_position": [
+        194.5655988199691,
+        1406.449732299015
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.01500407351217,
+      "observed_volume": 192.81195250225622,
+      "is_false_positive": false
+    },
+    {
+      "frame": 50,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        185.38612643906808,
+        1405
+      ],
+      "observed_position": [
+        185.53177295907238,
+        1404.4112310498526
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 80.15829466080437,
+      "observed_volume": 206.11307186327844,
+      "is_false_positive": false
+    },
+    {
+      "frame": 51,
+      "id": 0,
+      "actor": "B",
+      "true_position": [
+        194.68007174688995,
+        1431.2
+      ],
+      "observed_position": [
+        195.15097164906962,
+        1431.26999270709
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 77.34413193668378,
+      "observed_volume": 190.38002335855506,
+      "is_false_positive": false
+    },
+    {
+      "frame": 51,
+      "id": 1,
+      "actor": "A",
+      "true_position": [
+        185.59498549858057,
+        1430
+      ],
+      "observed_position": [
+        185.45641387595947,
+        1431.205208756119
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 82.62907096380577,
+      "observed_volume": 205.68132999363976,
+      "is_false_positive": false
+    },
+    {
+      "frame": 51,
+      "id": 2,
+      "actor": "independent",
+      "true_position": [
+        315.0,
+        1405.0
+      ],
+      "observed_position": [
+        314.65336632074644,
+        1404.512536924303
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 89.47455892161268,
+      "observed_volume": 222.0874697130863,
+      "is_false_positive": false
+    },
+    {
+      "frame": 52,
+      "id": 0,
+      "actor": "independent",
+      "true_position": [
+        314.3,
+        1427.7
+      ],
+      "observed_position": [
+        314.31554438010824,
+        1427.3844193853884
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 86.88045584226717,
+      "observed_volume": 217.52309702220023,
+      "is_false_positive": false
+    },
+    {
+      "frame": 52,
+      "id": 1,
+      "actor": "A",
+      "true_position": [
+        185.79500529295115,
+        1455
+      ],
+      "observed_position": [
+        185.92215590365643,
+        1455.7897344375065
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 81.55823231038119,
+      "observed_volume": 204.74039868701777,
+      "is_false_positive": false
+    },
+    {
+      "frame": 52,
+      "id": 2,
+      "actor": "B",
+      "true_position": [
+        194.8503546713123,
+        1456.2
+      ],
+      "observed_position": [
+        195.19639228894752,
+        1456.2139941310104
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.0711468384899,
+      "observed_volume": 194.7313550598377,
+      "is_false_positive": false
+    },
+    {
+      "frame": 53,
+      "id": 0,
+      "actor": "independent",
+      "true_position": [
+        313.6,
+        1450.3999999999999
+      ],
+      "observed_position": [
+        314.1086534724101,
+        1450.5113714912382
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.64184869227437,
+      "observed_volume": 218.7709417258965,
+      "is_false_positive": false
+    },
+    {
+      "frame": 53,
+      "id": 1,
+      "actor": "A",
+      "true_position": [
+        185.9851498674212,
+        1480
+      ],
+      "observed_position": [
+        185.98714400722284,
+        1479.8321596002968
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 80.98811548532808,
+      "observed_volume": 205.00722847931246,
+      "is_false_positive": false
+    },
+    {
+      "frame": 53,
+      "id": 2,
+      "actor": "B",
+      "true_position": [
+        195.02044218923905,
+        1481.2
+      ],
+      "observed_position": [
+        195.27771555234585,
+        1481.0238156516718
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 76.08069106543573,
+      "observed_volume": 195.08417053154736,
+      "is_false_positive": false
+    },
+    {
+      "frame": 54,
+      "id": 0,
+      "actor": "A",
+      "true_position": [
+        186.16403722007638,
+        1505
+      ],
+      "observed_position": [
+        186.35014274462893,
+        1505.2016033797363
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 82.00274792665182,
+      "observed_volume": 204.21008851135693,
+      "is_false_positive": false
+    },
+    {
+      "frame": 54,
+      "id": 1,
+      "actor": "independent",
+      "true_position": [
+        312.9,
+        1473.1
+      ],
+      "observed_position": [
+        312.5256424783336,
+        1473.633223392063
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.40180449488649,
+      "observed_volume": 218.63401384079268,
+      "is_false_positive": false
+    },
+    {
+      "frame": 54,
+      "id": 2,
+      "actor": "B",
+      "true_position": [
+        195.1860950012655,
+        1506.2
+      ],
+      "observed_position": [
+        195.64805026606936,
+        1505.9514581186982
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 76.85709569213452,
+      "observed_volume": 192.91994667586192,
+      "is_false_positive": false
+    },
+    {
+      "frame": 55,
+      "id": 0,
+      "actor": "independent",
+      "true_position": [
+        312.2,
+        1495.8
+      ],
+      "observed_position": [
+        312.1979770688583,
+        1496.1648437240967
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 89.09472174377034,
+      "observed_volume": 220.70826918893803,
+      "is_false_positive": false
+    },
+    {
+      "frame": 55,
+      "id": 1,
+      "actor": "B",
+      "true_position": [
+        195.3435586016132,
+        1531.2
+      ],
+      "observed_position": [
+        195.06771526176422,
+        1531.5486663088864
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.28120198852865,
+      "observed_volume": 197.45522945842083,
+      "is_false_positive": false
+    },
+    {
+      "frame": 55,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        186.33004542265962,
+        1530
+      ],
+      "observed_position": [
+        186.42381604976904,
+        1529.5656262124744
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 81.24559297570481,
+      "observed_volume": 205.64547723576524,
+      "is_false_positive": false
+    },
+    {
+      "frame": 56,
+      "id": 0,
+      "actor": "B",
+      "true_position": [
+        195.48953720018685,
+        1556.2
+      ],
+      "observed_position": [
+        195.20182153946052,
+        1556.5270637710894
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 76.98432186525014,
+      "observed_volume": 194.7422055125037,
+      "is_false_positive": false
+    },
+    {
+      "frame": 56,
+      "id": 1,
+      "actor": "independent",
+      "true_position": [
+        311.5,
+        1518.5
+      ],
+      "observed_position": [
+        311.768592644557,
+        1519.0226946729335
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.18729096174006,
+      "observed_volume": 224.13546268548848,
+      "is_false_positive": false
+    },
+    {
+      "frame": 56,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        186.48142259596952,
+        1555
+      ],
+      "observed_position": [
+        186.45814721185704,
+        1554.687091081229
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 81.57686537018256,
+      "observed_volume": 206.38292818020284,
+      "is_false_positive": false
+    },
+    {
+      "frame": 57,
+      "id": 0,
+      "actor": "B",
+      "true_position": [
+        195.62116784799738,
+        1581.2
+      ],
+      "observed_position": [
+        195.7695648752257,
+        1581.2695437103325
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 77.76730319922135,
+      "observed_volume": 193.6030268859285,
+      "is_false_positive": false
+    },
+    {
+      "frame": 57,
+      "id": 1,
+      "actor": "independent",
+      "true_position": [
+        310.8,
+        1541.2
+      ],
+      "observed_position": [
+        310.3653727721228,
+        1541.6024391859328
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 87.0728178090382,
+      "observed_volume": 221.90575842217066,
+      "is_false_positive": false
+    },
+    {
+      "frame": 57,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        186.61639155162808,
+        1580
+      ],
+      "observed_position": [
+        186.74805706045987,
+        1580.0521854211254
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 82.65209123779289,
+      "observed_volume": 205.00148791569464,
+      "is_false_positive": false
+    },
+    {
+      "frame": 58,
+      "id": 0,
+      "actor": "B",
+      "true_position": [
+        195.73599916015957,
+        1606.2
+      ],
+      "observed_position": [
+        195.42781366368368,
+        1605.729299695996
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.33567752715017,
+      "observed_volume": 193.93155754194825,
+      "is_false_positive": false
+    },
+    {
+      "frame": 58,
+      "id": 1,
+      "actor": "independent",
+      "true_position": [
+        310.1,
+        1563.8999999999999
+      ],
+      "observed_position": [
+        310.71584984005915,
+        1564.3328395801218
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.82984917700786,
+      "observed_volume": 220.18470043517806,
+      "is_false_positive": false
+    },
+    {
+      "frame": 58,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        186.73324347687497,
+        1605
+      ],
+      "observed_position": [
+        187.08196633271848,
+        1605.091833244382
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 80.92331371929777,
+      "observed_volume": 202.67549858198606,
+      "is_false_positive": false
+    },
+    {
+      "frame": 59,
+      "id": 0,
+      "actor": "B",
+      "true_position": [
+        195.83197628897534,
+        1631.2
+      ],
+      "observed_position": [
+        196.46398293599964,
+        1630.8613830921672
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 76.64705811050791,
+      "observed_volume": 198.53352669229278,
+      "is_false_positive": false
+    },
+    {
+      "frame": 59,
+      "id": 1,
+      "actor": "independent",
+      "true_position": [
+        309.4,
+        1586.6
+      ],
+      "observed_position": [
+        309.7342057242975,
+        1587.0566624117753
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.26937696026796,
+      "observed_volume": 220.11814155890463,
+      "is_false_positive": false
+    },
+    {
+      "frame": 59,
+      "id": 2,
+      "actor": "A",
+      "true_position": [
+        186.8304178799769,
+        1630
+      ],
+      "observed_position": [
+        186.62101380311586,
+        1630.1484916587858
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 82.44064626164774,
+      "observed_volume": 204.6427367275329,
+      "is_false_positive": false
+    },
+    {
+      "frame": 60,
+      "id": 0,
+      "actor": "A",
+      "true_position": [
+        186.9065680308478,
+        1655
+      ],
+      "observed_position": [
+        186.827778284047,
+        1654.952951158531
+      ],
+      "true_area": 82.0,
+      "true_volume": 205.0,
+      "observed_area": 83.15607090837526,
+      "observed_volume": 208.61202748597756,
+      "is_false_positive": false
+    },
+    {
+      "frame": 60,
+      "id": 1,
+      "actor": "B",
+      "true_position": [
+        195.9074318994764,
+        1656.2
+      ],
+      "observed_position": [
+        196.36345545201812,
+        1656.1021893257575
+      ],
+      "true_area": 78.0,
+      "true_volume": 195.0,
+      "observed_area": 78.34785174723501,
+      "observed_volume": 194.8556772727771,
+      "is_false_positive": false
+    },
+    {
+      "frame": 60,
+      "id": 2,
+      "actor": "independent",
+      "true_position": [
+        308.7,
+        1609.3
+      ],
+      "observed_position": [
+        308.75629149305195,
+        1609.4281944696702
+      ],
+      "true_area": 88.0,
+      "true_volume": 220.0,
+      "observed_area": 88.35285904600215,
+      "observed_volume": 219.45950727347793,
+      "is_false_positive": false
+    }
+  ],
+  "observation_noise": {
+    "position_sigma": 0.35,
+    "area_sigma": 1.0,
+    "volume_sigma": 2.0
+  },
+  "occluded_actor_frames": [],
+  "false_positives_are_unlinked": true,
+  "limitations": "No validated hydrodynamics; true ternary daughter contact is geometrical only, negative clutter model is artificial."
+}

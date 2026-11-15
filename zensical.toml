@@ -1,0 +1,29 @@
+[project]
+site_name = "MHT-X | Scientific tracking documentation"
+site_url = "https://mihails-birjukovs.github.io/MHT-X-v2/"
+site_description = "MHT-X multiple-hypothesis particle and bubble tracking"
+site_author = "MHT-X contributors · INM documentation design"
+copyright = "MHT-X project contributors · see licensing and rights"
+docs_dir = "docs"
+site_dir = "site"
+extra_css = ["stylesheets/inm-mhtx-v1.css"]
+nav = [
+  { "Home" = "index.md" },
+  { "Getting started" = "getting-started.md" },
+  { "Architecture" = "architecture.md" },
+  { "Methods and models" = "methods.md" },
+  { "Validation" = "validation.md" },
+  { "Interactive benchmarks" = "benchmarks.md" },
+  { "Data and provenance" = "data-provenance.md" },
+  { "Research" = "research.md" },
+  { "Credits" = "credits.md" },
+  { "Licensing and rights" = "licensing.md" },
+]
+[project.theme]
+logo = "assets/mhtx-header-placeholder.svg"
+favicon = "assets/mhtx-header-placeholder.svg"
+features = ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "toc.follow", "navigation.top"]
+[project.theme.palette]
+scheme = "default"
+primary = "custom"
+accent = "custom"

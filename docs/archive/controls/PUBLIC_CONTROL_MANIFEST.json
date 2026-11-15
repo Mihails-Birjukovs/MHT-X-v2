@@ -1,0 +1,141 @@
+{
+  "source_count": 12,
+  "pixel_exact_png_to_webp": true,
+  "original_x_source_frozen_sha": "3f1343f90ce29ba42eede6d4de84531d8168768e",
+  "calibration_status": "development synthetic controls; NOT blind physical validation",
+  "graph_exports": [
+    {
+      "case": "ternary_true_no_clutter",
+      "profile": "historical",
+      "cap": 3,
+      "status": "COMPLETE",
+      "graph": "data/graphs/ternary_true_no_clutter__historical__cap3.csv",
+      "graph_sha256": "9caef84b15ea85862d38b4c211eabda51ead1049fe0e9707738c43e192d17375",
+      "truth": "data/truth/ternary_true_no_clutter.json",
+      "storyboard": "visuals/ternary_true_no_clutter/historical/cap3_original/EVENT_STORYBOARD.webp",
+      "manifest": "visuals/ternary_true_no_clutter/historical/cap3_original/PUBLISHED_MANIFEST.json"
+    },
+    {
+      "case": "ternary_true_no_clutter",
+      "profile": "historical",
+      "cap": 2,
+      "status": "COMPLETE",
+      "graph": "data/graphs/ternary_true_no_clutter__historical__cap2.csv",
+      "graph_sha256": "589c55dfbc534ee76573a144ebcf5577ef41a4762ed8f0bed9782cfd3b1296a5",
+      "truth": "data/truth/ternary_true_no_clutter.json",
+      "storyboard": "visuals/ternary_true_no_clutter/historical/cap2_binary/EVENT_STORYBOARD.webp",
+      "manifest": "visuals/ternary_true_no_clutter/historical/cap2_binary/PUBLISHED_MANIFEST.json"
+    },
+    {
+      "case": "ternary_true_no_clutter",
+      "profile": "previous_first_FST",
+      "cap": 3,
+      "status": "COMPLETE",
+      "graph": "data/graphs/ternary_true_no_clutter__previous_first_FST__cap3.csv",
+      "graph_sha256": "0d54b4b8d1c37ccc962eb7b915dbc47f80fc02d7c396b9b6088906f3526bd2a2",
+      "truth": "data/truth/ternary_true_no_clutter.json",
+      "storyboard": "visuals/ternary_true_no_clutter/previous_first_FST/cap3_original/EVENT_STORYBOARD.webp",
+      "manifest": "visuals/ternary_true_no_clutter/previous_first_FST/cap3_original/PUBLISHED_MANIFEST.json"
+    },
+    {
+      "case": "ternary_true_no_clutter",
+      "profile": "previous_first_FST",
+      "cap": 2,
+      "status": "COMPLETE",
+      "graph": "data/graphs/ternary_true_no_clutter__previous_first_FST__cap2.csv",
+      "graph_sha256": "665427aa45eb20539c8549a201ab55444f7812093f0d54e886e614062dd67720",
+      "truth": "data/truth/ternary_true_no_clutter.json",
+      "storyboard": "visuals/ternary_true_no_clutter/previous_first_FST/cap2_binary/EVENT_STORYBOARD.webp",
+      "manifest": "visuals/ternary_true_no_clutter/previous_first_FST/cap2_binary/PUBLISHED_MANIFEST.json"
+    },
+    {
+      "case": "near_pass_clean",
+      "profile": "historical",
+      "cap": 3,
+      "status": "COMPLETE",
+      "graph": "data/graphs/near_pass_clean__historical__cap3.csv",
+      "graph_sha256": "03032cb9292b93c99d8915cff86cc01521c6d185ec77239158a3469daf2e23d5",
+      "truth": "data/truth/near_pass_clean.json",
+      "storyboard": "visuals/near_pass_clean/historical/cap3_original/EVENT_STORYBOARD.webp",
+      "manifest": "visuals/near_pass_clean/historical/cap3_original/PUBLISHED_MANIFEST.json"
+    },
+    {
+      "case": "near_pass_clean",
+      "profile": "historical",
+      "cap": 2,
+      "status": "COMPLETE",
+      "graph": "data/graphs/near_pass_clean__historical__cap2.csv",
+      "graph_sha256": "03032cb9292b93c99d8915cff86cc01521c6d185ec77239158a3469daf2e23d5",
+      "truth": "data/truth/near_pass_clean.json",
+      "storyboard": "visuals/near_pass_clean/historical/cap2_binary/EVENT_STORYBOARD.webp",
+      "manifest": "visuals/near_pass_clean/historical/cap2_binary/PUBLISHED_MANIFEST.json"
+    },
+    {
+      "case": "near_pass_clean",
+      "profile": "previous_first_FST",
+      "cap": 3,
+      "status": "COMPLETE",
+      "graph": "data/graphs/near_pass_clean__previous_first_FST__cap3.csv",
+      "graph_sha256": "35903a0ae99043e64e74e0ff2fd588ec35e77e464c7e877c10f902540f0bd4d7",
+      "truth": "data/truth/near_pass_clean.json",
+      "storyboard": "visuals/near_pass_clean/previous_first_FST/cap3_original/EVENT_STORYBOARD.webp",
+      "manifest": "visuals/near_pass_clean/previous_first_FST/cap3_original/PUBLISHED_MANIFEST.json"
+    },
+    {
+      "case": "near_pass_clean",
+      "profile": "previous_first_FST",
+      "cap": 2,
+      "status": "COMPLETE",
+      "graph": "data/graphs/near_pass_clean__previous_first_FST__cap2.csv",
+      "graph_sha256": "35903a0ae99043e64e74e0ff2fd588ec35e77e464c7e877c10f902540f0bd4d7",
+      "truth": "data/truth/near_pass_clean.json",
+      "storyboard": "visuals/near_pass_clean/previous_first_FST/cap2_binary/EVENT_STORYBOARD.webp",
+      "manifest": "visuals/near_pass_clean/previous_first_FST/cap2_binary/PUBLISHED_MANIFEST.json"
+    },
+    {
+      "case": "near_pass_with_clutter",
+      "profile": "historical",
+      "cap": 3,
+      "status": "COMPLETE",
+      "graph": "data/graphs/near_pass_with_clutter__historical__cap3.csv",
+      "graph_sha256": "9cd965b89354109256a7dc3ceb46f5b92b50e27bf1915fb6d684e70da1d948f4",
+      "truth": "data/truth/near_pass_with_clutter.json",
+      "storyboard": "visuals/near_pass_with_clutter/historical/cap3_original/EVENT_STORYBOARD.webp",
+      "manifest": "visuals/near_pass_with_clutter/historical/cap3_original/PUBLISHED_MANIFEST.json"
+    },
+    {
+      "case": "near_pass_with_clutter",
+      "profile": "historical",
+      "cap": 2,
+      "status": "COMPLETE",
+      "graph": "data/graphs/near_pass_with_clutter__historical__cap2.csv",
+      "graph_sha256": "9cd965b89354109256a7dc3ceb46f5b92b50e27bf1915fb6d684e70da1d948f4",
+      "truth": "data/truth/near_pass_with_clutter.json",
+      "storyboard": "visuals/near_pass_with_clutter/historical/cap2_binary/EVENT_STORYBOARD.webp",
+      "manifest": "visuals/near_pass_with_clutter/historical/cap2_binary/PUBLISHED_MANIFEST.json"
+    },
+    {
+      "case": "near_pass_with_clutter",
+      "profile": "previous_first_FST",
+      "cap": 3,
+      "status": "COMPLETE",
+      "graph": "data/graphs/near_pass_with_clutter__previous_first_FST__cap3.csv",
+      "graph_sha256": "724cfb85889120ace0da232798c7f733201de0a32da40b6e614793efc56fa1fd",
+      "truth": "data/truth/near_pass_with_clutter.json",
+      "storyboard": "visuals/near_pass_with_clutter/previous_first_FST/cap3_original/EVENT_STORYBOARD.webp",
+      "manifest": "visuals/near_pass_with_clutter/previous_first_FST/cap3_original/PUBLISHED_MANIFEST.json"
+    },
+    {
+      "case": "near_pass_with_clutter",
+      "profile": "previous_first_FST",
+      "cap": 2,
+      "status": "COMPLETE",
+      "graph": "data/graphs/near_pass_with_clutter__previous_first_FST__cap2.csv",
+      "graph_sha256": "724cfb85889120ace0da232798c7f733201de0a32da40b6e614793efc56fa1fd",
+      "truth": "data/truth/near_pass_with_clutter.json",
+      "storyboard": "visuals/near_pass_with_clutter/previous_first_FST/cap2_binary/EVENT_STORYBOARD.webp",
+      "manifest": "visuals/near_pass_with_clutter/previous_first_FST/cap2_binary/PUBLISHED_MANIFEST.json"
+    }
+  ],
+  "true_input_cases": 3
+}

@@ -1,0 +1,57 @@
+name: Build and publish MHT-X INM documentation
+on:
+  pull_request:
+    paths: ["docs/**", "zensical.toml", "scripts/**", "tests/docs/**", ".github/workflows/docs.yml"]
+  push:
+    branches: [main]
+    paths: ["docs/**", "zensical.toml", "scripts/**", "tests/docs/**", ".github/workflows/docs.yml"]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: mhtx-pages-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+          lfs: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --disable-pip-version-check "zensical==0.0.71"
+      - run: python scripts/validate_mhtx_public_site.py
+      - run: python -m unittest discover -s tests/docs -v
+      - run: zensical build --clean --strict
+      - run: python scripts/check_mhtx_built_site.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mhtx-reviewed-site
+          path: site/
+          if-no-files-found: error
+          include-hidden-files: true
+          retention-days: 7
+  deploy:
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: mhtx-reviewed-site
+          path: site/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/
+      - id: deployment
+        uses: actions/deploy-pages@v4

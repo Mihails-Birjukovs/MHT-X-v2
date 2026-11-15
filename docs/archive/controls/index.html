@@ -1,0 +1,45 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<title>MHT-X higher-order and clutter controls</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+body{background:#f4f6fa;color:#26384d;max-width:1300px;margin:20px auto;padding:0 20px;font:15px Segoe UI,Arial,sans-serif}
+h1{font-size:25px}p{line-height:1.6}.panel{background:#fff;border:1px solid #dae2ec;padding:15px;border-radius:12px}
+img{width:100%;height:auto;border:1px solid #cdd6e2;border-radius:8px;margin-top:12px}
+select{width:100%;padding:10px}input[type=range]{width:100%}button{padding:8px 12px}
+.metric{color:#53677e;font-weight:600}
+a{color:#1264a1} .row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:800px){.row{grid-template-columns:1fr}}
+</style></head><body>
+<h1>MHT-X — True ternary events and clutter negative controls</h1>
+<p>12 source-frozen tracking results. These are generated synthetic-coordinate plots, not experimental images or CFD.
+Compare the original up-to-three branching model with the binary-only restriction, under frozen historical or first-FST settings.</p>
+<div class="panel"><label for="case">Tracking result</label><select id="case"></select>
+<p class="metric" id="metrics"></p>
+<p><button id="prev">Previous</button> <button id="next">Next</button> Frame <b id="counter">1</b> / 60</p>
+<input type="range" id="slider" min="1" max="60" step="1" value="1">
+<img id="fig" alt="True vs selected tracking graph">
+<p><a id="storylink" href="#">View event-window contact sheet</a> | <a id="manifest" href="#">Per-frame SHA manifest</a> |
+<a href="NARY_AND_CLUTTER_CONTROL_RESULTS.csv">Machine CSV</a> | <a href="NARY_AND_CLUTTER_CONTROL_RESULTS.json">Machine JSON</a> |
+<a href="SCIENCE_REPORT.txt">Scientific report</a> | <a id="rawsource" href="#">Selected source graph</a> | <a id="truthsource" href="#">Independent truth</a></p>
+<img id="story" loading="lazy" alt="Eight-frame event storyboard"></div>
+<p class="metric">Interpretation: blue = true internal associations, green = correct selected MHT-X association,
+red = wrong selected association, purple x = synthetic false detection. No-event negative controls legitimately contain
+no true splits or merges. Max_k=2 cannot represent exact 1-to-3 or 3-to-1 events.</p>
+<script>
+const DATA=[{"case":"ternary_true_no_clutter","profile":"historical","cap":3,"status":"PASS","split":"1/0","merge":"1/0","internal_J":0.64375,"path":"visuals/ternary_true_no_clutter/historical/cap3_original"},{"case":"ternary_true_no_clutter","profile":"historical","cap":2,"status":"PASS","split":"0/1","merge":"0/1","internal_J":0.63125,"path":"visuals/ternary_true_no_clutter/historical/cap2_binary"},{"case":"ternary_true_no_clutter","profile":"previous_first_FST","cap":3,"status":"PASS","split":"1/1","merge":"1/0","internal_J":0.8944099378881988,"path":"visuals/ternary_true_no_clutter/previous_first_FST/cap3_original"},{"case":"ternary_true_no_clutter","profile":"previous_first_FST","cap":2,"status":"PASS","split":"0/2","merge":"0/1","internal_J":0.8819875776397516,"path":"visuals/ternary_true_no_clutter/previous_first_FST/cap2_binary"},{"case":"near_pass_clean","profile":"historical","cap":3,"status":"PASS","split":"0/0","merge":"0/2","internal_J":0.7277777777777777,"path":"visuals/near_pass_clean/historical/cap3_original"},{"case":"near_pass_clean","profile":"historical","cap":2,"status":"PASS","split":"0/0","merge":"0/2","internal_J":0.7277777777777777,"path":"visuals/near_pass_clean/historical/cap2_binary"},{"case":"near_pass_clean","profile":"previous_first_FST","cap":3,"status":"PASS","split":"0/0","merge":"0/0","internal_J":0.9776536312849162,"path":"visuals/near_pass_clean/previous_first_FST/cap3_original"},{"case":"near_pass_clean","profile":"previous_first_FST","cap":2,"status":"PASS","split":"0/0","merge":"0/0","internal_J":0.9776536312849162,"path":"visuals/near_pass_clean/previous_first_FST/cap2_binary"},{"case":"near_pass_with_clutter","profile":"historical","cap":3,"status":"PASS","split":"0/1","merge":"0/3","internal_J":0.7010869565217391,"path":"visuals/near_pass_with_clutter/historical/cap3_original"},{"case":"near_pass_with_clutter","profile":"historical","cap":2,"status":"PASS","split":"0/1","merge":"0/3","internal_J":0.7010869565217391,"path":"visuals/near_pass_with_clutter/historical/cap2_binary"},{"case":"near_pass_with_clutter","profile":"previous_first_FST","cap":3,"status":"PASS","split":"0/3","merge":"0/1","internal_J":0.9405405405405406,"path":"visuals/near_pass_with_clutter/previous_first_FST/cap3_original"},{"case":"near_pass_with_clutter","profile":"previous_first_FST","cap":2,"status":"PASS","split":"0/3","merge":"0/1","internal_J":0.9405405405405406,"path":"visuals/near_pass_with_clutter/previous_first_FST/cap2_binary"}];
+const $=k=>document.getElementById(k);let current=DATA[0];
+for(const [i,r] of DATA.entries()){let o=document.createElement('option');o.value=i;
+o.textContent=r.case+' | '+r.profile+' | max_k='+r.cap;$('case').appendChild(o)}
+function frame(n){n=Math.max(1,Math.min(60,Number(n)));$('slider').value=n;$('counter').textContent=n;
+$('fig').src=current.path+'/frames/frame_'+String(n).padStart(3,'0')+'.webp'}
+function change(i){current=DATA[Number(i)]; $('rawsource').href='data/graphs/'+current.case+'__'+current.profile+'__cap'+current.cap+'.csv'; $('truthsource').href='data/truth/'+current.case+'.json';$('metrics').textContent='Split TP/FP '+current.split+
+ ' | Merge TP/FP '+current.merge+' | Internal-edge Jaccard '+current.internal_J.toFixed(4);
+$('story').src=current.path+'/EVENT_STORYBOARD.webp';
+$('storylink').href=current.path+'/EVENT_STORYBOARD.webp';
+$('manifest').href=current.path+'/PUBLISHED_MANIFEST.json';
+frame(1)}
+$('case').onchange=e=>change(e.target.value);$('slider').oninput=e=>frame(e.target.value);
+$('prev').onclick=()=>frame(Number($('slider').value)-1);
+$('next').onclick=()=>frame(Number($('slider').value)+1);
+change(0);
+</script></body></html>
