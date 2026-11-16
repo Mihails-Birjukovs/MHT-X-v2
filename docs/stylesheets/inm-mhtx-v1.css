@@ -1,4 +1,4 @@
-/* Adapted from approved Library /Tools/INM_Documentation_Site v1.0.0. No official institution marks. */
+/* INM-style site; official institutional logos approved 2026-11-16 and sourced by audited Git blobs. */
 :root,[data-md-color-scheme="default"]{--inm-blue:#004b8e;--inm-navy:#1c3854;--inm-orange:#f47b20;--inm-slate:#edf3f6;--md-primary-fg-color:#1c3854;--md-primary-fg-color--dark:#112940;--md-accent-fg-color:#ce5e08;--md-typeset-a-color:#00528b}
 .md-header{background:#fff;color:var(--inm-navy);border-bottom:3px solid var(--inm-orange);box-shadow:0 1px 12px rgba(11,37,57,.09)}
 .md-header__button,.md-header__title{color:var(--inm-navy)}
@@ -14,6 +14,9 @@
 .md-typeset table:not([class]) tbody tr:nth-child(even){background:var(--inm-slate)}
 .md-typeset blockquote{border-left:3px solid var(--inm-orange);background:#f5f8fa;padding:.6em 1em}
 .md-typeset pre{border-left:3px solid var(--inm-blue)}
+.md-typeset .arithmatex{overflow-x:auto;max-width:100%;padding:.25rem 0}
+.md-typeset mjx-container[display="true"]{max-width:100%;overflow-x:auto;overflow-y:hidden}
+.md-typeset mjx-container[display="true"] mjx-tag{color:var(--inm-navy)!important}
 .inm-hero{background:linear-gradient(135deg,#1c3854,#153149);color:#fff;border-top:6px solid var(--inm-orange);border-radius:7px;padding:2.4rem 2.2rem;margin:.7rem 0 1.25rem}
 .md-typeset .inm-hero,.md-typeset .inm-hero :is(h1,h2,h3,p,strong,span){color:#fff}
 .md-typeset .inm-hero h1{font-size:2.35rem;line-height:1.16}
@@ -29,7 +32,7 @@
 .md-footer,.md-footer a,.md-footer a:visited,.md-footer__title,.md-footer__direction,.md-footer-meta,.md-footer-meta a,.md-footer-meta a:visited{color:#fff}
 .md-footer-meta{background:#142c41;border-top:1px solid rgba(255,255,255,.2)}
 .md-footer-meta__inner{display:flex;align-items:center;flex-wrap:wrap;min-height:5.3rem}
-.md-footer-meta__inner::after{content:"";display:block;flex:0 0 70px;width:70px;height:70px;margin-left:auto;background:#fff url("../assets/mhtx-footer-placeholder.svg") center/contain no-repeat}
+.md-footer-meta__inner::after{content:"";display:block;flex:0 0 70px;width:70px;height:70px;margin-left:auto;background:#fff url("../assets/inm-square-footer.svg") center/contain no-repeat}
 footer.md-footer .md-footer-meta .md-copyright,footer.md-footer .md-footer-meta .md-copyright__highlight{color:#fff!important;opacity:1}
 footer.md-footer .md-footer-meta .md-copyright a,footer.md-footer .md-footer-meta .md-copyright a:visited{color:#fff!important}
 @media(max-width:650px){.inm-hero{padding:1.3rem 1rem}.md-typeset .inm-hero h1{font-size:1.7rem}.md-header__button.md-logo img,.md-logo img{width:86px;height:32px}.md-footer-meta__inner::after{flex-basis:54px;width:54px;height:54px}}
