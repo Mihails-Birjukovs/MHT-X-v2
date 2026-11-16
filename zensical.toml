@@ -2,16 +2,18 @@
 site_name = "MHT-X | Scientific tracking documentation"
 site_url = "https://mihails-birjukovs.github.io/MHT-X-v2/"
 site_description = "MHT-X multiple-hypothesis particle and bubble tracking"
-site_author = "MHT-X contributors · INM documentation design"
+site_author = "MHT-X contributors · Institute of Numerical Modelling"
 copyright = "MHT-X project contributors · see licensing and rights"
 docs_dir = "docs"
 site_dir = "site"
 extra_css = ["stylesheets/inm-mhtx-v1.css"]
+extra_javascript = ["javascripts/mathjax.js", "https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"]
 nav = [
   { "Home" = "index.md" },
   { "Getting started" = "getting-started.md" },
   { "Architecture" = "architecture.md" },
   { "Methods and models" = "methods.md" },
+  { "Published motion equations" = "published-motion-equations.md" },
   { "Validation" = "validation.md" },
   { "Interactive benchmarks" = "benchmarks.md" },
   { "Data and provenance" = "data-provenance.md" },
@@ -20,10 +22,12 @@ nav = [
   { "Licensing and rights" = "licensing.md" },
 ]
 [project.theme]
-logo = "assets/mhtx-header-placeholder.svg"
-favicon = "assets/mhtx-header-placeholder.svg"
+logo = "assets/inm-horizontal.svg"
+favicon = "assets/inm-mark.svg"
 features = ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "toc.follow", "navigation.top"]
 [project.theme.palette]
 scheme = "default"
 primary = "custom"
 accent = "custom"
+[project.markdown_extensions]
+pymdownx.arithmatex.generic = true

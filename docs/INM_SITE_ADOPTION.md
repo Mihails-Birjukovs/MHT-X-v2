@@ -1,9 +1,9 @@
 # INM Zensical documentation framework adoption
 
-Applied reusable Library /Tools/INM_Documentation_Site v1.0.0 and governing /Tools/GitHub_Zensical_Documentation_Sites protocol. Project-specific visual adaptations retain navy/orange/blue/slate tokens, hero, white header, evidence identity strip, responsive page and high-contrast footer.
+Applied reusable Library \`/Tools/INM_Documentation_Site\` and governing \`/Tools/GitHub_Zensical_Documentation_Sites\` protocols. The active 2026-11-15 equation-typography addendum requires all explanatory equations outside literal code listings to be human-readable, displayed, visibly numbered and referenceable.
 
-Original standalone HTML benchmark viewer remains at docs/archive/index.html; the additional high-order/negative-control reviewer is at docs/archive/controls/index.html. A self-contained download ZIP includes both.
+The project-specific visual system retains navy/orange/blue/slate tokens, hero, white header, evidence identity strip, responsive page and high-contrast footer. As authorized 2026-11-16 by an INM lead researcher, the previously neutral placeholder configuration is replaced by three exact source-verified official INM SVG assets from the OOC documentation site. Blob provenance and institutional-rights exceptions are in \`licensing.md\`.
 
-No official institutional image assets are included; the neutral MHT-X typographic placeholder is not an official logo. All modernization documentation uses this navigation structure, clearly distinguishing released capabilities from research plans.
+Original standalone HTML benchmark viewers remain at \`docs/archive/index.html\` and \`docs/archive/controls/index.html\`. The portable offline ZIP includes both viewers and their scientific data; it is independent from this Zensical MathJax page renderer.
 
-Zensical version 0.0.71 under an isolated Python 3.12 environment. A strictly validated build and PR review do not prove live GitHub Pages deployment.
+The new [published motion equations](published-motion-equations.md) page separates original paper equations, source-code equivalents, upstream DFI and unvalidated research. MathJax 3.2.2 is pinned in site configuration; this CDN-served JS is not included in the offline benchmark ZIP. Successful static/strict build does not by itself establish browser rendering, live deployment or scientific manuscript formula-verification.

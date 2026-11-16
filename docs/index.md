@@ -19,10 +19,11 @@
 - [Installation and first run](getting-started.md)
 - [Architecture and branch differences](architecture.md)
 - [Motion, association, Entry/Exit and event models](methods.md)
+- [Published motion and flow-prior equations](published-motion-equations.md)
 - [Validation and regressions](validation.md)
 - [Benchmark visualizations and offline ZIP](benchmarks.md)
 - [Scientific provenance](data-provenance.md)
 - [Research roadmap](research.md)
 - [Credits](credits.md) and [rights](licensing.md)
 
-<div class="inm-credit-strip"><strong>Scope:</strong> This is scientific documentation of current source and validated synthetic benchmarks—not an assertion that unfinished Bayesian clutter or group-motion methods are implemented. All visual branding assets are neutral project placeholders, not official institutional logos.</div>
+<div class="inm-credit-strip"><strong>Scope:</strong> This is scientific documentation of current source and validated synthetic benchmarks—not an assertion that unfinished Bayesian clutter or group-motion methods are implemented. The INM institutional logo assets are officially authorized for use on this INM-styled documentation site; their source and licensing exceptions are recorded under Licensing and rights.</div>
