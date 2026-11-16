@@ -9,6 +9,8 @@
 </div>
 </section>
 
+<img class="inm-brand-mark" src="assets/inm-horizontal.svg" alt="Institute of Numerical Modelling, University of Latvia" loading="eager" decoding="async" />
+
 <div class="inm-identity">
 <div><small>Scientific software</small><strong>MHT-X development and reproducibility</strong><p>Documentation adapted to the visual system used for Institute of Numerical Modelling scientific software sites.</p></div>
 <div><small>Evidence boundary</small><strong>Source-frozen results versus experimental extensions</strong><p>Only curated synthetic results are included. Raw laboratory data and unpublished experiment images are not hosted.</p></div>
