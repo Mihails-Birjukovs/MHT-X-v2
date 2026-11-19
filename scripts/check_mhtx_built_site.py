@@ -17,6 +17,8 @@ def check():
  for tag in (".inm-hero",".inm-identity",".md-footer","--inm-orange","#f47b20"):
   if tag not in style:raise ValueError("INM design token missing "+tag)
  home=(SITE/"index.html").read_text(encoding="utf-8")
+ if 'href="https://github.com/Mihails-Birjukovs/MHT-X-v2"' not in home or "md-source" not in home:
+  raise ValueError("Public GitHub source link missing from header")
  if "inm-hero" not in home or "inm-mhtx-v1.css" not in home:
   raise ValueError("Site home lacks active INM style link")
  browser=(SITE/"benchmarks/index.html").read_text(encoding="utf-8")
